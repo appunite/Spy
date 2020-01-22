@@ -67,6 +67,10 @@
 		F12C33AB23D8BF4000F9F460 /* AnySpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12C33A923D8BF4000F9F460 /* AnySpy.swift */; };
 		F12C33AC23D8BF4000F9F460 /* AnySpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12C33A923D8BF4000F9F460 /* AnySpy.swift */; };
 		F12C33AD23D8BF4000F9F460 /* AnySpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12C33A923D8BF4000F9F460 /* AnySpy.swift */; };
+		F12C33AF23D8C6CB00F9F460 /* CompositeSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12C33AE23D8C6CB00F9F460 /* CompositeSpy.swift */; };
+		F12C33B023D8C6CB00F9F460 /* CompositeSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12C33AE23D8C6CB00F9F460 /* CompositeSpy.swift */; };
+		F12C33B123D8C6CB00F9F460 /* CompositeSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12C33AE23D8C6CB00F9F460 /* CompositeSpy.swift */; };
+		F12C33B223D8C6CB00F9F460 /* CompositeSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12C33AE23D8C6CB00F9F460 /* CompositeSpy.swift */; };
 		F3D6BF8A86265329889ED41C /* PTimestampProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F066CF5C12BC433A4D0339C8 /* PTimestampProvider.swift */; };
 		F5CF317CC6C31D366651B8BF /* CurrentTimestampProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC720605A9EFD7D25659B56D /* CurrentTimestampProvider.swift */; };
 		F79F86D94319BDFB8B6A1041 /* ConsoleSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C43B51E4C3FC74551482F1 /* ConsoleSpy.swift */; };
@@ -155,6 +159,7 @@
 		F066CF5C12BC433A4D0339C8 /* PTimestampProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PTimestampProvider.swift; sourceTree = "<group>"; };
 		F0ADD68BAD32886AD351C0DF /* RawSpyFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RawSpyFormatter.swift; sourceTree = "<group>"; };
 		F12C33A923D8BF4000F9F460 /* AnySpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnySpy.swift; sourceTree = "<group>"; };
+		F12C33AE23D8C6CB00F9F460 /* CompositeSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositeSpy.swift; sourceTree = "<group>"; };
 		F2850AE714DB254464B02DDD /* Spy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Spy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F770B779378C2C62F40B44C4 /* Pods-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.debug.xcconfig"; path = "Target Support Files/Pods-Example/Pods-Example.debug.xcconfig"; sourceTree = "<group>"; };
 		F89E7AB26C7CC111444C2F77 /* Spy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Spy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -246,6 +251,7 @@
 				F0ADD68BAD32886AD351C0DF /* RawSpyFormatter.swift */,
 				118C16754FC38E5A07685006 /* SpyLevel.swift */,
 				F12C33A923D8BF4000F9F460 /* AnySpy.swift */,
+				F12C33AE23D8C6CB00F9F460 /* CompositeSpy.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -655,6 +661,7 @@
 				03E14636E748AD712863C4C9 /* RawSpyFormatter.swift in Sources */,
 				75519EF5B192426192E12476 /* SpyLevel.swift in Sources */,
 				173FE8DE0B940BD6F0376872 /* String+PSpyable.swift in Sources */,
+				F12C33B023D8C6CB00F9F460 /* CompositeSpy.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -674,6 +681,7 @@
 				51B2EC621C9AD78302DC5E7D /* RawSpyFormatter.swift in Sources */,
 				C2E7B779989D9DBFF18A62EC /* SpyLevel.swift in Sources */,
 				C8629831D1D56B4BB934DF1A /* String+PSpyable.swift in Sources */,
+				F12C33AF23D8C6CB00F9F460 /* CompositeSpy.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -693,6 +701,7 @@
 				9BFC8B82D8A544471F8226A1 /* RawSpyFormatter.swift in Sources */,
 				2E177EFC11792493BE363631 /* SpyLevel.swift in Sources */,
 				1509C1F557AB15F513F207C5 /* String+PSpyable.swift in Sources */,
+				F12C33B123D8C6CB00F9F460 /* CompositeSpy.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -712,6 +721,7 @@
 				0B45CEF621128EDC4F2EC037 /* RawSpyFormatter.swift in Sources */,
 				8910FD3712967C56851A303E /* SpyLevel.swift in Sources */,
 				05B151B8E880D8E760E474EB /* String+PSpyable.swift in Sources */,
+				F12C33B223D8C6CB00F9F460 /* CompositeSpy.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
