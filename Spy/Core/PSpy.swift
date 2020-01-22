@@ -9,8 +9,13 @@
 public protocol PSpy {
     associatedtype Level: PSpyLevel
     associatedtype Channel: PSpyChannel
-    func configure(spyOnLevels: Set<Level>) -> Self
-    func configure(spyOnChannels: Set<Channel>) -> Self
-    func log(level: Level, channel: Channel, message: PSpyable) -> Self
+    @discardableResult func configure(spyOnLevels: Set<Level>) -> Self
+    @discardableResult func configure(spyOnChannels: Set<Channel>) -> Self
+    @discardableResult func log(level: Level, channel: Channel, message: PSpyable) -> Self
 }
 
+extension PSpy {
+    func toAnySpy() -> AnySpy<Level, Channel> {
+        return AnySpy(self)
+    }
+}
