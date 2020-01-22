@@ -6,6 +6,6 @@
 //  Copyright © 2020 AppUnite Sp. z o.o. All rights reserved.
 //
 
-public protocol PSpyLevel: Equatable, Hashable {
+public protocol PSpyLevel: Hashable {
     var levelName: String { get }
 }

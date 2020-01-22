@@ -7,46 +7,66 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		03E14636E748AD712863C4C9 /* RawSpyFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0ADD68BAD32886AD351C0DF /* RawSpyFormatter.swift */; };
 		05B151B8E880D8E760E474EB /* String+PSpyable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEC108A3832B5E814A0FD72 /* String+PSpyable.swift */; };
 		068C3F82F2F30FCE9337F719 /* PSpyChannel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7ECD0B3052BFA8AC94D83E2 /* PSpyChannel.swift */; };
+		0B45CEF621128EDC4F2EC037 /* RawSpyFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0ADD68BAD32886AD351C0DF /* RawSpyFormatter.swift */; };
 		0BC32ADA821AA7BBA4C4E632 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A3D91C2EC2DD101CF21ACEE /* AppDelegate.swift */; };
 		0E8A240FB1BD894915DB91FC /* PSpyLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA4577B8A05FCCE23974CA3 /* PSpyLevel.swift */; };
 		1509C1F557AB15F513F207C5 /* String+PSpyable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEC108A3832B5E814A0FD72 /* String+PSpyable.swift */; };
 		173FE8DE0B940BD6F0376872 /* String+PSpyable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEC108A3832B5E814A0FD72 /* String+PSpyable.swift */; };
+		1D07D139FC42B18DC7D99524 /* Pods_SpyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADE6505B6A70543D4BBCE88D /* Pods_SpyTests.framework */; };
 		1D6B29087959EE09A0E38A1E /* PSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C12F479779F885FFD5947B /* PSpy.swift */; };
 		21B02C3179425E712098BB8F /* PSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C12F479779F885FFD5947B /* PSpy.swift */; };
 		2E177EFC11792493BE363631 /* SpyLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118C16754FC38E5A07685006 /* SpyLevel.swift */; };
 		33393E3C5A2987D7177F6D82 /* Spy.h in Headers */ = {isa = PBXBuildFile; fileRef = 797BE01EEE903051BF964652 /* Spy.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		36889AE0B7173000B053A111 /* Pods_SpyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF1B25B383FCE77FDD6AFF12 /* Pods_SpyTests.framework */; };
 		3870206ABDFC01485BBF19AC /* PSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C12F479779F885FFD5947B /* PSpy.swift */; };
+		44243EEFD83ECAA405CE47D8 /* CurrentTimestampProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC720605A9EFD7D25659B56D /* CurrentTimestampProvider.swift */; };
 		4AB427DE68BE189509538792 /* Spy.h in Headers */ = {isa = PBXBuildFile; fileRef = 797BE01EEE903051BF964652 /* Spy.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4F128AC60B1145DE3F616BC0 /* PSpyLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA4577B8A05FCCE23974CA3 /* PSpyLevel.swift */; };
+		51B2EC621C9AD78302DC5E7D /* RawSpyFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0ADD68BAD32886AD351C0DF /* RawSpyFormatter.swift */; };
 		54843A4085FFD5237E5E6E59 /* PSpyable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 083BA954DE1B5FDE0E92AFBA /* PSpyable.swift */; };
 		5ED5122DDB798AC53EE3C8B3 /* PSpyable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 083BA954DE1B5FDE0E92AFBA /* PSpyable.swift */; };
 		6632657E0F9024B622C384F2 /* PSpyable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 083BA954DE1B5FDE0E92AFBA /* PSpyable.swift */; };
 		663DC4AAE9CBB4B181773A0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BBC8875BEB948A2868F8F4A /* Assets.xcassets */; };
+		6C26BFB55872028C592AA5E6 /* ConsoleSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C43B51E4C3FC74551482F1 /* ConsoleSpy.swift */; };
+		73BF06596792ACCE96D05F8C /* PTimestampProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F066CF5C12BC433A4D0339C8 /* PTimestampProvider.swift */; };
 		75519EF5B192426192E12476 /* SpyLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118C16754FC38E5A07685006 /* SpyLevel.swift */; };
+		75B1B84566E71D5B8B25E261 /* PSpyFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BDE36DD5E247B5B28C8A0F1 /* PSpyFormatter.swift */; };
 		7F7AC611D87F5A755F2FD60D /* PSpyLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA4577B8A05FCCE23974CA3 /* PSpyLevel.swift */; };
 		83C426EEA71209EFF73B8C33 /* PSpyLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA4577B8A05FCCE23974CA3 /* PSpyLevel.swift */; };
+		8412EDEAA2D85CEEA805E0EF /* PSpyFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BDE36DD5E247B5B28C8A0F1 /* PSpyFormatter.swift */; };
 		87A3C79ABA2B4A87465F2168 /* Spy.h in Headers */ = {isa = PBXBuildFile; fileRef = 797BE01EEE903051BF964652 /* Spy.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		886A7BD2543444F89389CC16 /* PSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C12F479779F885FFD5947B /* PSpy.swift */; };
 		8910FD3712967C56851A303E /* SpyLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118C16754FC38E5A07685006 /* SpyLevel.swift */; };
+		892B171B9B79D82756032DEE /* PSpyFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BDE36DD5E247B5B28C8A0F1 /* PSpyFormatter.swift */; };
+		8FCFB3833011AE89281E023B /* ConsoleSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C43B51E4C3FC74551482F1 /* ConsoleSpy.swift */; };
 		9A9D3BB19B331877AA7384EE /* PSpyChannel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7ECD0B3052BFA8AC94D83E2 /* PSpyChannel.swift */; };
+		9BFC8B82D8A544471F8226A1 /* RawSpyFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0ADD68BAD32886AD351C0DF /* RawSpyFormatter.swift */; };
+		9E5DEB16749087CB0CB5339E /* CurrentTimestampProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC720605A9EFD7D25659B56D /* CurrentTimestampProvider.swift */; };
+		A5991DC58A97A76CE3FE132C /* Pods_Spy_macOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB40BC46875D07531949BAC3 /* Pods_Spy_macOS.framework */; };
 		AB29D838E29A56E2F3BC1687 /* PSpyChannel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7ECD0B3052BFA8AC94D83E2 /* PSpyChannel.swift */; };
-		B47F639776EBE1BE13CBFB53 /* Pods_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0A2CF5BFD4CC7FDCDB4237B /* Pods_Example.framework */; };
+		B1FADF1401C7F0CAEF70E1D5 /* Pods_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B77E09D51BFE36366404518 /* Pods_Example.framework */; };
 		B68D37D441F7931F9805F067 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58A84B16AF7E4301E34B9862 /* ViewController.swift */; };
+		B8B4D55060E2DA4A225E54EB /* PTimestampProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F066CF5C12BC433A4D0339C8 /* PTimestampProvider.swift */; };
 		C2E7B779989D9DBFF18A62EC /* SpyLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118C16754FC38E5A07685006 /* SpyLevel.swift */; };
 		C35DAA04C28C23C8CC2FEB2F /* Spy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2850AE714DB254464B02DDD /* Spy.framework */; };
 		C4FE4FFA1B0FBF0B1CEFBDD3 /* Spy.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F2850AE714DB254464B02DDD /* Spy.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C620CBE9088160BA86699938 /* ConsoleSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C43B51E4C3FC74551482F1 /* ConsoleSpy.swift */; };
 		C8629831D1D56B4BB934DF1A /* String+PSpyable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEC108A3832B5E814A0FD72 /* String+PSpyable.swift */; };
+		C99A87C0ED390D32FB658163 /* CurrentTimestampProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC720605A9EFD7D25659B56D /* CurrentTimestampProvider.swift */; };
 		D4F6595FE610807177B0CF25 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B41911F9890DE920ABEED9EF /* Main.storyboard */; };
+		D4F8CBC3E2FCD93A2FD4EF6D /* PSpyFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BDE36DD5E247B5B28C8A0F1 /* PSpyFormatter.swift */; };
 		D60C6F7CF9D93E8FB7885B95 /* PSpyable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 083BA954DE1B5FDE0E92AFBA /* PSpyable.swift */; };
 		D6F11216ABB18B4691F4E657 /* Spy.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F2850AE714DB254464B02DDD /* Spy.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D7F58BE53E77ED9B8B5457AD /* SpyableStringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B712E56E1BBE344098456A06 /* SpyableStringTests.swift */; };
-		DB1D4B41FC0920075FD63444 /* Pods_Spy_macOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33C3F61C7ABC4A08FA7A41D1 /* Pods_Spy_macOS.framework */; };
 		DDC287FB5C2DB6B0045A0549 /* Spy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2850AE714DB254464B02DDD /* Spy.framework */; };
+		E0A8B1F68A1D77F737BDFC61 /* PTimestampProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F066CF5C12BC433A4D0339C8 /* PTimestampProvider.swift */; };
 		E3D4662BAB047881F16F9768 /* Spy.h in Headers */ = {isa = PBXBuildFile; fileRef = 797BE01EEE903051BF964652 /* Spy.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F12C338823D8B1C200F9F460 /* SpyLevelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12C338723D8B1C200F9F460 /* SpyLevelTests.swift */; };
+		F3D6BF8A86265329889ED41C /* PTimestampProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F066CF5C12BC433A4D0339C8 /* PTimestampProvider.swift */; };
+		F5CF317CC6C31D366651B8BF /* CurrentTimestampProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC720605A9EFD7D25659B56D /* CurrentTimestampProvider.swift */; };
+		F79F86D94319BDFB8B6A1041 /* ConsoleSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C43B51E4C3FC74551482F1 /* ConsoleSpy.swift */; };
+		F8F22B0AB5533519D2AD2347 /* SpyLevelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FCAD0635277EC7F24086E2A /* SpyLevelTests.swift */; };
 		FBB8940D9542B4DD3CB38558 /* PSpyChannel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7ECD0B3052BFA8AC94D83E2 /* PSpyChannel.swift */; };
 /* End PBXBuildFile section */
 
@@ -94,48 +114,54 @@
 
 /* Begin PBXFileReference section */
 		083BA954DE1B5FDE0E92AFBA /* PSpyable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSpyable.swift; sourceTree = "<group>"; };
+		0B77E09D51BFE36366404518 /* Pods_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0ECA5449FB8103E6B36F7CA5 /* Pods-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.release.xcconfig"; path = "Target Support Files/Pods-Example/Pods-Example.release.xcconfig"; sourceTree = "<group>"; };
 		118C16754FC38E5A07685006 /* SpyLevel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpyLevel.swift; sourceTree = "<group>"; };
-		143282DCCD6E5023FFF14900 /* Pods-SpyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpyTests.release.xcconfig"; path = "Target Support Files/Pods-SpyTests/Pods-SpyTests.release.xcconfig"; sourceTree = "<group>"; };
 		17C12F479779F885FFD5947B /* PSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSpy.swift; sourceTree = "<group>"; };
 		212C0F1ADFE8F1F7DE292679 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		33C3F61C7ABC4A08FA7A41D1 /* Pods_Spy_macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Spy_macOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3A9ABC0CDAB7F84714BA51F4 /* Pods-Spy_macOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Spy_macOS.release.xcconfig"; path = "Target Support Files/Pods-Spy_macOS/Pods-Spy_macOS.release.xcconfig"; sourceTree = "<group>"; };
+		38F9457ED9D6147DEE0F88A2 /* Pods-SpyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpyTests.release.xcconfig"; path = "Target Support Files/Pods-SpyTests/Pods-SpyTests.release.xcconfig"; sourceTree = "<group>"; };
+		398EC1D1FBBDC767AEA6BF97 /* Pods-Spy_macOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Spy_macOS.debug.xcconfig"; path = "Target Support Files/Pods-Spy_macOS/Pods-Spy_macOS.debug.xcconfig"; sourceTree = "<group>"; };
 		4BBC8875BEB948A2868F8F4A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4D2A75209F0ADFD824A7846E /* SpyTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SpyTests-Bridging-Header.h"; sourceTree = "<group>"; };
 		4E9FB7FE9330CAEDE9B9405B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		5489AA9BC65AF9E7441610A7 /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5880FCBC4A68A8F18CAA1D99 /* Example.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Example.entitlements; sourceTree = "<group>"; };
 		58A84B16AF7E4301E34B9862 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		6804092B68FBF22A29F345FF /* Pods-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.debug.xcconfig"; path = "Target Support Files/Pods-Example/Pods-Example.debug.xcconfig"; sourceTree = "<group>"; };
-		74C7845381C53209369F8F88 /* Pods-Spy_macOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Spy_macOS.debug.xcconfig"; path = "Target Support Files/Pods-Spy_macOS/Pods-Spy_macOS.debug.xcconfig"; sourceTree = "<group>"; };
+		5FCAD0635277EC7F24086E2A /* SpyLevelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpyLevelTests.swift; sourceTree = "<group>"; };
+		6650DDE5928A201C30CC6610 /* Pods-Spy_macOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Spy_macOS.release.xcconfig"; path = "Target Support Files/Pods-Spy_macOS/Pods-Spy_macOS.release.xcconfig"; sourceTree = "<group>"; };
 		797BE01EEE903051BF964652 /* Spy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Spy.h; sourceTree = "<group>"; };
+		7A830A71F84A0C4C7E295EED /* Pods-SpyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpyTests.debug.xcconfig"; path = "Target Support Files/Pods-SpyTests/Pods-SpyTests.debug.xcconfig"; sourceTree = "<group>"; };
 		8A3D91C2EC2DD101CF21ACEE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		92F35F256075C8FD7F58F6AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		94B02152FA5F1BF520D7032F /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		9BDE36DD5E247B5B28C8A0F1 /* PSpyFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSpyFormatter.swift; sourceTree = "<group>"; };
 		A74F2C395D1B8DECBD10C145 /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
 		A7ECD0B3052BFA8AC94D83E2 /* PSpyChannel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSpyChannel.swift; sourceTree = "<group>"; };
 		AA470997515CFFB38C44689C /* Common.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Common.xcconfig; sourceTree = "<group>"; };
+		AB40BC46875D07531949BAC3 /* Pods_Spy_macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Spy_macOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADE6505B6A70543D4BBCE88D /* Pods_SpyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2C43B51E4C3FC74551482F1 /* ConsoleSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsoleSpy.swift; sourceTree = "<group>"; };
 		B689C2640382401D7124B39C /* Spy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Spy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B712E56E1BBE344098456A06 /* SpyableStringTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpyableStringTests.swift; sourceTree = "<group>"; };
 		BAEC108A3832B5E814A0FD72 /* String+PSpyable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+PSpyable.swift"; sourceTree = "<group>"; };
 		BEA4577B8A05FCCE23974CA3 /* PSpyLevel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSpyLevel.swift; sourceTree = "<group>"; };
 		C9D02D06CCB2020EE4E5E901 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
 		CF49C862AFF8344692F93D42 /* Spy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Spy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DDD8822C436DD0C982B8CAE3 /* Pods-SpyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpyTests.debug.xcconfig"; path = "Target Support Files/Pods-SpyTests/Pods-SpyTests.debug.xcconfig"; sourceTree = "<group>"; };
 		DFE162D5C3F0A46EEA2F94A6 /* SpyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E0A2CF5BFD4CC7FDCDB4237B /* Pods_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		ED2A06FBA8E376539A0C3655 /* Pods-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.release.xcconfig"; path = "Target Support Files/Pods-Example/Pods-Example.release.xcconfig"; sourceTree = "<group>"; };
-		EF1B25B383FCE77FDD6AFF12 /* Pods_SpyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F12C338723D8B1C200F9F460 /* SpyLevelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpyLevelTests.swift; sourceTree = "<group>"; };
+		F066CF5C12BC433A4D0339C8 /* PTimestampProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PTimestampProvider.swift; sourceTree = "<group>"; };
+		F0ADD68BAD32886AD351C0DF /* RawSpyFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RawSpyFormatter.swift; sourceTree = "<group>"; };
 		F2850AE714DB254464B02DDD /* Spy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Spy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F770B779378C2C62F40B44C4 /* Pods-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.debug.xcconfig"; path = "Target Support Files/Pods-Example/Pods-Example.debug.xcconfig"; sourceTree = "<group>"; };
 		F89E7AB26C7CC111444C2F77 /* Spy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Spy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC720605A9EFD7D25659B56D /* CurrentTimestampProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentTimestampProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		0A668449DC3CA9AC62B18859 /* Frameworks */ = {
+		026DC01FCC5286A628553E3A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5991DC58A97A76CE3FE132C /* Pods_Spy_macOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,15 +170,28 @@
 			buildActionMask = 2147483647;
 			files = (
 				DDC287FB5C2DB6B0045A0549 /* Spy.framework in Frameworks */,
-				B47F639776EBE1BE13CBFB53 /* Pods_Example.framework in Frameworks */,
+				B1FADF1401C7F0CAEF70E1D5 /* Pods_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3BE4AA7691692EDF60B47BB2 /* Frameworks */ = {
+		31AD8154B02C3BC0750E9FED /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DB1D4B41FC0920075FD63444 /* Pods_Spy_macOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E72F969AE99AAB0E5F17ECB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		58396DAE490444BAE78F4EEF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -161,21 +200,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C35DAA04C28C23C8CC2FEB2F /* Spy.framework in Frameworks */,
-				36889AE0B7173000B053A111 /* Pods_SpyTests.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B71C7FC97F1DF3BE55CEEF99 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E18134167D44629055545FA6 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				1D07D139FC42B18DC7D99524 /* Pods_SpyTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,22 +220,29 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		44968FA7358B11FD1CA32C6D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F770B779378C2C62F40B44C4 /* Pods-Example.debug.xcconfig */,
+				0ECA5449FB8103E6B36F7CA5 /* Pods-Example.release.xcconfig */,
+				7A830A71F84A0C4C7E295EED /* Pods-SpyTests.debug.xcconfig */,
+				38F9457ED9D6147DEE0F88A2 /* Pods-SpyTests.release.xcconfig */,
+				398EC1D1FBBDC767AEA6BF97 /* Pods-Spy_macOS.debug.xcconfig */,
+				6650DDE5928A201C30CC6610 /* Pods-Spy_macOS.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		48371DECAB19F23BE84F0438 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				B2C43B51E4C3FC74551482F1 /* ConsoleSpy.swift */,
+				FC720605A9EFD7D25659B56D /* CurrentTimestampProvider.swift */,
+				F0ADD68BAD32886AD351C0DF /* RawSpyFormatter.swift */,
 				118C16754FC38E5A07685006 /* SpyLevel.swift */,
 			);
 			path = Common;
-			sourceTree = "<group>";
-		};
-		4F348FB8049855F9713D2F5F /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				E0A2CF5BFD4CC7FDCDB4237B /* Pods_Example.framework */,
-				EF1B25B383FCE77FDD6AFF12 /* Pods_SpyTests.framework */,
-				33C3F61C7ABC4A08FA7A41D1 /* Pods_Spy_macOS.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		6B067C3517B8F9329C382BE5 /* Spy */ = {
@@ -231,7 +263,9 @@
 				17C12F479779F885FFD5947B /* PSpy.swift */,
 				083BA954DE1B5FDE0E92AFBA /* PSpyable.swift */,
 				A7ECD0B3052BFA8AC94D83E2 /* PSpyChannel.swift */,
+				9BDE36DD5E247B5B28C8A0F1 /* PSpyFormatter.swift */,
 				BEA4577B8A05FCCE23974CA3 /* PSpyLevel.swift */,
+				F066CF5C12BC433A4D0339C8 /* PTimestampProvider.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -245,8 +279,8 @@
 				E069343808C95096117CBA7D /* SpyTests */,
 				94B02152FA5F1BF520D7032F /* Package.swift */,
 				0326187113199AEC92CFE93C /* Products */,
-				EEBEB31E80F10ABFA8FA6AF5 /* Pods */,
-				4F348FB8049855F9713D2F5F /* Frameworks */,
+				44968FA7358B11FD1CA32C6D /* Pods */,
+				CE0015D5D864F82F2776EFDD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -271,12 +305,22 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		CE0015D5D864F82F2776EFDD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0B77E09D51BFE36366404518 /* Pods_Example.framework */,
+				ADE6505B6A70543D4BBCE88D /* Pods_SpyTests.framework */,
+				AB40BC46875D07531949BAC3 /* Pods_Spy_macOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E069343808C95096117CBA7D /* SpyTests */ = {
 			isa = PBXGroup;
 			children = (
 				B712E56E1BBE344098456A06 /* SpyableStringTests.swift */,
+				5FCAD0635277EC7F24086E2A /* SpyLevelTests.swift */,
 				4D2A75209F0ADFD824A7846E /* SpyTests-Bridging-Header.h */,
-				F12C338723D8B1C200F9F460 /* SpyLevelTests.swift */,
 			);
 			path = SpyTests;
 			sourceTree = "<group>";
@@ -289,19 +333,6 @@
 				C9D02D06CCB2020EE4E5E901 /* Release.xcconfig */,
 			);
 			path = Configurations;
-			sourceTree = "<group>";
-		};
-		EEBEB31E80F10ABFA8FA6AF5 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				6804092B68FBF22A29F345FF /* Pods-Example.debug.xcconfig */,
-				ED2A06FBA8E376539A0C3655 /* Pods-Example.release.xcconfig */,
-				DDD8822C436DD0C982B8CAE3 /* Pods-SpyTests.debug.xcconfig */,
-				143282DCCD6E5023FFF14900 /* Pods-SpyTests.release.xcconfig */,
-				74C7845381C53209369F8F88 /* Pods-Spy_macOS.debug.xcconfig */,
-				3A9ABC0CDAB7F84714BA51F4 /* Pods-Spy_macOS.release.xcconfig */,
-			);
-			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -346,7 +377,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E20D01782C16923CC210FC11 /* Build configuration list for PBXNativeTarget "Example" */;
 			buildPhases = (
-				68DE02B96A567D275F551F26 /* [CP] Check Pods Manifest.lock */,
+				525B252712F6047DDC0ED515 /* [CP] Check Pods Manifest.lock */,
 				9F17513BE0DEE0FD0EB5FF02 /* Sources */,
 				BAC317D50090DEA1A23ED8B3 /* Resources */,
 				2F3B647C01C6D6CD27E34356 /* Frameworks */,
@@ -369,7 +400,7 @@
 			buildPhases = (
 				4CE71B7A82F6AB963337104A /* Headers */,
 				31195AA61D13AF5C43F28C5F /* Sources */,
-				0A668449DC3CA9AC62B18859 /* Frameworks */,
+				31AD8154B02C3BC0750E9FED /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -384,10 +415,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 42EBBB54AA87A8B2CE277EB8 /* Build configuration list for PBXNativeTarget "Spy_macOS" */;
 			buildPhases = (
-				F1AA96D686B361F8052D62CD /* [CP] Check Pods Manifest.lock */,
+				C8FA73497ECF2952D5025398 /* [CP] Check Pods Manifest.lock */,
 				5BC1FC8F32A204A991913FFD /* Headers */,
 				11CAAEE2FAB9D8F0AFBDE1D9 /* Sources */,
-				3BE4AA7691692EDF60B47BB2 /* Frameworks */,
+				026DC01FCC5286A628553E3A /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -404,7 +435,7 @@
 			buildPhases = (
 				24DFC8619973A8EF9B5194C4 /* Headers */,
 				3BD522A72D130E6652301A40 /* Sources */,
-				E18134167D44629055545FA6 /* Frameworks */,
+				4E72F969AE99AAB0E5F17ECB /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -419,7 +450,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FCD983788EDDFDC6DC663275 /* Build configuration list for PBXNativeTarget "SpyTests" */;
 			buildPhases = (
-				C93183A5C3F67E3889055D84 /* [CP] Check Pods Manifest.lock */,
+				E28B7821D96B627983EBD7A7 /* [CP] Check Pods Manifest.lock */,
 				C018F9E4B5D29C2F0108C579 /* Sources */,
 				A69796637A43D90E4016876C /* Frameworks */,
 				9DE344AF77F807B59E493724 /* Embed Frameworks */,
@@ -440,7 +471,7 @@
 			buildPhases = (
 				A2399FA8DCBC74F945151BC3 /* Headers */,
 				45FABD15EBAA08D147991A63 /* Sources */,
-				B71C7FC97F1DF3BE55CEEF99 /* Frameworks */,
+				58396DAE490444BAE78F4EEF /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -485,7 +516,6 @@
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				en,
 				Base,
 			);
 			mainGroup = AE00AEDFE1C29430B22DB166;
@@ -516,7 +546,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		68DE02B96A567D275F551F26 /* [CP] Check Pods Manifest.lock */ = {
+		525B252712F6047DDC0ED515 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -556,29 +586,7 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
 		};
-		C93183A5C3F67E3889055D84 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-SpyTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F1AA96D686B361F8052D62CD /* [CP] Check Pods Manifest.lock */ = {
+		C8FA73497ECF2952D5025398 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -600,6 +608,28 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		E28B7821D96B627983EBD7A7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SpyTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -607,10 +637,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8FCFB3833011AE89281E023B /* ConsoleSpy.swift in Sources */,
+				F5CF317CC6C31D366651B8BF /* CurrentTimestampProvider.swift in Sources */,
 				886A7BD2543444F89389CC16 /* PSpy.swift in Sources */,
 				AB29D838E29A56E2F3BC1687 /* PSpyChannel.swift in Sources */,
+				8412EDEAA2D85CEEA805E0EF /* PSpyFormatter.swift in Sources */,
 				4F128AC60B1145DE3F616BC0 /* PSpyLevel.swift in Sources */,
 				6632657E0F9024B622C384F2 /* PSpyable.swift in Sources */,
+				B8B4D55060E2DA4A225E54EB /* PTimestampProvider.swift in Sources */,
+				03E14636E748AD712863C4C9 /* RawSpyFormatter.swift in Sources */,
 				75519EF5B192426192E12476 /* SpyLevel.swift in Sources */,
 				173FE8DE0B940BD6F0376872 /* String+PSpyable.swift in Sources */,
 			);
@@ -620,10 +655,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C26BFB55872028C592AA5E6 /* ConsoleSpy.swift in Sources */,
+				44243EEFD83ECAA405CE47D8 /* CurrentTimestampProvider.swift in Sources */,
 				1D6B29087959EE09A0E38A1E /* PSpy.swift in Sources */,
 				9A9D3BB19B331877AA7384EE /* PSpyChannel.swift in Sources */,
+				75B1B84566E71D5B8B25E261 /* PSpyFormatter.swift in Sources */,
 				83C426EEA71209EFF73B8C33 /* PSpyLevel.swift in Sources */,
 				D60C6F7CF9D93E8FB7885B95 /* PSpyable.swift in Sources */,
+				E0A8B1F68A1D77F737BDFC61 /* PTimestampProvider.swift in Sources */,
+				51B2EC621C9AD78302DC5E7D /* RawSpyFormatter.swift in Sources */,
 				C2E7B779989D9DBFF18A62EC /* SpyLevel.swift in Sources */,
 				C8629831D1D56B4BB934DF1A /* String+PSpyable.swift in Sources */,
 			);
@@ -633,10 +673,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F79F86D94319BDFB8B6A1041 /* ConsoleSpy.swift in Sources */,
+				C99A87C0ED390D32FB658163 /* CurrentTimestampProvider.swift in Sources */,
 				21B02C3179425E712098BB8F /* PSpy.swift in Sources */,
 				068C3F82F2F30FCE9337F719 /* PSpyChannel.swift in Sources */,
+				892B171B9B79D82756032DEE /* PSpyFormatter.swift in Sources */,
 				0E8A240FB1BD894915DB91FC /* PSpyLevel.swift in Sources */,
 				5ED5122DDB798AC53EE3C8B3 /* PSpyable.swift in Sources */,
+				F3D6BF8A86265329889ED41C /* PTimestampProvider.swift in Sources */,
+				9BFC8B82D8A544471F8226A1 /* RawSpyFormatter.swift in Sources */,
 				2E177EFC11792493BE363631 /* SpyLevel.swift in Sources */,
 				1509C1F557AB15F513F207C5 /* String+PSpyable.swift in Sources */,
 			);
@@ -646,10 +691,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C620CBE9088160BA86699938 /* ConsoleSpy.swift in Sources */,
+				9E5DEB16749087CB0CB5339E /* CurrentTimestampProvider.swift in Sources */,
 				3870206ABDFC01485BBF19AC /* PSpy.swift in Sources */,
 				FBB8940D9542B4DD3CB38558 /* PSpyChannel.swift in Sources */,
+				D4F8CBC3E2FCD93A2FD4EF6D /* PSpyFormatter.swift in Sources */,
 				7F7AC611D87F5A755F2FD60D /* PSpyLevel.swift in Sources */,
 				54843A4085FFD5237E5E6E59 /* PSpyable.swift in Sources */,
+				73BF06596792ACCE96D05F8C /* PTimestampProvider.swift in Sources */,
+				0B45CEF621128EDC4F2EC037 /* RawSpyFormatter.swift in Sources */,
 				8910FD3712967C56851A303E /* SpyLevel.swift in Sources */,
 				05B151B8E880D8E760E474EB /* String+PSpyable.swift in Sources */,
 			);
@@ -668,8 +718,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8F22B0AB5533519D2AD2347 /* SpyLevelTests.swift in Sources */,
 				D7F58BE53E77ED9B8B5457AD /* SpyableStringTests.swift in Sources */,
-				F12C338823D8B1C200F9F460 /* SpyLevelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -702,7 +752,7 @@
 /* Begin XCBuildConfiguration section */
 		0C054A4C6A73B141C3E4A7E1 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = ED2A06FBA8E376539A0C3655 /* Pods-Example.release.xcconfig */;
+			baseConfigurationReference = 0ECA5449FB8103E6B36F7CA5 /* Pods-Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -720,7 +770,7 @@
 		};
 		1BF055A76204D004FAFD51AE /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 74C7845381C53209369F8F88 /* Pods-Spy_macOS.debug.xcconfig */;
+			baseConfigurationReference = 398EC1D1FBBDC767AEA6BF97 /* Pods-Spy_macOS.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
@@ -765,7 +815,7 @@
 		};
 		333AAF53B4B79D6C7401C5BB /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6804092B68FBF22A29F345FF /* Pods-Example.debug.xcconfig */;
+			baseConfigurationReference = F770B779378C2C62F40B44C4 /* Pods-Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -886,7 +936,7 @@
 		};
 		4B667152B7ED2900126DC487 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 143282DCCD6E5023FFF14900 /* Pods-SpyTests.release.xcconfig */;
+			baseConfigurationReference = 38F9457ED9D6147DEE0F88A2 /* Pods-SpyTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COMBINE_HIDPI_IMAGES = YES;
@@ -903,7 +953,7 @@
 		};
 		5BC81AD6AF80183195099A42 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3A9ABC0CDAB7F84714BA51F4 /* Pods-Spy_macOS.release.xcconfig */;
+			baseConfigurationReference = 6650DDE5928A201C30CC6610 /* Pods-Spy_macOS.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
@@ -1028,7 +1078,7 @@
 		};
 		F126C59C2A243B44A8BF3130 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DDD8822C436DD0C982B8CAE3 /* Pods-SpyTests.debug.xcconfig */;
+			baseConfigurationReference = 7A830A71F84A0C4C7E295EED /* Pods-SpyTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COMBINE_HIDPI_IMAGES = YES;
