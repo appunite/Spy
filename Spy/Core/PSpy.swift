@@ -9,7 +9,7 @@
 public protocol PSpy {
     associatedtype Level: PSpyLevel
     associatedtype Channel: PSpyChannel
-    func configure(spyOnLevels: [Level])
+    func configure(spyOnLevels: Set<Level>)
     func log(level: Level, channel: Channel, message: PSpyable)
 }
 

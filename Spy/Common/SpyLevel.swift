@@ -30,4 +30,8 @@ public enum SpyLevel: Int, PSpyLevel {
         case .severe: return "severe"
         }
     }
+    
+    public static func levelsFrom(_ level: SpyLevel) -> Set<SpyLevel> {
+        return Set([SpyLevel.finest, .finer, .fine, .config, .info, .warning, .severe]).filter { $0.levelPriority >= level.levelPriority }
+    }
 }

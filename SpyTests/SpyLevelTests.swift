@@ -29,4 +29,32 @@ public final class SpyLevelTests: XCTestCase {
         XCTAssertEqual(5, SpyLevel.warning.levelPriority)
         XCTAssertEqual(6, SpyLevel.severe.levelPriority)
     }
+    
+    func testLevelsFrom_WhenCalledWithFinest_ShouldReturnCorrectLevels() {
+        XCTAssertEqual(Set([.finest, .finer, .fine, .config, .info, .warning, .severe]), SpyLevel.levelsFrom(.finest))
+    }
+    
+    func testLevelsFrom_WhenCalledWithFiner_ShouldReturnCorrectLevels() {
+        XCTAssertEqual(Set([.finer, .fine, .config, .info, .warning, .severe]), SpyLevel.levelsFrom(.finer))
+    }
+    
+    func testLevelsFrom_WhenCalledWithFine_ShouldReturnCorrectLevels() {
+        XCTAssertEqual(Set([.fine, .config, .info, .warning, .severe]), SpyLevel.levelsFrom(.fine))
+    }
+    
+    func testLevelsFrom_WhenCalledWitConfig_ShouldReturnCorrectLevels() {
+        XCTAssertEqual(Set([.config, .info, .warning, .severe]), SpyLevel.levelsFrom(.config))
+    }
+    
+    func testLevelsFrom_WhenCalledWitInfo_ShouldReturnCorrectLevels() {
+        XCTAssertEqual(Set([.info, .warning, .severe]), SpyLevel.levelsFrom(.info))
+    }
+    
+    func testLevelsFrom_WhenCalledWitWarning_ShouldReturnCorrectLevels() {
+        XCTAssertEqual(Set([.warning, .severe]), SpyLevel.levelsFrom(.warning))
+    }
+    
+    func testLevelsFrom_WhenCalledWithSevere_ShouldReturnCorrectLevels() {
+        XCTAssertEqual(Set([.severe]), SpyLevel.levelsFrom(.severe))
+    }
 }
