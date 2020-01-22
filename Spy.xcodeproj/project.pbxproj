@@ -1,0 +1,947 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2766E07EAB0B2B2339B34FAE /* Spy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF49C862AFF8344692F93D42 /* Spy.framework */; };
+		B04CCB349688B773D4CB86D8 /* Pods_Spy_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B895F439A95336198480147 /* Pods_Spy_iOS.framework */; };
+		BC1785107B8460CEB6E4A122 /* Spy.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CF49C862AFF8344692F93D42 /* Spy.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C35DAA04C28C23C8CC2FEB2F /* Spy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2850AE714DB254464B02DDD /* Spy.framework */; };
+		C4FE4FFA1B0FBF0B1CEFBDD3 /* Spy.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F2850AE714DB254464B02DDD /* Spy.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D4945393ACF6D7611EC1293B /* Pods_ExampleIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12A178D7D47009B2DA248590 /* Pods_ExampleIOS.framework */; };
+		E827094D2A1883819D6D6C1F /* Pods_SpyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A4C942C34A7F118B133868E /* Pods_SpyTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3C60C76C0DE4A32DF88D0A31 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D32D990A00F8E691C6A525E0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3FBA4AF072DF2760D5AACD0B;
+			remoteInfo = Spy_macOS;
+		};
+		7FABF8C91D1F77CA5FEC7E98 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D32D990A00F8E691C6A525E0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 36C6DF975A1EFE397C678E85;
+			remoteInfo = Spy_iOS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9DE344AF77F807B59E493724 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				C4FE4FFA1B0FBF0B1CEFBDD3 /* Spy.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8BB0767FE4D8DBD4BDE4F5D /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				BC1785107B8460CEB6E4A122 /* Spy.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		12A178D7D47009B2DA248590 /* Pods_ExampleIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExampleIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B895F439A95336198480147 /* Pods_Spy_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Spy_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		42F0670D3F4DAB7ACC36FDFF /* Pods-SpyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpyTests.release.xcconfig"; path = "Target Support Files/Pods-SpyTests/Pods-SpyTests.release.xcconfig"; sourceTree = "<group>"; };
+		5722BE6FC1F02D822270FAB7 /* ExampleIOS.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = ExampleIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F6F4FFDBAEAED7D91940A74 /* Pods-ExampleIOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExampleIOS.release.xcconfig"; path = "Target Support Files/Pods-ExampleIOS/Pods-ExampleIOS.release.xcconfig"; sourceTree = "<group>"; };
+		7C41E6EFA68CBC3F0E10ECA4 /* Pods-Spy_iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Spy_iOS.release.xcconfig"; path = "Target Support Files/Pods-Spy_iOS/Pods-Spy_iOS.release.xcconfig"; sourceTree = "<group>"; };
+		8A4C942C34A7F118B133868E /* Pods_SpyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		94B02152FA5F1BF520D7032F /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		A4E9BABA095D4752566587D4 /* Pods-SpyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpyTests.debug.xcconfig"; path = "Target Support Files/Pods-SpyTests/Pods-SpyTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A74F2C395D1B8DECBD10C145 /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
+		AA470997515CFFB38C44689C /* Common.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Common.xcconfig; sourceTree = "<group>"; };
+		B689C2640382401D7124B39C /* Spy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Spy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9D02D06CCB2020EE4E5E901 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
+		CF49C862AFF8344692F93D42 /* Spy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Spy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D03E00A081B48D27086C1F39 /* Pods-ExampleIOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExampleIOS.debug.xcconfig"; path = "Target Support Files/Pods-ExampleIOS/Pods-ExampleIOS.debug.xcconfig"; sourceTree = "<group>"; };
+		DFE162D5C3F0A46EEA2F94A6 /* SpyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBC9CD35179123F7B50D5E2A /* Pods-Spy_iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Spy_iOS.debug.xcconfig"; path = "Target Support Files/Pods-Spy_iOS/Pods-Spy_iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		F2850AE714DB254464B02DDD /* Spy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Spy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F89E7AB26C7CC111444C2F77 /* Spy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Spy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		72890924892E492F9D097BD1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F885877F09B48F14D8426A8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A16DA16EC0A32ACC2B43F15A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B04CCB349688B773D4CB86D8 /* Pods_Spy_iOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A69796637A43D90E4016876C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C35DAA04C28C23C8CC2FEB2F /* Spy.framework in Frameworks */,
+				E827094D2A1883819D6D6C1F /* Pods_SpyTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA8F1886FB7E97A4B4DCD44D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2766E07EAB0B2B2339B34FAE /* Spy.framework in Frameworks */,
+				D4945393ACF6D7611EC1293B /* Pods_ExampleIOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5E10436CA0B35E9560F9809 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0326187113199AEC92CFE93C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5722BE6FC1F02D822270FAB7 /* ExampleIOS.app */,
+				CF49C862AFF8344692F93D42 /* Spy.framework */,
+				F2850AE714DB254464B02DDD /* Spy.framework */,
+				F89E7AB26C7CC111444C2F77 /* Spy.framework */,
+				B689C2640382401D7124B39C /* Spy.framework */,
+				DFE162D5C3F0A46EEA2F94A6 /* SpyTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1A629A42ACC18ED9DC3CFDA1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				12A178D7D47009B2DA248590 /* Pods_ExampleIOS.framework */,
+				8A4C942C34A7F118B133868E /* Pods_SpyTests.framework */,
+				3B895F439A95336198480147 /* Pods_Spy_iOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		41CB52A7892A10FC6853C03F /* ExampleIOS */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ExampleIOS;
+			sourceTree = "<group>";
+		};
+		6B067C3517B8F9329C382BE5 /* Spy */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Spy;
+			sourceTree = "<group>";
+		};
+		7D356E73BB60386CE1D6C7EA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D03E00A081B48D27086C1F39 /* Pods-ExampleIOS.debug.xcconfig */,
+				6F6F4FFDBAEAED7D91940A74 /* Pods-ExampleIOS.release.xcconfig */,
+				A4E9BABA095D4752566587D4 /* Pods-SpyTests.debug.xcconfig */,
+				42F0670D3F4DAB7ACC36FDFF /* Pods-SpyTests.release.xcconfig */,
+				EBC9CD35179123F7B50D5E2A /* Pods-Spy_iOS.debug.xcconfig */,
+				7C41E6EFA68CBC3F0E10ECA4 /* Pods-Spy_iOS.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		AE00AEDFE1C29430B22DB166 = {
+			isa = PBXGroup;
+			children = (
+				EE0E6E12F0CFB43F5564B8A3 /* Configurations */,
+				41CB52A7892A10FC6853C03F /* ExampleIOS */,
+				6B067C3517B8F9329C382BE5 /* Spy */,
+				E069343808C95096117CBA7D /* SpyTests */,
+				94B02152FA5F1BF520D7032F /* Package.swift */,
+				0326187113199AEC92CFE93C /* Products */,
+				7D356E73BB60386CE1D6C7EA /* Pods */,
+				1A629A42ACC18ED9DC3CFDA1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E069343808C95096117CBA7D /* SpyTests */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SpyTests;
+			sourceTree = "<group>";
+		};
+		EE0E6E12F0CFB43F5564B8A3 /* Configurations */ = {
+			isa = PBXGroup;
+			children = (
+				AA470997515CFFB38C44689C /* Common.xcconfig */,
+				A74F2C395D1B8DECBD10C145 /* Debug.xcconfig */,
+				C9D02D06CCB2020EE4E5E901 /* Release.xcconfig */,
+			);
+			path = Configurations;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		08FED9CBE5AB00A4C2C20EC5 /* ExampleIOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF4DBB133F73003FA16BD9B5 /* Build configuration list for PBXNativeTarget "ExampleIOS" */;
+			buildPhases = (
+				7C53A6DFF54EC3BC27D62D62 /* [CP] Check Pods Manifest.lock */,
+				F944B52B2890BA1E21037026 /* Sources */,
+				EA8F1886FB7E97A4B4DCD44D /* Frameworks */,
+				E8BB0767FE4D8DBD4BDE4F5D /* Embed Frameworks */,
+				0D7AB88CBC0D951D0B9620E1 /* SwiftLint */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F0B509589392CF4F0F4985F9 /* PBXTargetDependency */,
+			);
+			name = ExampleIOS;
+			productName = ExampleIOS;
+			productReference = 5722BE6FC1F02D822270FAB7 /* ExampleIOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		36C6DF975A1EFE397C678E85 /* Spy_iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3C2AB836305F80B90627295F /* Build configuration list for PBXNativeTarget "Spy_iOS" */;
+			buildPhases = (
+				8EC9E202F35F0A791BF11395 /* [CP] Check Pods Manifest.lock */,
+				31195AA61D13AF5C43F28C5F /* Sources */,
+				A16DA16EC0A32ACC2B43F15A /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Spy_iOS;
+			productName = Spy_iOS;
+			productReference = CF49C862AFF8344692F93D42 /* Spy.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		3FBA4AF072DF2760D5AACD0B /* Spy_macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 42EBBB54AA87A8B2CE277EB8 /* Build configuration list for PBXNativeTarget "Spy_macOS" */;
+			buildPhases = (
+				11CAAEE2FAB9D8F0AFBDE1D9 /* Sources */,
+				F5E10436CA0B35E9560F9809 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Spy_macOS;
+			productName = Spy_macOS;
+			productReference = F2850AE714DB254464B02DDD /* Spy.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		60B42552CC8BDD4099ED975A /* Spy_tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D5C83FA2578275282804C87D /* Build configuration list for PBXNativeTarget "Spy_tvOS" */;
+			buildPhases = (
+				3BD522A72D130E6652301A40 /* Sources */,
+				72890924892E492F9D097BD1 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Spy_tvOS;
+			productName = Spy_tvOS;
+			productReference = F89E7AB26C7CC111444C2F77 /* Spy.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E45F6F002237BD59164FB9A9 /* SpyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FCD983788EDDFDC6DC663275 /* Build configuration list for PBXNativeTarget "SpyTests" */;
+			buildPhases = (
+				225426C7FCCE7E11C1A756AC /* [CP] Check Pods Manifest.lock */,
+				C018F9E4B5D29C2F0108C579 /* Sources */,
+				A69796637A43D90E4016876C /* Frameworks */,
+				9DE344AF77F807B59E493724 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C2D5AFD30973B8CAE4BEAC80 /* PBXTargetDependency */,
+			);
+			name = SpyTests;
+			productName = SpyTests;
+			productReference = DFE162D5C3F0A46EEA2F94A6 /* SpyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F79727547383822B89BEC647 /* Spy_watchOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D8D10E5C1D066816B96DF006 /* Build configuration list for PBXNativeTarget "Spy_watchOS" */;
+			buildPhases = (
+				45FABD15EBAA08D147991A63 /* Sources */,
+				7F885877F09B48F14D8426A8 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Spy_watchOS;
+			productName = Spy_watchOS;
+			productReference = B689C2640382401D7124B39C /* Spy.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D32D990A00F8E691C6A525E0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = AppUnite;
+				TargetAttributes = {
+					08FED9CBE5AB00A4C2C20EC5 = {
+						ProvisioningStyle = Manual;
+					};
+					36C6DF975A1EFE397C678E85 = {
+						ProvisioningStyle = Manual;
+					};
+					3FBA4AF072DF2760D5AACD0B = {
+						ProvisioningStyle = Manual;
+					};
+					60B42552CC8BDD4099ED975A = {
+						ProvisioningStyle = Manual;
+					};
+					E45F6F002237BD59164FB9A9 = {
+						ProvisioningStyle = Manual;
+					};
+					F79727547383822B89BEC647 = {
+						ProvisioningStyle = Manual;
+					};
+				};
+			};
+			buildConfigurationList = 56A0AF1724DD80D3899C310B /* Build configuration list for PBXProject "Spy" */;
+			compatibilityVersion = "Xcode 10.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = AE00AEDFE1C29430B22DB166;
+			productRefGroup = 0326187113199AEC92CFE93C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				08FED9CBE5AB00A4C2C20EC5 /* ExampleIOS */,
+				E45F6F002237BD59164FB9A9 /* SpyTests */,
+				36C6DF975A1EFE397C678E85 /* Spy_iOS */,
+				3FBA4AF072DF2760D5AACD0B /* Spy_macOS */,
+				60B42552CC8BDD4099ED975A /* Spy_tvOS */,
+				F79727547383822B89BEC647 /* Spy_watchOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0D7AB88CBC0D951D0B9620E1 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
+		};
+		225426C7FCCE7E11C1A756AC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SpyTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7C53A6DFF54EC3BC27D62D62 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ExampleIOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8EC9E202F35F0A791BF11395 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Spy_iOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		11CAAEE2FAB9D8F0AFBDE1D9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		31195AA61D13AF5C43F28C5F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3BD522A72D130E6652301A40 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45FABD15EBAA08D147991A63 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C018F9E4B5D29C2F0108C579 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F944B52B2890BA1E21037026 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C2D5AFD30973B8CAE4BEAC80 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3FBA4AF072DF2760D5AACD0B /* Spy_macOS */;
+			targetProxy = 3C60C76C0DE4A32DF88D0A31 /* PBXContainerItemProxy */;
+		};
+		F0B509589392CF4F0F4985F9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 36C6DF975A1EFE397C678E85 /* Spy_iOS */;
+			targetProxy = 7FABF8C91D1F77CA5FEC7E98 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1BF055A76204D004FAFD51AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "$(SPY_BUNDLE_IDENTIFIER)";
+				PRODUCT_NAME = Spy;
+				PROVISIONING_PROFILE_SPECIFIER = "$(SPY_PROVISIONING_PROFILE_SPECIFIER)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		221018AAB67F06061632C216 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "$(SPY_BUNDLE_IDENTIFIER)";
+				PRODUCT_NAME = Spy;
+				PROVISIONING_PROFILE_SPECIFIER = "$(SPY_PROVISIONING_PROFILE_SPECIFIER)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+			};
+			name = Debug;
+		};
+		36222D11003DA048EDE6885F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A74F2C395D1B8DECBD10C145 /* Debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				WATCHOS_DEPLOYMENT_TARGET = 1.0;
+			};
+			name = Debug;
+		};
+		406A77023509B2F3B8C793ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "$(SPY_BUNDLE_IDENTIFIER)";
+				PRODUCT_NAME = Spy;
+				PROVISIONING_PROFILE_SPECIFIER = "$(SPY_PROVISIONING_PROFILE_SPECIFIER)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+			};
+			name = Release;
+		};
+		425F9F5ADC3513B70C9CAD5D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EBC9CD35179123F7B50D5E2A /* Pods-Spy_iOS.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "$(SPY_BUNDLE_IDENTIFIER)";
+				PRODUCT_NAME = Spy;
+				PROVISIONING_PROFILE_SPECIFIER = "$(SPY_PROVISIONING_PROFILE_SPECIFIER)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4B667152B7ED2900126DC487 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 42F0670D3F4DAB7ACC36FDFF /* Pods-SpyTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.appunite.spy.tests;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		5BC81AD6AF80183195099A42 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "$(SPY_BUNDLE_IDENTIFIER)";
+				PRODUCT_NAME = Spy;
+				PROVISIONING_PROFILE_SPECIFIER = "$(SPY_PROVISIONING_PROFILE_SPECIFIER)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		5F6BFA27A824A14C4D2DE804 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C41E6EFA68CBC3F0E10ECA4 /* Pods-Spy_iOS.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "$(SPY_BUNDLE_IDENTIFIER)";
+				PRODUCT_NAME = Spy;
+				PROVISIONING_PROFILE_SPECIFIER = "$(SPY_PROVISIONING_PROFILE_SPECIFIER)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5FCC30BA93F0A691AB46C24E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C9D02D06CCB2020EE4E5E901 /* Release.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 1.0;
+			};
+			name = Release;
+		};
+		97933420127C2D261ABBF376 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D03E00A081B48D27086C1F39 /* Pods-ExampleIOS.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.appunite.spy.example;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B2DECA4BBA01E433FF0EA8B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "$(SPY_BUNDLE_IDENTIFIER)";
+				PRODUCT_NAME = Spy;
+				PROVISIONING_PROFILE_SPECIFIER = "$(SPY_PROVISIONING_PROFILE_SPECIFIER)";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 3;
+			};
+			name = Release;
+		};
+		EEC6778A01F67D57BD44ACCA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F6F4FFDBAEAED7D91940A74 /* Pods-ExampleIOS.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.appunite.spy.example;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F126C59C2A243B44A8BF3130 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A4E9BABA095D4752566587D4 /* Pods-SpyTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.appunite.spy.tests;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		F346B87A2A43A6C94B06CC45 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "$(SPY_BUNDLE_IDENTIFIER)";
+				PRODUCT_NAME = Spy;
+				PROVISIONING_PROFILE_SPECIFIER = "$(SPY_PROVISIONING_PROFILE_SPECIFIER)";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 3;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3C2AB836305F80B90627295F /* Build configuration list for PBXNativeTarget "Spy_iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				425F9F5ADC3513B70C9CAD5D /* Debug */,
+				5F6BFA27A824A14C4D2DE804 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "";
+		};
+		42EBBB54AA87A8B2CE277EB8 /* Build configuration list for PBXNativeTarget "Spy_macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1BF055A76204D004FAFD51AE /* Debug */,
+				5BC81AD6AF80183195099A42 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "";
+		};
+		56A0AF1724DD80D3899C310B /* Build configuration list for PBXProject "Spy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				36222D11003DA048EDE6885F /* Debug */,
+				5FCC30BA93F0A691AB46C24E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		CF4DBB133F73003FA16BD9B5 /* Build configuration list for PBXNativeTarget "ExampleIOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				97933420127C2D261ABBF376 /* Debug */,
+				EEC6778A01F67D57BD44ACCA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "";
+		};
+		D5C83FA2578275282804C87D /* Build configuration list for PBXNativeTarget "Spy_tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F346B87A2A43A6C94B06CC45 /* Debug */,
+				B2DECA4BBA01E433FF0EA8B6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "";
+		};
+		D8D10E5C1D066816B96DF006 /* Build configuration list for PBXNativeTarget "Spy_watchOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				221018AAB67F06061632C216 /* Debug */,
+				406A77023509B2F3B8C793ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "";
+		};
+		FCD983788EDDFDC6DC663275 /* Build configuration list for PBXNativeTarget "SpyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F126C59C2A243B44A8BF3130 /* Debug */,
+				4B667152B7ED2900126DC487 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "";
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D32D990A00F8E691C6A525E0 /* Project object */;
+}

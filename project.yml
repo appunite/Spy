@@ -1,0 +1,80 @@
+name: Spy
+attributes:
+  ORGANIZATIONNAME: AppUnite
+options:
+  createIntermediateGroups: true
+  xcodeVersion: 11.3
+  groupSortPosition: top
+  deploymentTarget:
+    iOS: "8.0"
+    macOS: "10.15"
+    watchOS: "1.0"
+configs:
+  Debug: debug
+  Release: release
+fileGroups:
+  - Configurations
+  - Package.swift
+configFiles:
+  Debug: Configurations/Debug.xcconfig
+  Release: Configurations/Release.xcconfig
+schemes:
+  Spy:
+    build:
+      targets:
+        Spy_iOS: all
+        Spy_tvOS: all
+        Spy_watchOS: all
+        Spy_macOS: all
+    run:
+      config: Debug
+    test:
+      config: Debug
+      targets: [SpyTests]
+      gatherCoverageData: true
+    profile:
+      config: Release
+    analyze:
+      config: Debug
+    archive:
+      config: Release
+
+targets:
+  Spy:
+    type: framework
+    platform: [macOS, iOS, tvOS, watchOS]
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: $(SPY_BUNDLE_IDENTIFIER)
+        PROVISIONING_PROFILE_SPECIFIER: $(SPY_PROVISIONING_PROFILE_SPECIFIER)
+    sources:
+      - path: Spy
+  SpyTests:
+    type: bundle.unit-test
+    platform: macOS
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.appunite.spy.tests
+        # empty specifier resolves to "Automatic"
+        PROVISIONING_PROFILE_SPECIFIER: 
+    sources:
+      - path: SpyTests
+    dependencies:
+      - target: Spy_macOS
+  ExampleIOS:
+    type: application
+    platform: iOS
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.appunite.spy.example
+        # empty specifier resolves to "Automatic"
+        PROVISIONING_PROFILE_SPECIFIER:
+        CURRENT_PROJECT_VERSION: 1
+    sources:
+      - path: ExampleIOS
+    dependencies:
+      - target: Spy_iOS
+    postBuildScripts:
+      - script: |
+                "${PODS_ROOT}/SwiftLint/swiftlint"
+        name: SwiftLint

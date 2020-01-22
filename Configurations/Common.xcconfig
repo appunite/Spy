@@ -8,3 +8,12 @@
 
 // Configuration settings file format documentation can be found at:
 // https://help.apple.com/xcode/#/dev745c5c974
+
+SPY_BUNDLE_IDENTIFIER = com.appunite.spy
+SPY_PROVISIONING_PROFILE_SPECIFIER =
+
+VERSIONING_SYSTEM = apple-generic
+PRODUCT_VERSION = 0.0.1
+SWIFT_VERSION = 5.0
+CODE_SIGN_STYLE = Manual
+
