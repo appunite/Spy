@@ -4,12 +4,13 @@ project 'Spy.xcodeproj'
  
 use_frameworks!
 
-target 'ExampleIOS' do
+target 'Example' do
+  platform :macos, '10.10'
   pod 'SwiftLint'
 end
 
-target 'Spy_iOS' do
-  # Comment the next line if you don't want to use dynamic frameworks
+target 'Spy_macOS' do
+  platform :macos, '10.10'
   pod 'SwiftLint'
 
   # Pods for Spy
