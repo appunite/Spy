@@ -250,7 +250,6 @@
 				FC720605A9EFD7D25659B56D /* CurrentTimestampProvider.swift */,
 				F0ADD68BAD32886AD351C0DF /* RawSpyFormatter.swift */,
 				118C16754FC38E5A07685006 /* SpyLevel.swift */,
-				F12C33A923D8BF4000F9F460 /* AnySpy.swift */,
 				F12C33AE23D8C6CB00F9F460 /* CompositeSpy.swift */,
 			);
 			path = Common;
@@ -271,6 +270,7 @@
 		A6EE52F92C01A117FF0C2234 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				F12C33A923D8BF4000F9F460 /* AnySpy.swift */,
 				17C12F479779F885FFD5947B /* PSpy.swift */,
 				083BA954DE1B5FDE0E92AFBA /* PSpyable.swift */,
 				A7ECD0B3052BFA8AC94D83E2 /* PSpyChannel.swift */,
