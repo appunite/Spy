@@ -9,8 +9,8 @@
 import Spy
 
 public enum SpyChannel: String, PSpyChannel {
-    case lifecycle
-    case other
+    case foo
+    case bar
     
     public var channelName: String {
         return self.rawValue

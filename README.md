@@ -46,6 +46,94 @@ To install Spy using **Swift Package Manager** go through following steps:
 
 Here is a quick overview of functionalities and concepts used in **Spy**.
 
+### SpyChannel
+
+SpyChannel is anything that implements *PSpyChannel* protocol. Channels can be used to categorize logs. You define 
+Typically they are implemented with an enum e.g.:
+```swift
+public enum SpyChannel: String, PSpyChannel {
+    case foo
+    case bar
+    
+    public var channelName: String {
+        return self.rawValue
+    }
+}
+```
+
+### SpyLevel
+SpyLevel is anything that implements *PSpyLevel* protocol. You can define your own levels, but Spy commes with one set defined for you. This set is called *SpyLevel* and contains following levels: *finest, finer, fine, config, info, warning, severe* sorted by the increasing alert priority.
+
+### SpyConfiguration
+Contains levels and channels that the Spy will spy on.
+
+### SpyConfigurationBuilder
+Builds your spy configuration by providing add and remove functions for both levels and channels.
+Example usage
+```swift
+SpyConfigurationBuilder()
+    .add(level: .severe)
+    .add(channels: [.foo, .bar])
+    .build()
+```
+
+### Spyable
+Spyable is a entity that can be logged. It has to implement *PSpyable* protocol. You can define your own spyables or use string as a basic one.
+
+### Spy
+Spy is anything that implements *PSpy* protocol. There a few spies defined for you:
+- *ConsoleSpy* - spy that logs by using print command
+- *CompositeSpy* - spy that groups multiple spies into one
+- *AnySpy* - type-erased spy, every spy can be converted to AnySpy
+
+Logging is performed with *log* method as follows
+```swift
+spy.log(level: .severe, channel: .foo, message: "Something bad happened")
+```
+
+## Example
+This is an example definition of the spies.
+It utilizes *CompositeSpy* to allow to log onto multiple destinations (*Console* and *Network*). Please note that *ConsoleSpy* is shipped with the *Spy* and *NetworkSpy* is not.
+```swift
+public struct Environment {
+    public static var spy: AnySpy<SpyLevel, SpyChannel> = {
+        return CompositeSpy()
+            .add(spy: ConsoleSpy<SpyLevel, SpyChannel, RawSpyFormatter>(
+                spyFormatter: RawSpyFormatter(),
+                timestampProvider: CurrentTimestampProvider(),
+                configuration: SpyConfigurationBuilder()
+                    .add(levels: SpyLevel.levelsFrom(loggingLevel))
+                    .add(channel: .foo)
+                .build()).toAnySpy())
+            .add(spy: NetworkSpy()
+                .apply(configuration: SpyConfigurationBuilder()
+                    .add(level: .severe)
+                    .add(channels: [.foo, .bar])
+                    .build()).toAnySpy()
+        ).toAnySpy()
+    }()
+}
+```
+By using preprocessor we can define different logging levels for debug and release. That way we won't forget about switching off unimportant logs.
+```swift    
+public extension Environment {
+	static var loggingLevel: SpyLevel {
+        #if DEBUG
+        return .info
+        #else
+        return .warning
+        #endif
+    }
+}
+```
+
+And here is how you use Spy:
+```swift
+Environment.spy.log(level: .info, channel: .foo, message: "initialized")
+```
+
+For more detailed example please see source code.
+
 ## Contribution
 
 Project is created by **Tomasz Lewandowski**.
