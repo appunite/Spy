@@ -1,0 +1,16 @@
+//
+//  Debug.xcconfig
+//  Spy
+//
+//  Created by Tomasz Lewandowski on 22/01/2020.
+//  Copyright © 2020 AppUnite Sp. z o.o. All rights reserved.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+#include "Common.xcconfig"
+
+DEBUG_INFORMATION_FORMAT = dwarf
+SWIFT_OPTIMIZATION_LEVEL = -Onone
+GCC_OPTIMIZATION_LEVEL = 0
