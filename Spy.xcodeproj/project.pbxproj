@@ -82,6 +82,10 @@
 		F12C33BF23D91EB300F9F460 /* SpyConfigurationBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12C33BC23D91EB300F9F460 /* SpyConfigurationBuilder.swift */; };
 		F12C33C023D91EB300F9F460 /* SpyConfigurationBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12C33BC23D91EB300F9F460 /* SpyConfigurationBuilder.swift */; };
 		F12C33C223D9251600F9F460 /* NetworkSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12C33C123D9251600F9F460 /* NetworkSpy.swift */; };
+		F12C33C423D92D5600F9F460 /* RawSpyFormatterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12C33C323D92D5600F9F460 /* RawSpyFormatterTests.swift */; };
+		F12C33C623D92DCC00F9F460 /* SpyChannel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12C33C523D92DCC00F9F460 /* SpyChannel.swift */; };
+		F12C33C823D92F3000F9F460 /* SpyConfigurationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12C33C723D92F3000F9F460 /* SpyConfigurationTests.swift */; };
+		F12C33CA23D930CD00F9F460 /* SpyConfigurationBuilderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12C33C923D930CD00F9F460 /* SpyConfigurationBuilderTests.swift */; };
 		F3D6BF8A86265329889ED41C /* PTimestampProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F066CF5C12BC433A4D0339C8 /* PTimestampProvider.swift */; };
 		F5CF317CC6C31D366651B8BF /* CurrentTimestampProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC720605A9EFD7D25659B56D /* CurrentTimestampProvider.swift */; };
 		F79F86D94319BDFB8B6A1041 /* ConsoleSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C43B51E4C3FC74551482F1 /* ConsoleSpy.swift */; };
@@ -176,6 +180,10 @@
 		F12C33B723D91E5900F9F460 /* SpyConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpyConfiguration.swift; sourceTree = "<group>"; };
 		F12C33BC23D91EB300F9F460 /* SpyConfigurationBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpyConfigurationBuilder.swift; sourceTree = "<group>"; };
 		F12C33C123D9251600F9F460 /* NetworkSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkSpy.swift; sourceTree = "<group>"; };
+		F12C33C323D92D5600F9F460 /* RawSpyFormatterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RawSpyFormatterTests.swift; sourceTree = "<group>"; };
+		F12C33C523D92DCC00F9F460 /* SpyChannel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpyChannel.swift; sourceTree = "<group>"; };
+		F12C33C723D92F3000F9F460 /* SpyConfigurationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpyConfigurationTests.swift; sourceTree = "<group>"; };
+		F12C33C923D930CD00F9F460 /* SpyConfigurationBuilderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpyConfigurationBuilderTests.swift; sourceTree = "<group>"; };
 		F2850AE714DB254464B02DDD /* Spy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Spy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F770B779378C2C62F40B44C4 /* Pods-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.debug.xcconfig"; path = "Target Support Files/Pods-Example/Pods-Example.debug.xcconfig"; sourceTree = "<group>"; };
 		F89E7AB26C7CC111444C2F77 /* Spy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Spy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -353,6 +361,10 @@
 				B712E56E1BBE344098456A06 /* SpyableStringTests.swift */,
 				5FCAD0635277EC7F24086E2A /* SpyLevelTests.swift */,
 				4D2A75209F0ADFD824A7846E /* SpyTests-Bridging-Header.h */,
+				F12C33C323D92D5600F9F460 /* RawSpyFormatterTests.swift */,
+				F12C33C523D92DCC00F9F460 /* SpyChannel.swift */,
+				F12C33C723D92F3000F9F460 /* SpyConfigurationTests.swift */,
+				F12C33C923D930CD00F9F460 /* SpyConfigurationBuilderTests.swift */,
 			);
 			path = SpyTests;
 			sourceTree = "<group>";
@@ -770,8 +782,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F12C33C623D92DCC00F9F460 /* SpyChannel.swift in Sources */,
 				F8F22B0AB5533519D2AD2347 /* SpyLevelTests.swift in Sources */,
 				D7F58BE53E77ED9B8B5457AD /* SpyableStringTests.swift in Sources */,
+				F12C33C423D92D5600F9F460 /* RawSpyFormatterTests.swift in Sources */,
+				F12C33C823D92F3000F9F460 /* SpyConfigurationTests.swift in Sources */,
+				F12C33CA23D930CD00F9F460 /* SpyConfigurationBuilderTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
