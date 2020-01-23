@@ -34,15 +34,15 @@ import AppKit
 
 {% macro methodClosureName method %}{% call swiftifyMethodName method.selectorName %}Closure{% endmacro %}
 
-{% macro closureReturnTypeName method %}{% if method.isOptionalReturnType %}{{ method.unwrappedReturnTypeName }}?{% else %}{{ method.returnTypeName }}{% endif %}{% endmacro %}
+{% macro closureReturnTypeName method inType %}{% if method.isOptionalReturnType %}{% if method.unwrappedTypeName.name != "Self" %}{{ method.unwrappedReturnTypeName }}{% else %}{% call mockUseNameForType type %}{% endif %}?{% else %}{% if method.returnTypeName.name != "Self" %}{{ method.returnTypeName }}{% else %}{% call mockUseNameForType type %}{% endif %}{% endif %}{% endmacro %}
 
-{% macro methodClosureDeclaration method %}
-    var {% call methodClosureName method %}: (({% for param in method.parameters %}{{ param.typeName }}{% if not forloop.last %}, {% endif %}{% endfor %}) {% if method.throws %}throws {% endif %}-> {% if method.isInitializer %}Void{% else %}{% call closureReturnTypeName method %}{% endif %})?
+{% macro methodClosureDeclaration method inType %}
+    var {% call methodClosureName method %}: (({% for param in method.parameters %}{{ param.typeName }}{% if not forloop.last %}, {% endif %}{% endfor %}) {% if method.throws %}throws {% endif %}-> {% if method.isInitializer %}Void{% else %}{% call closureReturnTypeName method inType %}{% endif %})?
 {% endmacro %}
 
 {% macro methodClosureCallParameters method %}{% for param in method.parameters %}{{ param.name }}{% if not forloop.last %}, {% endif %}{% endfor %}{% endmacro %}
 
-{% macro mockMethod method %}
+{% macro mockMethod method inType %}
     //MARK: - {{ method.shortName }}
 
     {% if method.throws %}
@@ -61,10 +61,10 @@ import AppKit
     var {% call swiftifyMethodName method.selectorName %}ReceivedArguments: ({% for param in method.parameters %}{{ param.name }}: {{ param.unwrappedTypeName if param.typeAttributes.escaping else param.typeName }}{{ ', ' if not forloop.last }}{% endfor %})?
     var {% call swiftifyMethodName method.selectorName %}ReceivedInvocations: [({% for param in method.parameters %}{{ param.name }}: {{ param.unwrappedTypeName if param.typeAttributes.escaping else param.typeName }}{{ ', ' if not forloop.last }}{% endfor %})] = []
     {% endif %}
-    {% if not method.returnTypeName.isVoid and not method.isInitializer %}
-    var {% call swiftifyMethodName method.selectorName %}ReturnValue: {{ method.returnTypeName }}{{ '!' if not method.isOptionalReturnType }}
+    {% if not method.actualReturnTypeName.isVoid and not method.isInitializer %}
+    var {% call swiftifyMethodName method.selectorName %}ReturnValue: {% if method.returnTypeName.name != "Self" %}{{ method.returnTypeName }}{% else %}{% call mockUseNameForType inType %}{% endif %}{{ '!' if not method.isOptionalReturnType }}
     {% endif %}
-    {% call methodClosureDeclaration method %}
+    {% call methodClosureDeclaration method inType %}
 
 {% if method.isInitializer %}
     required {{ method.name }} {
@@ -72,7 +72,7 @@ import AppKit
         {% call methodClosureName method %}?({% call methodClosureCallParameters method %})
     }
 {% else %}
-    func {{ method.name }}{{ ' throws' if method.throws }}{% if not method.returnTypeName.isVoid %} -> {{ method.returnTypeName }}{% endif %} {
+    func {{ method.name }}{{ ' throws' if method.throws }}{% if not method.returnTypeName.isVoid %} -> {% if method.returnTypeName.name != "Self" %}{{ method.returnTypeName }}{% else %}{% call mockUseNameForType inType %}{% endif %}{% endif %} {
         {% if method.throws %}
         {% call methodThrowableErrorUsage method %}
         {% endif %}
@@ -106,15 +106,17 @@ import AppKit
 
 {% macro underlyingMockedVariableName variable %}underlying{{ variable.name|upperFirstLetter }}{% endmacro %}
 {% macro mockedVariableName variable %}{{ variable.name }}{% endmacro %}
+{% macro mockNameForType type %}{{ type.name }}Mock{{ type.annotations.AutoMockableGenerics }}{% endmacro %}
+{% macro mockUseNameForType type %}{{ type.name }}Mock{{ type.annotations.AutoMockableSelfGenerics }}{% endmacro %}
 
 {% for type in types.protocols where type.based.AutoMockable or type|annotated:"AutoMockable" %}{% if type.name != "AutoMockable" %}
-class {{ type.name }}Mock{{ type.annotations.AutoMockableGenerics }}: {{ type.name }} {
+{% if type.based.AutoMockable or type|annotated:"AutoMockable" %}final {% endif %}class {% call mockNameForType type %}: {{ type.name }} {
 {% for variable in type.allVariables|!definedInExtension %}
     {% if variable.isOptional %}{% call mockOptionalVariable variable %}{% elif variable.isArray or variable.isDictionary %}{% call mockNonOptionalArrayOrDictionaryVariable variable %}{% else %}{% call mockNonOptionalVariable variable %}{% endif %}
 {% endfor %}
 
 {% for method in type.allMethods|!definedInExtension %}
-    {% call mockMethod method %}
+    {% call mockMethod method type %}
 {% endfor %}
 }
 {% endif %}{% endfor %}
