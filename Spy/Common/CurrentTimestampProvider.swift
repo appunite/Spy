@@ -7,6 +7,10 @@
 //
 
 public final class CurrentTimestampProvider: PTimestampProvider {
+    public init() {
+        
+    }
+    
     public var timestamp: TimeInterval {
         return Date().timeIntervalSince1970
     }

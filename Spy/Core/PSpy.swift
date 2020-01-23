@@ -14,7 +14,7 @@ public protocol PSpy {
     @discardableResult func log(level: Level, channel: Channel, message: PSpyable) -> Self
 }
 
-extension PSpy {
+public extension PSpy {
     func toAnySpy() -> AnySpy<Level, Channel> {
         return AnySpy(self)
     }

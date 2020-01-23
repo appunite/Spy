@@ -9,7 +9,10 @@
 public class CompositeSpy<Level: PSpyLevel, Channel: PSpyChannel>: PSpy {
     private var spies: [AnySpy<Level, Channel>] = []
     
-    public func addSpy(spy: AnySpy<Level, Channel>) -> CompositeSpy<Level, Channel> {
+    public init() {
+    }
+    
+    public func add(spy: AnySpy<Level, Channel>) -> CompositeSpy<Level, Channel> {
         spies.append(spy)
         return self
     }

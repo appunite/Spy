@@ -10,10 +10,19 @@ import Cocoa
 import Spy
 
 class ViewController: NSViewController {
-
+    override init(nibName nibNameOrNil: NSNib.Name?, bundle nibBundleOrNil: Bundle?) {
+        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
+        Environment.spy.log(level: .info, channel: .lifecycle, message: "initialized")
+    }
+    
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
+        Environment.spy.log(level: .info, channel: .lifecycle, message: "initialized")
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("abc".spyMessage)
+        Environment.spy.log(level: .info, channel: .lifecycle, message: "ViewDidLoad")
         // Do any additional setup after loading the view.
     }
 
@@ -23,6 +32,4 @@ class ViewController: NSViewController {
         }
     }
 
-
 }
-

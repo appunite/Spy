@@ -7,7 +7,11 @@
 //
 
 public final class RawSpyFormatter<Level: PSpyLevel, Channel: PSpyChannel>: PSpyFormatter {
+    public init() {
+        
+    }
+    
     public func format(timestamp: TimeInterval, level: Level, channel: Channel, message: PSpyable) -> String {
-        return "\(timestamp)::\(level.levelName)::\(channel.channelName)::\(message.spyMessage)"
+        return "\(Date(timeIntervalSince1970: timestamp)) \(level.levelName)::\(channel.channelName)::\(message.spyMessage)"
     }
 }
