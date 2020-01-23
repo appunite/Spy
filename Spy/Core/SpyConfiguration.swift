@@ -6,7 +6,7 @@
 //  Copyright © 2020 AppUnite Sp. z o.o. All rights reserved.
 //
 
-public struct SpyConfiguration<Level: PSpyLevel, Channel: PSpyChannel> {
+public struct SpyConfiguration<Level: PSpyLevel, Channel: PSpyChannel>: Equatable {
     public let spyOnLevels: Set<Level>
     public let spyOnChannels: Set<Channel>
     
