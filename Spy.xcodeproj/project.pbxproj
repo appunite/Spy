@@ -86,6 +86,7 @@
 		E0A8B1F68A1D77F737BDFC61 /* PTimestampProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F066CF5C12BC433A4D0339C8 /* PTimestampProvider.swift */; };
 		E3D4662BAB047881F16F9768 /* Spy.h in Headers */ = {isa = PBXBuildFile; fileRef = 797BE01EEE903051BF964652 /* Spy.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E4FB454F9DC865BCB2282CE2 /* AnySpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2977004EA2EB53528A4F35 /* AnySpy.swift */; };
+		F12C33DE23DA61D000F9F460 /* AnySpyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12C33DD23DA61D000F9F460 /* AnySpyTests.swift */; };
 		F3D6BF8A86265329889ED41C /* PTimestampProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F066CF5C12BC433A4D0339C8 /* PTimestampProvider.swift */; };
 		F5CF317CC6C31D366651B8BF /* CurrentTimestampProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC720605A9EFD7D25659B56D /* CurrentTimestampProvider.swift */; };
 		F79F86D94319BDFB8B6A1041 /* ConsoleSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C43B51E4C3FC74551482F1 /* ConsoleSpy.swift */; };
@@ -187,6 +188,7 @@
 		DFE162D5C3F0A46EEA2F94A6 /* SpyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F066CF5C12BC433A4D0339C8 /* PTimestampProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PTimestampProvider.swift; sourceTree = "<group>"; };
 		F0ADD68BAD32886AD351C0DF /* RawSpyFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RawSpyFormatter.swift; sourceTree = "<group>"; };
+		F12C33DD23DA61D000F9F460 /* AnySpyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnySpyTests.swift; sourceTree = "<group>"; };
 		F2850AE714DB254464B02DDD /* Spy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Spy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F89E7AB26C7CC111444C2F77 /* Spy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Spy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB0714C858C393158E5559A4 /* Pods-Spy_macOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Spy_macOS.debug.xcconfig"; path = "Target Support Files/Pods-Spy_macOS/Pods-Spy_macOS.debug.xcconfig"; sourceTree = "<group>"; };
@@ -364,7 +366,6 @@
 				FB0714C858C393158E5559A4 /* Pods-Spy_macOS.debug.xcconfig */,
 				9D33B316B21FF838AFCA8D57 /* Pods-Spy_macOS.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -380,6 +381,7 @@
 				8A225A817646067EBD729D1B /* SpyConfigurationTests.swift */,
 				5FCAD0635277EC7F24086E2A /* SpyLevelTests.swift */,
 				4D2A75209F0ADFD824A7846E /* SpyTests-Bridging-Header.h */,
+				F12C33DD23DA61D000F9F460 /* AnySpyTests.swift */,
 			);
 			path = SpyTests;
 			sourceTree = "<group>";
@@ -575,6 +577,7 @@
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				en,
 				Base,
 			);
 			mainGroup = AE00AEDFE1C29430B22DB166;
@@ -802,6 +805,7 @@
 				386498804F31348398A92925 /* SpyChannel.swift in Sources */,
 				6696F75F0D5EF9C5E22D12DD /* SpyConfigurationBuilderTests.swift in Sources */,
 				FFA798B2BBD7BE28D89D2D39 /* SpyConfigurationTests.swift in Sources */,
+				F12C33DE23DA61D000F9F460 /* AnySpyTests.swift in Sources */,
 				F8F22B0AB5533519D2AD2347 /* SpyLevelTests.swift in Sources */,
 				D7F58BE53E77ED9B8B5457AD /* SpyableStringTests.swift in Sources */,
 			);
