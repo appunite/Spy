@@ -6,6 +6,10 @@
 //  Copyright © 2020 AppUnite Sp. z o.o. All rights reserved.
 //
 
+// sourcery: AutoMockable
+// sourcery: AutoMockableHasSelfReturns
+// sourcery: AutoMockableGenerics="<Level: PSpyLevel, Channel: PSpyChannel>"
+// sourcery: AutoMockableSelfGenerics="<Level, Channel>"
 public protocol PSpy {
     associatedtype Level: PSpyLevel
     associatedtype Channel: PSpyChannel
