@@ -15,6 +15,18 @@ public final class SpyConfigurationTests: XCTestCase {
         sut = SpyConfiguration(spyOnLevels: [.info], spyOnChannels: [.foo])
     }
     
+    func testInit_WhenInitializedWithNoLevelsAndChannels_ShouldNotHaveLevelsAndChannelsSet() {
+        sut = SpyConfiguration()
+        XCTAssertEqual([], sut.spyOnLevels)
+        XCTAssertEqual([], sut.spyOnChannels)
+    }
+    
+    func testInit_WhenInitializedWithLevelsAndChannels_ShouldNotHaveTheseLevelsAndChannelsSet() {
+        sut = SpyConfiguration(spyOnLevels: [.info, .warning], spyOnChannels: [.foo, .bar])
+        XCTAssertEqual([.info, .warning], sut.spyOnLevels)
+        XCTAssertEqual([.foo, .bar], sut.spyOnChannels)
+    }
+    
     func testShouldLog_WhenOnlyChannelIsValid_ShouldReturnFalse() {
         XCTAssertFalse(sut.shouldLog(level: .warning, channel: .foo))
     }
