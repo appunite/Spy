@@ -20,18 +20,63 @@ configFiles:
   Debug: Configurations/Debug.xcconfig
   Release: Configurations/Release.xcconfig
 schemes:
-  Spy:
+  Spy_iOS:
     build:
       targets:
         Spy_iOS: all
-        Spy_tvOS: all
-        Spy_watchOS: all
+    run:
+      config: Debug
+    test:
+      config: Debug
+      targets: []
+      gatherCoverageData: true
+    profile:
+      config: Release
+    analyze:
+      config: Debug
+    archive:
+      config: Release
+  Spy_macOS:
+    build:
+      targets:
         Spy_macOS: all
     run:
       config: Debug
     test:
       config: Debug
       targets: [SpyTests]
+      gatherCoverageData: true
+    profile:
+      config: Release
+    analyze:
+      config: Debug
+    archive:
+      config: Release
+  Spy_watchOS:
+    build:
+      targets:
+        Spy_watchOS: all
+    run:
+      config: Debug
+    test:
+      config: Debug
+      targets: []
+      gatherCoverageData: true
+    profile:
+      config: Release
+    analyze:
+      config: Debug
+    archive:
+      config: Release
+  Spy_tvOS:
+    build:
+      targets:
+        Spy_tvOS: all
+    run:
+      config: Debug
+    test:
+      config: Debug
+      targets: []
       gatherCoverageData: true
     profile:
       config: Release

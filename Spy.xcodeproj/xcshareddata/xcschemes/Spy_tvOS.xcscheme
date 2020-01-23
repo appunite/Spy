@@ -14,51 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "36C6DF975A1EFE397C678E85"
-               BuildableName = "Spy.framework"
-               BlueprintName = "Spy_iOS"
-               ReferencedContainer = "container:Spy.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "3FBA4AF072DF2760D5AACD0B"
-               BuildableName = "Spy.framework"
-               BlueprintName = "Spy_macOS"
-               ReferencedContainer = "container:Spy.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
                BlueprintIdentifier = "60B42552CC8BDD4099ED975A"
                BuildableName = "Spy.framework"
                BlueprintName = "Spy_tvOS"
-               ReferencedContainer = "container:Spy.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "F79727547383822B89BEC647"
-               BuildableName = "Spy.framework"
-               BlueprintName = "Spy_watchOS"
                ReferencedContainer = "container:Spy.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -72,23 +30,13 @@
       onlyGenerateCoverageForSpecifiedTargets = "NO"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E45F6F002237BD59164FB9A9"
-               BuildableName = "SpyTests.xctest"
-               BlueprintName = "SpyTests"
-               ReferencedContainer = "container:Spy.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "36C6DF975A1EFE397C678E85"
+            BlueprintIdentifier = "60B42552CC8BDD4099ED975A"
             BuildableName = "Spy.framework"
-            BlueprintName = "Spy_iOS"
+            BlueprintName = "Spy_tvOS"
             ReferencedContainer = "container:Spy.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -112,9 +60,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "36C6DF975A1EFE397C678E85"
+            BlueprintIdentifier = "60B42552CC8BDD4099ED975A"
             BuildableName = "Spy.framework"
-            BlueprintName = "Spy_iOS"
+            BlueprintName = "Spy_tvOS"
             ReferencedContainer = "container:Spy.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -133,9 +81,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "36C6DF975A1EFE397C678E85"
+            BlueprintIdentifier = "60B42552CC8BDD4099ED975A"
             BuildableName = "Spy.framework"
-            BlueprintName = "Spy_iOS"
+            BlueprintName = "Spy_tvOS"
             ReferencedContainer = "container:Spy.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
