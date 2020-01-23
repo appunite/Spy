@@ -7,7 +7,7 @@
 //
 
 public final class ConsoleSpy<Level, Channel, Formatter: PSpyFormatter>: PSpy where Formatter.Level == Level, Formatter.Channel == Channel {
-    private var configuration: SpyConfiguration<Level, Channel>
+    public private(set) var configuration: SpyConfiguration<Level, Channel>
     private let spyFormatter: Formatter
     private let timestampProvider: PTimestampProvider
 
@@ -24,10 +24,7 @@ public final class ConsoleSpy<Level, Channel, Formatter: PSpyFormatter>: PSpy wh
         return self
     }
     
-    @discardableResult public func log(level: Level,
-                                       channel: Channel,
-                                       message: PSpyable) -> Self {
-        guard configuration.shouldLog(level: level, channel: channel) else { return self }
+    @discardableResult public func forceLog(level: Level, channel: Channel, message: PSpyable) -> Self {
         print(spyFormatter.format(timestamp: timestampProvider.timestamp, level: level, channel: channel, message: message))
         return self
     }

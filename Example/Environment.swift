@@ -15,7 +15,7 @@ public struct Environment {
                 spyFormatter: RawSpyFormatter(),
                 timestampProvider: CurrentTimestampProvider(),
                 configuration: SpyConfigurationBuilder()
-                    .add(levels: SpyLevel.levelsFrom(.info))
+                    .add(levels: SpyLevel.levelsFrom(loggingLevel))
                     .add(channel: .lifecycle)
                 .build()).toAnySpy())
             .add(spy: NetworkSpy()
@@ -25,4 +25,12 @@ public struct Environment {
                     .build()).toAnySpy()
         ).toAnySpy()
     }()
+    
+    static var loggingLevel: SpyLevel {
+        #if DEBUG
+        return .info
+        #else
+        return .warning
+        #endif
+    }
 }

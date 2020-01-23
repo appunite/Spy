@@ -14,42 +14,42 @@ public final class SpyConfigurationBuilder<Level: PSpyLevel, Channel: PSpyChanne
         
     }
     
-    public func add(level: Level) -> SpyConfigurationBuilder<Level, Channel> {
+    public func add(level: Level) -> Self {
         spyOnLevels.insert(level)
         return self
     }
     
-    public func remove(level: Level) -> SpyConfigurationBuilder<Level, Channel> {
+    public func remove(level: Level) -> Self {
         spyOnLevels.remove(level)
         return self
     }
     
-    public func add(levels: Set<Level>) -> SpyConfigurationBuilder<Level, Channel> {
+    public func add(levels: Set<Level>) -> Self {
         spyOnLevels = spyOnLevels.union(levels)
         return self
     }
     
-    public func remove(levels: Set<Level>) -> SpyConfigurationBuilder<Level, Channel> {
+    public func remove(levels: Set<Level>) -> Self {
         spyOnLevels = spyOnLevels.subtracting(levels)
         return self
     }
     
-    public func add(channel: Channel) -> SpyConfigurationBuilder<Level, Channel> {
+    public func add(channel: Channel) -> Self {
         spyOnChannels.insert(channel)
         return self
     }
     
-    public func remove(channel: Channel) -> SpyConfigurationBuilder<Level, Channel> {
+    public func remove(channel: Channel) -> Self {
         spyOnChannels.remove(channel)
         return self
     }
     
-    public func add(channels: Set<Channel>) -> SpyConfigurationBuilder<Level, Channel> {
+    public func add(channels: Set<Channel>) -> Self {
         spyOnChannels = spyOnChannels.union(channels)
         return self
     }
     
-    public func remove(channels: Set<Channel>) -> SpyConfigurationBuilder<Level, Channel> {
+    public func remove(channels: Set<Channel>) -> Self {
         spyOnChannels = spyOnChannels.subtracting(channels)
         return self
     }

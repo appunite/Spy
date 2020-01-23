@@ -7,6 +7,10 @@
 //
 
 public final class AnySpy<Level: PSpyLevel, Channel: PSpyChannel>: PSpy {
+    public var configuration: SpyConfiguration<Level, Channel> {
+        return spy.configuration
+    }
+    
     private let spy: _AnySpyBase<Level, Channel>
     
     public init<Spy: PSpy>(_ spy: Spy) where Spy.Level == Level, Spy.Channel == Channel {
@@ -22,12 +26,21 @@ public final class AnySpy<Level: PSpyLevel, Channel: PSpyChannel>: PSpy {
         spy.log(level: level, channel: channel, message: message)
         return self
     }
+    
+    @discardableResult public func forceLog(level: Level, channel: Channel, message: PSpyable) -> Self {
+        spy.forceLog(level: level, channel: channel, message: message)
+        return self
+    }
 }
 
 private final class _AnySpyBox<Spy: PSpy>: _AnySpyBase<Spy.Level, Spy.Channel> {
     public typealias Level = Spy.Level
     public typealias Channel = Spy.Channel
     private let spy: Spy
+    
+    override var configuration: SpyConfiguration<Level, Channel> {
+        return spy.configuration
+    }
     
     init(_ spy: Spy) {
         self.spy = spy
@@ -43,12 +56,19 @@ private final class _AnySpyBox<Spy: PSpy>: _AnySpyBase<Spy.Level, Spy.Channel> {
         spy.log(level: level, channel: channel, message: message)
         return self
     }
+    
+    @discardableResult override func forceLog(level: Level, channel: Channel, message: PSpyable) -> Self {
+        spy.forceLog(level: level, channel: channel, message: message)
+        return self
+    }
 }
 
 private class _AnySpyBase<Level: PSpyLevel, Channel: PSpyChannel>: PSpy {
+    private(set) internal var configuration: SpyConfiguration<Level, Channel> = SpyConfiguration()
+    
     init() {
         guard type(of: self) != _AnySpyBase.self else {
-            fatalError("_AnyCollectionProviderBase<Item> instances can not be created; create a subclass instance instead")
+            fatalError("_AnySpyBase<Level, Channel> instances can not be created; create a subclass instance instead")
         }
     }
     
@@ -60,8 +80,11 @@ private class _AnySpyBase<Level: PSpyLevel, Channel: PSpyChannel>: PSpy {
         fatalError("Must override")
     }
     
+    @discardableResult func forceLog(level: Level, channel: Channel, message: PSpyable) -> Self {
+        fatalError("Must override")
+    }
+    
     func hasLoadedData() -> Bool {
         fatalError("Must override")
     }
 }
-
