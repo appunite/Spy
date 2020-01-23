@@ -11,13 +11,18 @@ import Spy
 public struct Environment {
     public static var spy: AnySpy<SpyLevel, SpyChannel> = {
         return CompositeSpy()
-            .add(spy: ConsoleSpy(
-                spyFormatter: RawSpyFormatter<SpyLevel, SpyChannel>(),
+            .add(spy: ConsoleSpy<SpyLevel, SpyChannel, RawSpyFormatter>(
+                spyFormatter: RawSpyFormatter(),
                 timestampProvider: CurrentTimestampProvider(),
-                spyOnLevels: [],
-                spyOnChannels: []).toAnySpy())
-            .configure(spyOnLevels: [.info, .warning, .severe])
-            .configure(spyOnChannels: [.lifecycle])
-            .toAnySpy()
+                configuration: SpyConfigurationBuilder()
+                    .add(levels: SpyLevel.levelsFrom(.info))
+                    .add(channel: .lifecycle)
+                .build()).toAnySpy())
+            .add(spy: NetworkSpy()
+                .apply(configuration: SpyConfigurationBuilder()
+                    .add(level: .severe)
+                    .add(channels: [.lifecycle, .other])
+                    .build()).toAnySpy()
+        ).toAnySpy()
     }()
 }

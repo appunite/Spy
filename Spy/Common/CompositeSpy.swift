@@ -17,20 +17,13 @@ public class CompositeSpy<Level: PSpyLevel, Channel: PSpyChannel>: PSpy {
         return self
     }
         
-    public func configure(spyOnLevels: Set<Level>) -> Self {
+    public func apply(configuration: SpyConfiguration<Level, Channel>) -> Self {
         for spy in spies {
-            spy.configure(spyOnLevels: spyOnLevels)
+            spy.apply(configuration: configuration)
         }
         return self
     }
-    
-    public func configure(spyOnChannels: Set<Channel>) -> Self {
-        for spy in spies {
-            spy.configure(spyOnChannels: spyOnChannels)
-        }
-        return self
-    }
-    
+        
     public func log(level: Level, channel: Channel, message: PSpyable) -> Self {
         for spy in spies {
             spy.log(level: level, channel: channel, message: message)

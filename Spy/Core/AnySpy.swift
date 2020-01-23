@@ -13,16 +13,11 @@ public final class AnySpy<Level: PSpyLevel, Channel: PSpyChannel>: PSpy {
         self.spy = _AnySpyBox(spy)
     }
     
-    @discardableResult public func configure(spyOnLevels: Set<Level>) -> Self {
-        spy.configure(spyOnLevels: spyOnLevels)
+    @discardableResult public func apply(configuration: SpyConfiguration<Level, Channel>) -> Self {
+        spy.apply(configuration: configuration)
         return self
     }
-    
-    @discardableResult public func configure(spyOnChannels: Set<Channel>) -> Self {
-        spy.configure(spyOnChannels: spyOnChannels)
-        return self
-    }
-    
+        
     @discardableResult public func log(level: Level, channel: Channel, message: PSpyable) -> Self {
         spy.log(level: level, channel: channel, message: message)
         return self
@@ -39,17 +34,12 @@ private final class _AnySpyBox<Spy: PSpy>: _AnySpyBase<Spy.Level, Spy.Channel> {
         super.init()
     }
     
-    @discardableResult public override func configure(spyOnLevels: Set<Spy.Level>) -> Self {
-        spy.configure(spyOnLevels: spyOnLevels)
+    @discardableResult override public func apply(configuration: SpyConfiguration<Level, Channel>) -> Self {
+        spy.apply(configuration: configuration)
         return self
     }
     
-    @discardableResult public override func configure(spyOnChannels: Set<Spy.Channel>) -> Self {
-        spy.configure(spyOnChannels: spyOnChannels)
-        return self
-    }
-    
-    @discardableResult public override func log(level: Spy.Level, channel: Spy.Channel, message: PSpyable) -> Self {
+    @discardableResult override public func log(level: Spy.Level, channel: Spy.Channel, message: PSpyable) -> Self {
         spy.log(level: level, channel: channel, message: message)
         return self
     }
@@ -62,11 +52,7 @@ private class _AnySpyBase<Level: PSpyLevel, Channel: PSpyChannel>: PSpy {
         }
     }
     
-    @discardableResult public func configure(spyOnLevels: Set<Level>) -> Self {
-        fatalError("Must override")
-    }
-    
-    @discardableResult public func configure(spyOnChannels: Set<Channel>) -> Self {
+    @discardableResult public func apply(configuration: SpyConfiguration<Level, Channel>) -> Self {
         fatalError("Must override")
     }
     

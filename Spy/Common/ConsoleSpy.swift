@@ -6,29 +6,28 @@
 //  Copyright © 2020 AppUnite Sp. z o.o. All rights reserved.
 //
 
-public class ConsoleSpy<Level, Channel, Formatter: PSpyFormatter>: PSpy where Formatter.Level == Level, Formatter.Channel == Channel {
-    private var spyOnLevels: Set<Level> = []
-    private var spyOnChannels: Set<Channel> = []
+public final class ConsoleSpy<Level, Channel, Formatter: PSpyFormatter>: PSpy where Formatter.Level == Level, Formatter.Channel == Channel {
+    private var configuration: SpyConfiguration<Level, Channel>
     private let spyFormatter: Formatter
     private let timestampProvider: PTimestampProvider
 
-    public init(spyFormatter: Formatter, timestampProvider: PTimestampProvider, spyOnLevels: Set<Level>, spyOnChannels: Set<Channel>) {
+    public init(spyFormatter: Formatter,
+                timestampProvider: PTimestampProvider,
+                configuration: SpyConfiguration<Level, Channel> = SpyConfiguration()) {
         self.spyFormatter = spyFormatter
         self.timestampProvider = timestampProvider
+        self.configuration = configuration
     }
     
-    @discardableResult public func configure(spyOnLevels: Set<Level>) -> Self {
-        self.spyOnLevels = spyOnLevels
+    @discardableResult public func apply(configuration: SpyConfiguration<Level, Channel>) -> Self {
+        self.configuration = configuration
         return self
     }
     
-    @discardableResult public func configure(spyOnChannels: Set<Channel>) -> Self {
-        self.spyOnChannels = spyOnChannels
-        return self
-    }
-    
-    @discardableResult public func log(level: Level, channel: Channel, message: PSpyable) -> Self {
-        guard spyOnLevels.contains(level), spyOnChannels.contains(channel) else { return self }
+    @discardableResult public func log(level: Level,
+                                       channel: Channel,
+                                       message: PSpyable) -> Self {
+        guard configuration.shouldLog(level: level, channel: channel) else { return self }
         print(spyFormatter.format(timestamp: timestampProvider.timestamp, level: level, channel: channel, message: message))
         return self
     }

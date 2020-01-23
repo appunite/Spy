@@ -9,8 +9,7 @@
 public protocol PSpy {
     associatedtype Level: PSpyLevel
     associatedtype Channel: PSpyChannel
-    @discardableResult func configure(spyOnLevels: Set<Level>) -> Self
-    @discardableResult func configure(spyOnChannels: Set<Channel>) -> Self
+    @discardableResult func apply(configuration: SpyConfiguration<Level, Channel>) -> Self
     @discardableResult func log(level: Level, channel: Channel, message: PSpyable) -> Self
 }
 
