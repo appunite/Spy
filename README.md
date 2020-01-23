@@ -7,6 +7,7 @@ Project uses following tools for development
 1. XCodeGen
 2. Cocoapods
 3. SwiftLint
+4. Sourcery
 
 ## Installation
 
