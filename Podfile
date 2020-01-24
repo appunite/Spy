@@ -18,6 +18,7 @@ target 'Spy_macOS' do
   target 'SpyTests' do
     # Pods for testing
   	inherit! :search_paths
+  	pod 'Sourcery'
   end
 
 end

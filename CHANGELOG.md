@@ -6,6 +6,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 - Add carthage support
+- Boost code coverage
 
 ## [0.0.3]
 - Fixed version to 0.0.3
