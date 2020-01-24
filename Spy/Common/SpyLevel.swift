@@ -6,7 +6,7 @@
 //  Copyright © 2020 AppUnite Sp. z o.o. All rights reserved.
 //
 
-public enum SpyLevel: Int, PSpyLevel {    
+public enum SpyLevel: Int, PSpyLevel {
     case finest = 0
     case finer = 1
     case fine = 2
