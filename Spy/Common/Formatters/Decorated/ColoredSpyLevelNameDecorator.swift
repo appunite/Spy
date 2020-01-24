@@ -14,11 +14,13 @@ public final class ColoredSpyLevelNameDecorator: PSpyLevelDecorator {
     }
     
     public func decorate(level: SpyLevel, value: String) -> String {
-        return value.colored(with: color(forLevel: level))
+        return value.colored(with: level.color)
     }
-    
-    private func color(forLevel level: Level) -> SpyColor {
-        switch level {
+}
+
+private extension SpyLevel {
+    var color: SpyColor {
+        switch self {
         case .finest: return .white
         case .finer: return .cyan
         case .fine: return .blue

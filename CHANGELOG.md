@@ -6,8 +6,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 - Add decorated formatter
-- Add decorator for color changing
-- Add decorator for emoji prefixes
+- Add decorator for level color changing
+- Add decorator for level emoji prefixes
 
 ## [0.1.0]
 - Add .travis.yml for CI support

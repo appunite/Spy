@@ -14,7 +14,6 @@ public struct Environment {
             .add(spy: ConsoleSpy<SpyLevel, SpyChannel, DecoratedSpyFormatter>(
                 spyFormatter: DecoratedSpyFormatter(
                     levelNameBuilder: DecoratedLevelNameBuilder<SpyLevel>()
-                        .add(decorator: PlainLevelNameDecorator().toAnyDecorator())
                         .add(decorator: EmojiPrefixedSpyLevelNameDecorator().toAnyDecorator())
                         ),
                 timestampProvider: CurrentTimestampProvider(),
