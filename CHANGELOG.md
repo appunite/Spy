@@ -5,7 +5,9 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
-- Add colored formatter
+- Add decorated formatter
+- Add decorator for color changing
+- Add decorator for emoji prefixes
 
 ## [0.1.0]
 - Add .travis.yml for CI support

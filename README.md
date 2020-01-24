@@ -115,6 +115,17 @@ Spy is anything that implements *PSpy* protocol. There are a few spies already d
 - *CompositeSpy* - spy that groups multiple spies into one
 - *AnySpy* - type-erased spy - every spy can be converted to AnySpy
 
+#### ConsoleSpy
+ConsoleSpy comes with two available output formatters **RawSpyFormatter** and **DecoratedSpyFormatter** with the later being extendable with decorators. You can always define your own output formatter.
+Example output for *RawSpyFormatter* will look like:
+```
+info::foo::Hello Spy
+```
+And example output for *DecoratedSpyFormatter* will look like:
+```
+ℹ️ info::foo::Hello Spy
+```
+
 Logging is performed with **log** method as follows:
 ```swift
 spy.log(level: .severe, channel: .foo, message: "Something bad happened")
@@ -127,8 +138,12 @@ It utilizes *CompositeSpy* to allow you to log onto multiple destinations (*Cons
 public struct Environment {
     public static var spy: AnySpy<SpyLevel, SpyChannel> = {
         return CompositeSpy()
-            .add(spy: ConsoleSpy<SpyLevel, SpyChannel, RawSpyFormatter>(
-                spyFormatter: RawSpyFormatter(),
+            .add(spy: ConsoleSpy<SpyLevel, SpyChannel, DecoratedSpyFormatter>(
+                spyFormatter: DecoratedSpyFormatter(
+                    levelNameBuilder: DecoratedLevelNameBuilder<SpyLevel>()
+                        .add(decorator: PlainLevelNameDecorator().toAnyDecorator())
+                        .add(decorator: EmojiPrefixedSpyLevelNameDecorator().toAnyDecorator())
+                        ),
                 timestampProvider: CurrentTimestampProvider(),
                 configuration: SpyConfigurationBuilder()
                     .add(levels: SpyLevel.levelsFrom(loggingLevel))
