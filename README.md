@@ -1,3 +1,6 @@
+[![Build Status](https://travis-ci.org/appunite/Spy.svg?branch=master)](https://travis-ci.org/appunite/Spy)
+
+
 Spy is a flexible, lightweight, multiplatform logging utility written in pure Swift. It allows to log with different levels and on different channels. You can define what levels and channels actually are.
 
 ## Requirements

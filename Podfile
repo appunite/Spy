@@ -15,10 +15,38 @@ target 'Spy_macOS' do
 
   # Pods for Spy
 
-  target 'SpyTests' do
+  target 'SpyTests_macOS' do
     # Pods for testing
   	inherit! :search_paths
   	pod 'Sourcery'
+  end
+
+end
+
+target 'Spy_iOS' do
+  platform :ios, '8.0'
+  pod 'SwiftLint'
+
+  # Pods for Spy
+
+  target 'SpyTests_iOS' do
+    # Pods for testing
+    inherit! :search_paths
+    pod 'Sourcery'
+  end
+
+end
+
+target 'Spy_tvOS' do
+  platform :tvos, '10.10'
+  pod 'SwiftLint'
+
+  # Pods for Spy
+
+  target 'SpyTests_tvOS' do
+    # Pods for testing
+    inherit! :search_paths
+    pod 'Sourcery'
   end
 
 end
