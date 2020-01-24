@@ -1,4 +1,4 @@
-Spy is a lightweight, multiplatform logging utility written in pure Swift. It allows to log with different levels and on different channels. You can define what levels and channels actually are.
+Spy is a flexible, lightweight, multiplatform logging utility written in pure Swift. It allows to log with different levels and on different channels. You can define what levels and channels actually are.
 
 ## Requirements
 
@@ -7,6 +7,7 @@ Project uses following tools for development
 1. XCodeGen
 2. Cocoapods
 3. SwiftLint
+4. Sourcery
 
 ## Installation
 
@@ -39,7 +40,7 @@ github "appunite/Spy"
 
 To install Spy using **Swift Package Manager** go through following steps:
 
-1. Add following package dependency in you **Package.swift** ``` .package(url: "https://github.com/appunite/Spy.git", from: "0.0.3") ```
+1. Add following package dependency in you **Package.swift** ``` .package(url: "https://github.com/appunite/Spy.git", from: "0.0.4") ```
 2. Add following tatget dependency in your **Package.swift** ``` dependencies: ["Spy"]) ```
 
 ## Overview
@@ -48,8 +49,7 @@ Here is a quick overview of functionalities and concepts used in **Spy**.
 
 ### SpyChannel
 
-SpyChannel is anything that implements *PSpyChannel* protocol. Channels can be used to categorize logs. You define 
-Typically they are implemented with an enum e.g.:
+SpyChannel is anything that implements *PSpyChannel* protocol. Channels can be used to categorize logs. Typically they are implemented with an enum. You can define your own channels as follows:
 ```swift
 public enum SpyChannel: String, PSpyChannel {
     case foo
@@ -62,14 +62,14 @@ public enum SpyChannel: String, PSpyChannel {
 ```
 
 ### SpyLevel
-SpyLevel is anything that implements *PSpyLevel* protocol. You can define your own levels, but Spy commes with one set defined for you. This set is called *SpyLevel* and contains following levels: *finest, finer, fine, config, info, warning, severe* sorted by the increasing alert priority.
+SpyLevel is anything that implements *PSpyLevel* protocol. You can define your own levels, but Spy commes with one set defined for you so you can use it if you want. This set is called *SpyLevel* and contains following alert levels: *finest, finer, fine, config, info, warning, severe* sorted by the increasing alert priority.
 
 ### SpyConfiguration
 Contains levels and channels that the Spy will spy on.
 
 ### SpyConfigurationBuilder
 Builds your spy configuration by providing add and remove functions for both levels and channels.
-Example usage
+Example usage:
 ```swift
 SpyConfigurationBuilder()
     .add(level: .severe)
@@ -81,19 +81,19 @@ SpyConfigurationBuilder()
 Spyable is a entity that can be logged. It has to implement *PSpyable* protocol. You can define your own spyables or use string as a basic one.
 
 ### Spy
-Spy is anything that implements *PSpy* protocol. There a few spies defined for you:
-- *ConsoleSpy* - spy that logs by using print command
+Spy is anything that implements *PSpy* protocol. There are a few spies already defined for you:
+- *ConsoleSpy* - spy that logs spyables by using print command
 - *CompositeSpy* - spy that groups multiple spies into one
-- *AnySpy* - type-erased spy, every spy can be converted to AnySpy
+- *AnySpy* - type-erased spy - every spy can be converted to AnySpy
 
-Logging is performed with *log* method as follows
+Logging is performed with **log** method as follows:
 ```swift
 spy.log(level: .severe, channel: .foo, message: "Something bad happened")
 ```
 
 ## Example
 This is an example definition of the spies.
-It utilizes *CompositeSpy* to allow to log onto multiple destinations (*Console* and *Network*). Please note that *ConsoleSpy* is shipped with the *Spy* and *NetworkSpy* is not.
+It utilizes *CompositeSpy* to allow you to log onto multiple destinations (*Console* and *Network*). Please note that *ConsoleSpy* is shipped with the *Spy* and *NetworkSpy* is not.
 ```swift
 public struct Environment {
     public static var spy: AnySpy<SpyLevel, SpyChannel> = {
@@ -114,7 +114,7 @@ public struct Environment {
     }()
 }
 ```
-By using preprocessor we can define different logging levels for debug and release. That way we won't forget about switching off unimportant logs.
+By using preprocessor we can define different logging levels for debug and release. That way we won't forget about switching off unimportant logs before release.
 ```swift    
 public extension Environment {
 	static var loggingLevel: SpyLevel {
@@ -127,18 +127,18 @@ public extension Environment {
 }
 ```
 
-And here is how you use Spy:
+And here is how you could use Spy:
 ```swift
 Environment.spy.log(level: .info, channel: .foo, message: "initialized")
 ```
 
-For more detailed example please see source code.
+For more detailed example please see the source code.
 
 ## Contribution
 
-Project is created by **Tomasz Lewandowski**.
+Project is created and maintained by **Tomasz Lewandowski**.
 
-If you created some new feature or fixed a bug you can create a pull request. Feel free to submit your feature requests if you have any.
+If you created some new feature or fixed a bug you can create a pull request. Please feel free to submit your feature requests if you have any.
 
 ## License
 

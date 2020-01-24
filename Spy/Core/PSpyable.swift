@@ -6,6 +6,7 @@
 //  Copyright © 2020 AppUnite Sp. z o.o. All rights reserved.
 //
 
+// sourcery: AutoMockable
 public protocol PSpyable {
     var spyMessage: String { get }
 }

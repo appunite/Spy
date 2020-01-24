@@ -13,6 +13,12 @@ bundler:
 generate:
 	@xcodegen generate
 	@bundle exec pod install
+	@make sourcery
+
+sourcery: auto-mocks
+
+auto-mocks:
+	@$(SOURCERY) --config sourcery/AutoMockable.sourcery.yml --disableCache
 
 define brew_install
 	@echo "--- Installing $(1)..."
