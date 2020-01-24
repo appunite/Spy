@@ -6,6 +6,8 @@
 //  Copyright © 2020 AppUnite Sp. z o.o. All rights reserved.
 //
 
+import Foundation
+
 public final class CurrentTimestampProvider: PTimestampProvider {
     public init() {
         
