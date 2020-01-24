@@ -47,7 +47,7 @@ github "appunite/Spy"
 
 To install Spy using **Swift Package Manager** go through following steps:
 
-1. Add following package dependency in you **Package.swift** ``` .package(url: "https://github.com/appunite/Spy.git", from: "0.0.4") ```
+1. Add following package dependency in you **Package.swift** ``` .package(url: "https://github.com/appunite/Spy.git", from: "0.1.0") ```
 2. Add following tatget dependency in your **Package.swift** ``` dependencies: ["Spy"]) ```
 
 For instance this is how it might look like:
@@ -62,7 +62,7 @@ let package = Package(
             targets: ["YourLibrary"])
     ],
     dependencies: [
-        .package(url: "https://github.com/appunite/Spy.git", from: "0.0.4")
+        .package(url: "https://github.com/appunite/Spy.git", from: "0.1.0")
     ],
     targets: [
         .target(
@@ -158,7 +158,7 @@ public extension Environment {
 
 And here is how you could use Spy:
 ```swift
-Environment.spy.log(level: .info, channel: .foo, message: "initialized")
+Environment.spy.log(level: .info, channel: .foo, message: "Hello Spy")
 ```
 
 For more detailed example please see the source code.
