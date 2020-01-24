@@ -11,8 +11,12 @@ import Spy
 public struct Environment {
     public static var spy: AnySpy<SpyLevel, SpyChannel> = {
         return CompositeSpy()
-            .add(spy: ConsoleSpy<SpyLevel, SpyChannel, RawSpyFormatter>(
-                spyFormatter: RawSpyFormatter(),
+            .add(spy: ConsoleSpy<SpyLevel, SpyChannel, DecoratedSpyFormatter>(
+                spyFormatter: DecoratedSpyFormatter(
+                    levelNameBuilder: DecoratedLevelNameBuilder<SpyLevel>()
+                        .add(decorator: PlainLevelNameDecorator().toAnyDecorator())
+                        .add(decorator: EmojiPrefixedSpyLevelNameDecorator().toAnyDecorator())
+                        ),
                 timestampProvider: CurrentTimestampProvider(),
                 configuration: SpyConfigurationBuilder()
                     .add(levels: SpyLevel.levelsFrom(loggingLevel))

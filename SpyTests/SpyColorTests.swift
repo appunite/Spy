@@ -11,6 +11,7 @@ import Spy
 
 public final class SpyColorTests: XCTestCase {
     func testModificator_WhenCalledForColor_ShouldReturnCorrectString() {
+        // then
         XCTAssertEqual("\u{001B}[0;0m", SpyColor.`default`.modificator)
         XCTAssertEqual("\u{001B}[0;30m", SpyColor.black.modificator)
         XCTAssertEqual("\u{001B}[0;31m", SpyColor.red.modificator)
