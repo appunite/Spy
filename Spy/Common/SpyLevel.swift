@@ -6,7 +6,7 @@
 //  Copyright © 2020 AppUnite Sp. z o.o. All rights reserved.
 //
 
-public enum SpyLevel: Int, PSpyLevel {    
+public enum SpyLevel: Int, PColoredSpyLevel {
     case finest = 0
     case finer = 1
     case fine = 2
@@ -33,5 +33,17 @@ public enum SpyLevel: Int, PSpyLevel {
     
     public static func levelsFrom(_ level: SpyLevel) -> Set<SpyLevel> {
         return Set([SpyLevel.finest, .finer, .fine, .config, .info, .warning, .severe]).filter { $0.levelPriority >= level.levelPriority }
+    }
+    
+    public var color: SpyColor {
+        switch self {
+        case .finest: return .white
+        case .finer: return .cyan
+        case .fine: return .blue
+        case .config: return .magenta
+        case .info: return .green
+        case .warning: return .yellow
+        case .severe: return .red
+        }
     }
 }
