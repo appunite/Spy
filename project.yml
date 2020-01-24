@@ -28,7 +28,7 @@ schemes:
       config: Debug
     test:
       config: Debug
-      targets: []
+      targets: [SpyTests_iOS]
       gatherCoverageData: true
     profile:
       config: Release
@@ -44,7 +44,7 @@ schemes:
       config: Debug
     test:
       config: Debug
-      targets: [SpyTests]
+      targets: [SpyTests_macOS]
       gatherCoverageData: true
     profile:
       config: Release
@@ -76,7 +76,7 @@ schemes:
       config: Debug
     test:
       config: Debug
-      targets: []
+      targets: [SpyTests_tvOS]
       gatherCoverageData: true
     profile:
       config: Release
@@ -97,7 +97,7 @@ targets:
       - path: Spy
   SpyTests:
     type: bundle.unit-test
-    platform: macOS
+    platform: [macOS, iOS, tvOS]
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.appunite.spy.tests

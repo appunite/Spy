@@ -30,6 +30,16 @@
       onlyGenerateCoverageForSpecifiedTargets = "NO"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "B4793D05CFC502CC17EFAAA5"
+               BuildableName = "SpyTests.xctest"
+               BlueprintName = "SpyTests_iOS"
+               ReferencedContainer = "container:Spy.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference

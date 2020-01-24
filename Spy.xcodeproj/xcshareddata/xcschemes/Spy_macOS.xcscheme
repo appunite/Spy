@@ -34,9 +34,9 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E45F6F002237BD59164FB9A9"
+               BlueprintIdentifier = "5E2DBFB210EA0F8B5F36AB26"
                BuildableName = "SpyTests.xctest"
-               BlueprintName = "SpyTests"
+               BlueprintName = "SpyTests_macOS"
                ReferencedContainer = "container:Spy.xcodeproj">
             </BuildableReference>
          </TestableReference>

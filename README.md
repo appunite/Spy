@@ -1,3 +1,10 @@
+[![Build Status](https://travis-ci.org/appunite/Spy.svg?branch=master)](https://travis-ci.org/appunite/Spy)
+[![Carthage compatible](https://img.shields.io/badge/Carthage-Compatible-brightgreen.svg?style=flat)](https://github.com/Carthage/Carthage)
+[![Cocoapods](https://img.shields.io/cocoapods/v/Spy.svg?style=flat)](https://cocoapods.org/pods/Spy)
+[![Platform](https://img.shields.io/cocoapods/p/Spy.svg?style=flat)](https://cocoapods.org/pods/Spy)
+[![License](https://img.shields.io/cocoapods/l/Spy.svg?style=flat)](https://cocoapods.org/pods/Spy)
+
+
 Spy is a flexible, lightweight, multiplatform logging utility written in pure Swift. It allows to log with different levels and on different channels. You can define what levels and channels actually are.
 
 ## Requirements
@@ -40,8 +47,30 @@ github "appunite/Spy"
 
 To install Spy using **Swift Package Manager** go through following steps:
 
-1. Add following package dependency in you **Package.swift** ``` .package(url: "https://github.com/appunite/Spy.git", from: "0.0.4") ```
+1. Add following package dependency in you **Package.swift** ``` .package(url: "https://github.com/appunite/Spy.git", from: "0.1.0") ```
 2. Add following tatget dependency in your **Package.swift** ``` dependencies: ["Spy"]) ```
+
+For instance this is how it might look like:
+```swift
+import PackageDescription
+
+let package = Package(
+    name: "YourLibrary",
+    products: [
+        .library(
+            name: "YourLibrary",
+            targets: ["YourLibrary"])
+    ],
+    dependencies: [
+        .package(url: "https://github.com/appunite/Spy.git", from: "0.1.0")
+    ],
+    targets: [
+        .target(
+            name: "YourLibrary",
+            dependencies: ["Spy"])
+    ]
+)
+```
 
 ## Overview
 
@@ -129,7 +158,7 @@ public extension Environment {
 
 And here is how you could use Spy:
 ```swift
-Environment.spy.log(level: .info, channel: .foo, message: "initialized")
+Environment.spy.log(level: .info, channel: .foo, message: "Hello Spy")
 ```
 
 For more detailed example please see the source code.

@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name         = "Spy"
-  spec.version      = "0.0.4"
+  spec.version      = "0.1.0"
   spec.summary      = "Spy is a flexible, lightweight, multiplatform logging utility written in pure Swift."
   spec.homepage     = "https://github.com/appunite/Spy"
   spec.license      = { :type => "MIT", :file => "LICENSE.md" }

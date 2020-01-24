@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [0.1.0]
+- Add .travis.yml for CI support
+- Fix support for package manager
+
 ## [0.0.4]
 - Add carthage support
 - Boost code coverage

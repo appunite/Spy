@@ -1,0 +1,30 @@
+language: swift
+osx_image: xcode11.3
+
+env:
+  global:
+    - WORKSPACE='Spy.xcworkspace'
+    - IOS_DESTINATION='platform=iOS Simulator,OS=12.4,name=iPhone X'
+    - TVOS_DESTINATION='platform=tvOS Simulator,name=Apple TV'
+    - MACOS_DESTINATION='platform=OS X'
+    - WATCHOS_DESTINATION='platform=watchOS Simulator,OS=6.1.1,name=Apple Watch Series 5 - 44mm'
+    - IOS_SCHEME='Spy_iOS'
+    - TVOS_SCHEME='Spy_tvOS'
+    - MACOS_SCHEME='Spy_macOS'
+    - WATCHOS_SCHEME='Spy_watchOS'
+
+
+before_install:
+  - make bundler
+  - brew update
+  - bundle install
+  - brew outdated xctool || brew upgrade xctool
+  - bundle exec pod install
+
+script:
+  - set -o pipefail
+  - swift --version
+  - xcodebuild clean build test -workspace "$WORKSPACE" -scheme "$IOS_SCHEME" -destination "$IOS_DESTINATION" | xcpretty
+  - xcodebuild clean build test -workspace "$WORKSPACE" -scheme "$TVOS_SCHEME" -destination "$TVOS_DESTINATION" | xcpretty
+  - xcodebuild clean build test -workspace "$WORKSPACE" -scheme "$MACOS_SCHEME" -destination "$MACOS_DESTINATION" | xcpretty
+  - xcodebuild clean build -workspace "$WORKSPACE" -scheme "$WATCHOS_SCHEME" -destination "$WATCHOS_DESTINATION" | xcpretty
