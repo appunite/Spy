@@ -120,6 +120,20 @@ Logging is performed with **log** method as follows:
 spy.log(level: .severe, channel: .foo, message: "Something bad happened")
 ```
 
+#### ConsoleSpy
+ConsoleSpy comes with two available output formatters **RawSpyFormatter** and **DecoratedSpyFormatter** with the later being extendable with decorators. You can always define your own output formatter.
+Example output for *RawSpyFormatter* will look like:
+```
+info::foo::Hello Spy
+```
+And example output for *DecoratedSpyFormatter* may look like:
+```
+ℹ️ info::foo::Hello Spy
+```
+<p align="center">
+  <img src="resources/log.png" alt="Log example"/>
+</p>
+
 ## Example
 This is an example definition of the spies.
 It utilizes *CompositeSpy* to allow you to log onto multiple destinations (*Console* and *Network*). Please note that *ConsoleSpy* is shipped with the *Spy* and *NetworkSpy* is not.
@@ -127,8 +141,11 @@ It utilizes *CompositeSpy* to allow you to log onto multiple destinations (*Cons
 public struct Environment {
     public static var spy: AnySpy<SpyLevel, SpyChannel> = {
         return CompositeSpy()
-            .add(spy: ConsoleSpy<SpyLevel, SpyChannel, RawSpyFormatter>(
-                spyFormatter: RawSpyFormatter(),
+            .add(spy: ConsoleSpy<SpyLevel, SpyChannel, DecoratedSpyFormatter>(
+                spyFormatter: DecoratedSpyFormatter(
+                    levelNameBuilder: DecoratedLevelNameBuilder<SpyLevel>()
+                        .add(decorator: EmojiPrefixedSpyLevelNameDecorator().toAnyDecorator())
+                        ),
                 timestampProvider: CurrentTimestampProvider(),
                 configuration: SpyConfigurationBuilder()
                     .add(levels: SpyLevel.levelsFrom(loggingLevel))
