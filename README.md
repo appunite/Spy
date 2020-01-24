@@ -1,4 +1,4 @@
-Spy is a lightweight, multiplatform logging utility written in pure Swift. It allows to log with different levels and on different channels. You can define what levels and channels actually are.
+Spy is a flexible, lightweight, multiplatform logging utility written in pure Swift. It allows to log with different levels and on different channels. You can define what levels and channels actually are.
 
 ## Requirements
 
@@ -40,7 +40,7 @@ github "appunite/Spy"
 
 To install Spy using **Swift Package Manager** go through following steps:
 
-1. Add following package dependency in you **Package.swift** ``` .package(url: "https://github.com/appunite/Spy.git", from: "0.0.3") ```
+1. Add following package dependency in you **Package.swift** ``` .package(url: "https://github.com/appunite/Spy.git", from: "0.0.4") ```
 2. Add following tatget dependency in your **Package.swift** ``` dependencies: ["Spy"]) ```
 
 ## Overview
@@ -49,7 +49,7 @@ Here is a quick overview of functionalities and concepts used in **Spy**.
 
 ### SpyChannel
 
-SpyChannel is anything that implements *PSpyChannel* protocol. Channels can be used to categorize logs. Typically they are implemented with an enum. You can define your own channels as follows::
+SpyChannel is anything that implements *PSpyChannel* protocol. Channels can be used to categorize logs. Typically they are implemented with an enum. You can define your own channels as follows:
 ```swift
 public enum SpyChannel: String, PSpyChannel {
     case foo
