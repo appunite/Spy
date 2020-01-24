@@ -1,3 +1,10 @@
+[![Build Status](https://travis-ci.org/appunite/Spy.svg?branch=master)](https://travis-ci.org/appunite/Spy)
+[![Carthage compatible](https://img.shields.io/badge/Carthage-Compatible-brightgreen.svg?style=flat)](https://github.com/Carthage/Carthage)
+[![Cocoapods](https://img.shields.io/cocoapods/v/Spy.svg?style=flat)](https://cocoapods.org/pods/Spy)
+[![Platform](https://img.shields.io/cocoapods/p/Spy.svg?style=flat)](https://cocoapods.org/pods/Spy)
+[![License](https://img.shields.io/cocoapods/l/Spy.svg?style=flat)](https://cocoapods.org/pods/Spy)
+
+
 Spy is a flexible, lightweight, multiplatform logging utility written in pure Swift. It allows to log with different levels and on different channels. You can define what levels and channels actually are.
 
 ## Requirements
