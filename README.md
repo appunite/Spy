@@ -1,4 +1,5 @@
 [![Build Status](https://travis-ci.org/appunite/Spy.svg?branch=master)](https://travis-ci.org/appunite/Spy)
+[![codecov](https://codecov.io/gh/appunite/Spy/branch/master/graph/badge.svg)](https://codecov.io/gh/appunite/Spy)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-Compatible-brightgreen.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![Cocoapods](https://img.shields.io/cocoapods/v/Spy.svg?style=flat)](https://cocoapods.org/pods/Spy)
 [![Platform](https://img.shields.io/cocoapods/p/Spy.svg?style=flat)](https://cocoapods.org/pods/Spy)

@@ -25,6 +25,7 @@ script:
   - set -o pipefail
   - swift --version
   - xcodebuild clean build test -workspace "$WORKSPACE" -scheme "$IOS_SCHEME" -destination "$IOS_DESTINATION" | xcpretty
+  - bash <(curl -s https://codecov.io/bash)
   - xcodebuild clean build test -workspace "$WORKSPACE" -scheme "$TVOS_SCHEME" -destination "$TVOS_DESTINATION" | xcpretty
   - xcodebuild clean build test -workspace "$WORKSPACE" -scheme "$MACOS_SCHEME" -destination "$MACOS_DESTINATION" | xcpretty
   - xcodebuild clean build -workspace "$WORKSPACE" -scheme "$WATCHOS_SCHEME" -destination "$WATCHOS_DESTINATION" | xcpretty
