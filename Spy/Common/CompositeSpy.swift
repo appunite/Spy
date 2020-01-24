@@ -14,12 +14,12 @@ public class CompositeSpy<Level: PSpyLevel, Channel: PSpyChannel>: PSpy {
     public init() {
     }
     
-    public func add(spy: AnySpy<Level, Channel>) -> Self {
+    @discardableResult public func add(spy: AnySpy<Level, Channel>) -> Self {
         spies.append(spy)
         return self
     }
         
-    public func apply(configuration: SpyConfiguration<Level, Channel>) -> Self {
+    @discardableResult public func apply(configuration: SpyConfiguration<Level, Channel>) -> Self {
         self.configuration = configuration
         for spy in spies {
             spy.apply(configuration: configuration)
@@ -27,14 +27,14 @@ public class CompositeSpy<Level: PSpyLevel, Channel: PSpyChannel>: PSpy {
         return self
     }
         
-    public func log(level: Level, channel: Channel, message: PSpyable) -> Self {
+    @discardableResult public func log(level: Level, channel: Channel, message: PSpyable) -> Self {
         for spy in spies {
             spy.log(level: level, channel: channel, message: message)
         }
         return self
     }
     
-    public func forceLog(level: Level, channel: Channel, message: PSpyable) -> Self {
+    @discardableResult public func forceLog(level: Level, channel: Channel, message: PSpyable) -> Self {
         for spy in spies {
             spy.forceLog(level: level, channel: channel, message: message)
         }

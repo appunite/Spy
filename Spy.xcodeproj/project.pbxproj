@@ -88,6 +88,7 @@
 		E4FB454F9DC865BCB2282CE2 /* AnySpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2977004EA2EB53528A4F35 /* AnySpy.swift */; };
 		F12C33DE23DA61D000F9F460 /* AnySpyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12C33DD23DA61D000F9F460 /* AnySpyTests.swift */; };
 		F12C33E023DA665A00F9F460 /* PSpyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12C33DF23DA665A00F9F460 /* PSpyTests.swift */; };
+		F12C33E223DA68D300F9F460 /* CompositeSpyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12C33E123DA68D300F9F460 /* CompositeSpyTests.swift */; };
 		F3D6BF8A86265329889ED41C /* PTimestampProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F066CF5C12BC433A4D0339C8 /* PTimestampProvider.swift */; };
 		F5CF317CC6C31D366651B8BF /* CurrentTimestampProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC720605A9EFD7D25659B56D /* CurrentTimestampProvider.swift */; };
 		F79F86D94319BDFB8B6A1041 /* ConsoleSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C43B51E4C3FC74551482F1 /* ConsoleSpy.swift */; };
@@ -191,6 +192,7 @@
 		F0ADD68BAD32886AD351C0DF /* RawSpyFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RawSpyFormatter.swift; sourceTree = "<group>"; };
 		F12C33DD23DA61D000F9F460 /* AnySpyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnySpyTests.swift; sourceTree = "<group>"; };
 		F12C33DF23DA665A00F9F460 /* PSpyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSpyTests.swift; sourceTree = "<group>"; };
+		F12C33E123DA68D300F9F460 /* CompositeSpyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositeSpyTests.swift; sourceTree = "<group>"; };
 		F2850AE714DB254464B02DDD /* Spy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Spy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F89E7AB26C7CC111444C2F77 /* Spy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Spy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB0714C858C393158E5559A4 /* Pods-Spy_macOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Spy_macOS.debug.xcconfig"; path = "Target Support Files/Pods-Spy_macOS/Pods-Spy_macOS.debug.xcconfig"; sourceTree = "<group>"; };
@@ -385,6 +387,7 @@
 				4D2A75209F0ADFD824A7846E /* SpyTests-Bridging-Header.h */,
 				F12C33DD23DA61D000F9F460 /* AnySpyTests.swift */,
 				F12C33DF23DA665A00F9F460 /* PSpyTests.swift */,
+				F12C33E123DA68D300F9F460 /* CompositeSpyTests.swift */,
 			);
 			path = SpyTests;
 			sourceTree = "<group>";
@@ -803,6 +806,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2F23ECD0CFC975966E488E33 /* AutoMockable.generated.swift in Sources */,
+				F12C33E223DA68D300F9F460 /* CompositeSpyTests.swift in Sources */,
 				F12C33E023DA665A00F9F460 /* PSpyTests.swift in Sources */,
 				B985895928A34462705FD36F /* ConsoleSpyTests.swift in Sources */,
 				DBF7CCE103815EBF62C11B0F /* RawSpyFormatterTests.swift in Sources */,
