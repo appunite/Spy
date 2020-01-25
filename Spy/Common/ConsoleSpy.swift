@@ -6,11 +6,18 @@
 //  Copyright © 2020 AppUnite Sp. z o.o. All rights reserved.
 //
 
+/** Concrete implementation of a spy which logs to console.
+ 
+Example usage:
+ConsoleSpy(spyFormatter: RawSpyFormatter(), timestampProvider: CurrentTimestampProvider())
+ .log(level: .info, channel: .foo, message: "Hello spy")
+*/
 public final class ConsoleSpy<Level, Channel, Formatter: PSpyFormatter>: PSpy where Formatter.Level == Level, Formatter.Channel == Channel {
     public private(set) var configuration: SpyConfiguration<Level, Channel>
     private let spyFormatter: Formatter
     private let timestampProvider: PTimestampProvider
 
+    /// Initializes ConsoleSpy with given formatter, timestamp provider and configuration
     public init(spyFormatter: Formatter,
                 timestampProvider: PTimestampProvider,
                 configuration: SpyConfiguration<Level, Channel> = SpyConfiguration()) {

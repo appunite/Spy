@@ -6,6 +6,7 @@
 //  Copyright © 2020 AppUnite Sp. z o.o. All rights reserved.
 //
 
+/// Concrete of PSpyLevel with available levels sorted by increasing alert priority; finest, finer, fine, config, info, warning, severe
 public enum SpyLevel: Int, PSpyLevel {
     case finest = 0
     case finer = 1
@@ -15,6 +16,7 @@ public enum SpyLevel: Int, PSpyLevel {
     case warning = 5
     case severe = 6
     
+    /// Alert priority of the current level
     public var levelPriority: Int {
         return rawValue
     }
@@ -31,6 +33,7 @@ public enum SpyLevel: Int, PSpyLevel {
         }
     }
     
+    /// Returns levels with alert priority equal or higher than given level
     public static func levelsFrom(_ level: SpyLevel) -> Set<SpyLevel> {
         return Set([SpyLevel.finest, .finer, .fine, .config, .info, .warning, .severe]).filter { $0.levelPriority >= level.levelPriority }
     }

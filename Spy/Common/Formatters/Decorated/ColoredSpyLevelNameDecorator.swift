@@ -6,6 +6,7 @@
 //  Copyright © 2020 AppUnite Sp. z o.o. All rights reserved.
 //
 
+/// Decorator that applies level modificators to the level name
 public final class ColoredSpyLevelNameDecorator: PSpyLevelDecorator {
     public typealias Level = SpyLevel
     

@@ -24,7 +24,7 @@ final class AnySpyTests: XCTestCase {
         // given
         let configuration = SpyConfiguration<SpyLevel, SpyChannel>(spyOnLevels: [.info], spyOnChannels: [.foo])
         // when
-        let anySpy = sut.toAnySpy()
+        let anySpy = sut.any()
         anySpy.apply(configuration: configuration)
         // then
         XCTAssertTrue(sut.applyConfigurationCalled)
@@ -33,7 +33,7 @@ final class AnySpyTests: XCTestCase {
     
     func testForceLog_WhenCalled_ShouldPassCallToWrappedSpy() {
         // when
-        let anySpy = sut.toAnySpy()
+        let anySpy = sut.any()
         anySpy.forceLog(level: .info, channel: .foo, message: "message")
         // then
         XCTAssertTrue(sut.forceLogLevelChannelMessageCalled)
@@ -44,7 +44,7 @@ final class AnySpyTests: XCTestCase {
 
     func testLog_WhenCalled_ShouldPassCallToWrappedSpy() {
         // when
-        let anySpy = sut.toAnySpy()
+        let anySpy = sut.any()
         anySpy.log(level: .info, channel: .foo, message: "message")
         // then
         XCTAssertTrue(sut.logLevelChannelMessageCalled)

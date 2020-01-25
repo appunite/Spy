@@ -8,6 +8,7 @@
 
 import Foundation
 
+/// Raw output formatter which create logs in following format: date level::channel::message
 public final class RawSpyFormatter<Level: PSpyLevel, Channel: PSpyChannel>: PSpyFormatter {
     public init() {
         

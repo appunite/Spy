@@ -6,7 +6,10 @@
 //  Copyright © 2020 AppUnite Sp. z o.o. All rights reserved.
 //
 
+/// Decorator that applies emoji prefix to the level name
 public final class EmojiPrefixedSpyLevelNameDecorator: PSpyLevelDecorator {
+    public typealias Level = SpyLevel
+
     public init() {
         
     }
@@ -14,8 +17,6 @@ public final class EmojiPrefixedSpyLevelNameDecorator: PSpyLevelDecorator {
     public func decorate(level: SpyLevel, value: String) -> String {
         return level.prefix + " " + value
     }
-    
-    public typealias Level = SpyLevel
 }
 
 private extension SpyLevel {

@@ -145,19 +145,19 @@ public struct Environment {
             .add(spy: ConsoleSpy<SpyLevel, SpyChannel, DecoratedSpyFormatter>(
                 spyFormatter: DecoratedSpyFormatter(
                     levelNameBuilder: DecoratedLevelNameBuilder<SpyLevel>()
-                        .add(decorator: EmojiPrefixedSpyLevelNameDecorator().toAnyDecorator())
+                        .add(decorator: EmojiPrefixedSpyLevelNameDecorator().any())
                         ),
                 timestampProvider: CurrentTimestampProvider(),
                 configuration: SpyConfigurationBuilder()
                     .add(levels: SpyLevel.levelsFrom(loggingLevel))
                     .add(channel: .foo)
-                .build()).toAnySpy())
+                .build()).any())
             .add(spy: NetworkSpy()
                 .apply(configuration: SpyConfigurationBuilder()
                     .add(level: .severe)
                     .add(channels: [.foo, .bar])
-                    .build()).toAnySpy()
-        ).toAnySpy()
+                    .build()).any()
+        ).any()
     }()
 }
 ```
