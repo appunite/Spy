@@ -24,6 +24,12 @@ public final class SpyConfigurationBuilder<Level: PSpyLevel, Channel: PSpyChanne
         
     }
     
+    /// Creates instance of the builder with levels and channels copied from already existing configuration
+    public init(withConfiguration configuration: SpyConfiguration<Level, Channel>) {
+        self.spyOnLevels = configuration.spyOnLevels
+        self.spyOnChannels = configuration.spyOnChannels
+    }
+    
     /// Adds level to be spied on to the configuration
     public func add(level: Level) -> Self {
         spyOnLevels.insert(level)
