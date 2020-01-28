@@ -3,6 +3,7 @@
 [![Carthage compatible](https://img.shields.io/badge/Carthage-Compatible-brightgreen.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![Cocoapods](https://img.shields.io/cocoapods/v/Spy.svg?style=flat)](https://cocoapods.org/pods/Spy)
 [![Platform](https://img.shields.io/cocoapods/p/Spy.svg?style=flat)](https://cocoapods.org/pods/Spy)
+[![Platform](https://img.shields.io/badge/Platform-linux-brightgreen.svg)](#)
 [![License](https://img.shields.io/cocoapods/l/Spy.svg?style=flat)](https://cocoapods.org/pods/Spy)
 
 
@@ -12,10 +13,10 @@ Spy is a flexible, lightweight, multiplatform logging utility written in pure Sw
 
 ### Development
 Project uses following tools for development
-1. XCodeGen
-2. Cocoapods
-3. SwiftLint
-4. Sourcery
+1. [XCodeGen](https://github.com/yonaskolb/XcodeGen)
+2. [Cocoapods](https://cocoapods.org)
+3. [SwiftLint](https://github.com/realm/SwiftLint)
+4. [Sourcery](https://github.com/krzysztofzablocki/Sourcery)
 
 ## Installation
 
