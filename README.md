@@ -7,7 +7,7 @@
 [![License](https://img.shields.io/cocoapods/l/Spy.svg?style=flat)](https://cocoapods.org/pods/Spy)
 
 
-Spy is a flexible, lightweight, multiplatform logging utility written in pure Swift. It allows to log with different levels and on different channels. You can define what levels and channels actually are.
+Spy is a flexible, lightweight, multiplatform logging utility written in pure Swift. It allows to log on different levels and channels which you can define on your own depending on your needs.
 
 ## Requirements
 
@@ -49,7 +49,7 @@ github "appunite/Spy"
 
 To install Spy using **Swift Package Manager** go through following steps:
 
-1. Add following package dependency in you **Package.swift** ``` .package(url: "https://github.com/appunite/Spy.git", from: "0.2.0") ```
+1. Add following package dependency in you **Package.swift** ``` .package(url: "https://github.com/appunite/Spy.git", from: "0.3.0") ```
 2. Add following target dependency in your **Package.swift** ``` dependencies: ["Spy"]) ```
 
 For instance this is how it might look like:
@@ -64,7 +64,7 @@ let package = Package(
             targets: ["YourLibrary"])
     ],
     dependencies: [
-        .package(url: "https://github.com/appunite/Spy.git", from: "0.2.0")
+        .package(url: "https://github.com/appunite/Spy.git", from: "0.3.0")
     ],
     targets: [
         .target(
