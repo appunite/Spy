@@ -6,6 +6,7 @@
 //  Copyright © 2020 AppUnite Sp. z o.o. All rights reserved.
 //
 
+/// Decorator that returns level name
 public final class PlainLevelNameDecorator<Level: PSpyLevel>: PSpyLevelDecorator {
     public init() {
         

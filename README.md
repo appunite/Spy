@@ -3,6 +3,7 @@
 [![Carthage compatible](https://img.shields.io/badge/Carthage-Compatible-brightgreen.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![Cocoapods](https://img.shields.io/cocoapods/v/Spy.svg?style=flat)](https://cocoapods.org/pods/Spy)
 [![Platform](https://img.shields.io/cocoapods/p/Spy.svg?style=flat)](https://cocoapods.org/pods/Spy)
+[![Platform](https://img.shields.io/badge/Platform-linux-brightgreen.svg)](#)
 [![License](https://img.shields.io/cocoapods/l/Spy.svg?style=flat)](https://cocoapods.org/pods/Spy)
 
 
@@ -12,10 +13,10 @@ Spy is a flexible, lightweight, multiplatform logging utility written in pure Sw
 
 ### Development
 Project uses following tools for development
-1. XCodeGen
-2. Cocoapods
-3. SwiftLint
-4. Sourcery
+1. [XCodeGen](https://github.com/yonaskolb/XcodeGen)
+2. [Cocoapods](https://cocoapods.org)
+3. [SwiftLint](https://github.com/realm/SwiftLint)
+4. [Sourcery](https://github.com/krzysztofzablocki/Sourcery)
 
 ## Installation
 
@@ -49,7 +50,7 @@ github "appunite/Spy"
 To install Spy using **Swift Package Manager** go through following steps:
 
 1. Add following package dependency in you **Package.swift** ``` .package(url: "https://github.com/appunite/Spy.git", from: "0.2.0") ```
-2. Add following tatget dependency in your **Package.swift** ``` dependencies: ["Spy"]) ```
+2. Add following target dependency in your **Package.swift** ``` dependencies: ["Spy"]) ```
 
 For instance this is how it might look like:
 ```swift
@@ -145,19 +146,19 @@ public struct Environment {
             .add(spy: ConsoleSpy<SpyLevel, SpyChannel, DecoratedSpyFormatter>(
                 spyFormatter: DecoratedSpyFormatter(
                     levelNameBuilder: DecoratedLevelNameBuilder<SpyLevel>()
-                        .add(decorator: EmojiPrefixedSpyLevelNameDecorator().toAnyDecorator())
+                        .add(decorator: EmojiPrefixedSpyLevelNameDecorator().any())
                         ),
                 timestampProvider: CurrentTimestampProvider(),
                 configuration: SpyConfigurationBuilder()
                     .add(levels: SpyLevel.levelsFrom(loggingLevel))
                     .add(channel: .foo)
-                .build()).toAnySpy())
+                .build()).any())
             .add(spy: NetworkSpy()
                 .apply(configuration: SpyConfigurationBuilder()
                     .add(level: .severe)
                     .add(channels: [.foo, .bar])
-                    .build()).toAnySpy()
-        ).toAnySpy()
+                    .build()).any()
+        ).any()
     }()
 }
 ```

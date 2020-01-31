@@ -7,6 +7,7 @@
 //
 
 public extension String {
+    /// Returns text wrapped with color modificators
     func colored(with color: SpyColor) -> String {
         return color.modificator + self + SpyColor.default.modificator
     }

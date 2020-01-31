@@ -17,6 +17,14 @@ public final class SpyConfigurationBuilderTests: XCTestCase {
         sut = SpyConfigurationBuilder()
     }
     
+    func testInitWithConfiguration_WhenCalled_ShouldCopyThatConfigurationSettings() {
+        // given
+        let configuration = SpyConfiguration<SpyLevel, SpyChannel>(spyOnLevels: [.info, .severe], spyOnChannels: [.foo, .bar])
+        sut = SpyConfigurationBuilder(withConfiguration: configuration)
+        // then
+        XCTAssertEqual(configuration, sut.build())
+    }
+    
     func testAddLevel_WhenCalled_ShouldAddLevel() {
         let configuration = sut.add(level: .info).build()
         XCTAssertEqual([.info], configuration.spyOnLevels)

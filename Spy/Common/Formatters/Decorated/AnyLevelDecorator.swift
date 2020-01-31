@@ -6,6 +6,12 @@
 //  Copyright © 2020 AppUnite Sp. z o.o. All rights reserved.
 //
 
+/** Type-erased implementation of PSpyLevelDecorator.
+ 
+ #Example usage:
+ - AnyLevelDecorator(decorator)
+ - decorator.any()
+*/
 public final class AnyLevelDecorator<Level: PSpyLevel>: PSpyLevelDecorator {
     private let decorator: _AnyLevelDecoratorBase<Level>
     

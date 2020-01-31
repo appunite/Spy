@@ -7,6 +7,8 @@
 //
 
 // sourcery: AutoMockable
+/// Represents an entity that can be spied on
 public protocol PSpyable {
+    /// A value logged by Spy
     var spyMessage: String { get }
 }

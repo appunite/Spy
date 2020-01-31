@@ -17,7 +17,7 @@ final class CompositeSpyTests: XCTestCase {
         sut = CompositeSpy()
         createMocks()
         for mock in mocks {
-            sut.add(spy: mock.toAnySpy())
+            sut.add(spy: mock.any())
         }
     }
     

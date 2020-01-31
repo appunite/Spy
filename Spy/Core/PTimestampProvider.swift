@@ -9,6 +9,8 @@
 import Foundation
 
 // sourcery: AutoMockable
+/// Timestamp provider protocol created for testing purposes. Please see CurrentTimestampProvider for concrete implementation.
 public protocol PTimestampProvider {
+    /// Returns a timestamp since 1970
     var timestamp: TimeInterval { get }
 }

@@ -6,6 +6,13 @@
 //  Copyright © 2020 AppUnite Sp. z o.o. All rights reserved.
 //
 
+/**
+ Type-erased wrapper for PSpy.
+ 
+ Example usage:
+    - AnySpy(spy)
+    - spy.any()
+*/
 public final class AnySpy<Level: PSpyLevel, Channel: PSpyChannel>: PSpy {
     public var configuration: SpyConfiguration<Level, Channel> {
         return spy.configuration
@@ -17,16 +24,19 @@ public final class AnySpy<Level: PSpyLevel, Channel: PSpyChannel>: PSpy {
         self.spy = _AnySpyBox(spy)
     }
     
+    // Applies configuration to underlying PSpy
     @discardableResult public func apply(configuration: SpyConfiguration<Level, Channel>) -> Self {
         spy.apply(configuration: configuration)
         return self
     }
-        
+    
+    // Performs log on underlying PSpy
     @discardableResult public func log(level: Level, channel: Channel, message: PSpyable) -> Self {
         spy.log(level: level, channel: channel, message: message)
         return self
     }
     
+    // Performs forced log on underlying PSpy
     @discardableResult public func forceLog(level: Level, channel: Channel, message: PSpyable) -> Self {
         spy.forceLog(level: level, channel: channel, message: message)
         return self
