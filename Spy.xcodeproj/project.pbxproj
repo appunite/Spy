@@ -289,7 +289,7 @@
 		5B38C06DFA82FEE0B6018DFE /* Spy-Swift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Spy-Swift.h"; sourceTree = "<group>"; };
 		5FCAD0635277EC7F24086E2A /* SpyLevelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpyLevelTests.swift; sourceTree = "<group>"; };
 		67253CF8104AD95F0C363B9E /* AnyLevelDecorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyLevelDecorator.swift; sourceTree = "<group>"; };
-		6772CCD175E542765B2DCE45 /* SpyTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = SpyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6772CCD175E542765B2DCE45 /* SpyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AE5C6E9E7B4486B90AA8977 /* Pods-Spy_iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Spy_iOS.debug.xcconfig"; path = "Target Support Files/Pods-Spy_iOS/Pods-Spy_iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		6D80E77E946C234FA70A60CB /* String+Colored.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Colored.swift"; sourceTree = "<group>"; };
 		6E00BBCA9E4F5B96DBACDEAA /* CompositeSpyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositeSpyTests.swift; sourceTree = "<group>"; };
@@ -329,7 +329,7 @@
 		BF2977004EA2EB53528A4F35 /* AnySpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnySpy.swift; sourceTree = "<group>"; };
 		C07270B638EC2B530F79710A /* Pods-SpyTests_iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpyTests_iOS.release.xcconfig"; path = "Target Support Files/Pods-SpyTests_iOS/Pods-SpyTests_iOS.release.xcconfig"; sourceTree = "<group>"; };
 		C9D02D06CCB2020EE4E5E901 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
-		CA898462C74354F0C07F6D32 /* SpyTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = SpyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA898462C74354F0C07F6D32 /* SpyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCDFA0D0073DAF97F1D8A2FB /* Pods-Spy_tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Spy_tvOS.release.xcconfig"; path = "Target Support Files/Pods-Spy_tvOS/Pods-Spy_tvOS.release.xcconfig"; sourceTree = "<group>"; };
 		CF49C862AFF8344692F93D42 /* Spy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Spy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D02FCD02910E58058F44C50F /* Pods-Spy_macOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Spy_macOS.debug.xcconfig"; path = "Target Support Files/Pods-Spy_macOS/Pods-Spy_macOS.debug.xcconfig"; sourceTree = "<group>"; };
