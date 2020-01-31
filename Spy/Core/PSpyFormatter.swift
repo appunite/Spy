@@ -10,8 +10,10 @@ import Foundation
 
 // sourcery: AutoMockable
 // sourcery: AutoMockableGenerics="<Level: PSpyLevel, Channel: PSpyChannel>"
+/// Represents logger output formatter
 public protocol PSpyFormatter {
     associatedtype Level: PSpyLevel
     associatedtype Channel: PSpyChannel
+    /// Formats given log data into the output format
     func format(timestamp: TimeInterval, level: Level, channel: Channel, message: PSpyable) -> String
 }

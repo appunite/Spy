@@ -8,8 +8,9 @@
 
 import Foundation
 
+/// Raw output formatter which create logs in following format: date decorate(level)::channel::message
 public final class DecoratedSpyFormatter<Level: PSpyLevel, Channel: PSpyChannel>: PSpyFormatter {
-    let levelNameBuilder: DecoratedLevelNameBuilder<Level>
+    private let levelNameBuilder: DecoratedLevelNameBuilder<Level>
     
     public init(levelNameBuilder: DecoratedLevelNameBuilder<Level>) {
         self.levelNameBuilder = levelNameBuilder
