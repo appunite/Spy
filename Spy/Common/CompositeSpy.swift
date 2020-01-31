@@ -34,8 +34,10 @@ public class CompositeSpy<Level: PSpyLevel, Channel: PSpyChannel>: PSpy {
         return self
     }
     
-    /// Log the message data onto every underlying spy
-    /// Please note that configuration checks are performed per underlying spy
+    /**
+     Log the message data onto every underlying spy
+     Please note that configuration checks are performed per underlying spy
+    */
     @discardableResult public func log(level: Level, channel: Channel, message: PSpyable) -> Self {
         for spy in spies {
             spy.log(level: level, channel: channel, message: message)
