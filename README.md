@@ -111,6 +111,14 @@ SpyConfigurationBuilder()
 ### Spyable
 Spyable is a entity that can be logged. It has to implement *PSpyable* protocol. You can define your own spyables or use string as a basic one.
 
+### Spied
+Spied is a property wrapper that allows to log all changes and accesses to a property. Example usage:
+```swift
+class Foo {
+    @Spied(spy: Environment.spy, onLevel: .info, onChannel: .foo) var foo = "foo"
+}
+```
+
 ### Spy
 Spy is anything that implements *PSpy* protocol. There are a few spies already defined for you:
 - *ConsoleSpy* - spy that logs spyables by using print command
