@@ -12,16 +12,16 @@ public struct Spied<SpyLevel: PSpyLevel, SpyChannel: PSpyChannel, T: PSpyable> {
     private var value: T
     private var level: SpyLevel
     private var channel: SpyChannel
-    private var accessingMapper: (PSpyable) -> PSpyable
-    private var settingMapper: (PSpyable) -> PSpyable
+    private var getMapper: (PSpyable) -> PSpyable
+    private var setMapper: (PSpyable) -> PSpyable
     
     public var wrappedValue: T {
         get {
-            spy.log(level: level, channel: channel, message: accessingMapper(value))
+            spy.log(level: level, channel: channel, message: getMapper(value))
             return value
         }
         set {
-            spy.log(level: level, channel: channel, message: settingMapper(value))
+            spy.log(level: level, channel: channel, message: setMapper(value))
             value = newValue
         }
     }
@@ -31,22 +31,22 @@ public struct Spied<SpyLevel: PSpyLevel, SpyChannel: PSpyChannel, T: PSpyable> {
         self.spy = spy
         self.level = level
         self.channel = channel
-        self.accessingMapper = { spyable in "Accessing: \(spyable.spyMessage)" }
-        self.settingMapper = { spyable in "Setting: \(spyable.spyMessage)" }
+        self.getMapper = { spyable in "Get: \(spyable.spyMessage)" }
+        self.setMapper = { spyable in "Set: \(spyable.spyMessage)" }
     }
     
     public init(wrappedValue: T,
                 spy: AnySpy<SpyLevel, SpyChannel>,
                 onLevel level: SpyLevel,
                 onChannel channel: SpyChannel,
-                accessingMapper: @escaping (PSpyable) -> PSpyable,
-                settingMapper: @escaping (PSpyable) -> PSpyable) {
+                getMapper: @escaping (PSpyable) -> PSpyable,
+                setMapper: @escaping (PSpyable) -> PSpyable) {
         self.value = wrappedValue
         self.spy = spy
         self.level = level
         self.channel = channel
-        self.accessingMapper = accessingMapper
-        self.settingMapper = settingMapper
+        self.getMapper = getMapper
+        self.setMapper = setMapper
     }
 
 }
