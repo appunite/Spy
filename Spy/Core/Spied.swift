@@ -21,7 +21,7 @@ public struct Spied<SpyLevel: PSpyLevel, SpyChannel: PSpyChannel, T: PSpyable> {
             return value
         }
         set {
-            spy.log(level: level, channel: channel, message: setMapper(value))
+            spy.log(level: level, channel: channel, message: setMapper(newValue))
             value = newValue
         }
     }
