@@ -38,7 +38,7 @@ target 'Spy_iOS' do
 end
 
 target 'Spy_tvOS' do
-  platform :tvos, '10.10'
+  platform :tvos, '9.0'
   pod 'SwiftLint'
 
   # Pods for Spy
@@ -49,4 +49,11 @@ target 'Spy_tvOS' do
     pod 'Sourcery'
   end
 
+end
+
+target 'Spy_watchOS' do
+  platform :watchos, '2.0'
+  pod 'SwiftLint'
+
+  # Pods for Spy
 end
