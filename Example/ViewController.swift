@@ -10,6 +10,8 @@ import Cocoa
 import Spy
 
 class ViewController: NSViewController {
+    @Spied(spy: Environment.spy, onLevel: .info, onChannel: .foo) var text = "text"
+    
     override init(nibName nibNameOrNil: NSNib.Name?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
         Environment.spy.log(level: .info, channel: .foo, message: "initialized")
@@ -23,6 +25,7 @@ class ViewController: NSViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         Environment.spy.log(level: .info, channel: .foo, message: "ViewDidLoad")
+        text = "abc"
     }
     
     override func viewDidAppear() {

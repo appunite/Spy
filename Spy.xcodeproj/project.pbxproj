@@ -164,6 +164,13 @@
 		EC5EEF9E4C560D3FD40B53B3 /* Pods_Spy_macOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A350D233B2A216337D18A1C7 /* Pods_Spy_macOS.framework */; };
 		EC640757F0DF68788CB2E307 /* AutoMockable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB98796A3C79A11981558DD /* AutoMockable.generated.swift */; };
 		ED1D9880D0FE92EC326A5113 /* Spy-Swift.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B38C06DFA82FEE0B6018DFE /* Spy-Swift.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		F12DE9E323E82C81006D9FD4 /* SpiedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12DE9E223E82C81006D9FD4 /* SpiedTests.swift */; };
+		F12DE9E423E82C81006D9FD4 /* SpiedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12DE9E223E82C81006D9FD4 /* SpiedTests.swift */; };
+		F12DE9E523E82C81006D9FD4 /* SpiedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12DE9E223E82C81006D9FD4 /* SpiedTests.swift */; };
+		F149CDBA23E5EB1B009B2B7F /* Spied.swift in Sources */ = {isa = PBXBuildFile; fileRef = F149CDB923E5EB1B009B2B7F /* Spied.swift */; };
+		F149CDBB23E5EB1B009B2B7F /* Spied.swift in Sources */ = {isa = PBXBuildFile; fileRef = F149CDB923E5EB1B009B2B7F /* Spied.swift */; };
+		F149CDBC23E5EB1B009B2B7F /* Spied.swift in Sources */ = {isa = PBXBuildFile; fileRef = F149CDB923E5EB1B009B2B7F /* Spied.swift */; };
+		F149CDBD23E5EB1B009B2B7F /* Spied.swift in Sources */ = {isa = PBXBuildFile; fileRef = F149CDB923E5EB1B009B2B7F /* Spied.swift */; };
 		F1A0395ABBF615489F73A323 /* TestColoredSpyLevelNameDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB04DC49C011B23DF8C3389E /* TestColoredSpyLevelNameDecorator.swift */; };
 		F3D6BF8A86265329889ED41C /* PTimestampProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F066CF5C12BC433A4D0339C8 /* PTimestampProvider.swift */; };
 		F5CF317CC6C31D366651B8BF /* CurrentTimestampProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC720605A9EFD7D25659B56D /* CurrentTimestampProvider.swift */; };
@@ -339,6 +346,8 @@
 		E0C2B48A37BCD71964A07060 /* Pods_SpyTests_tvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpyTests_tvOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E363BE39B9B1741FCCF7AEFB /* Pods-SpyTests_tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpyTests_tvOS.debug.xcconfig"; path = "Target Support Files/Pods-SpyTests_tvOS/Pods-SpyTests_tvOS.debug.xcconfig"; sourceTree = "<group>"; };
 		F066CF5C12BC433A4D0339C8 /* PTimestampProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PTimestampProvider.swift; sourceTree = "<group>"; };
+		F12DE9E223E82C81006D9FD4 /* SpiedTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpiedTests.swift; sourceTree = "<group>"; };
+		F149CDB923E5EB1B009B2B7F /* Spied.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spied.swift; sourceTree = "<group>"; };
 		F2850AE714DB254464B02DDD /* Spy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Spy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F532A7B8168E805A2735D1F1 /* RawSpyFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RawSpyFormatter.swift; sourceTree = "<group>"; };
 		F89E7AB26C7CC111444C2F77 /* Spy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Spy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -509,6 +518,7 @@
 				1ACE6EFE1738957011107C20 /* SpyColor.swift */,
 				8002EB9A67043BABE9E9E729 /* SpyConfiguration.swift */,
 				B4D2E0EF783D972A969685BB /* SpyConfigurationBuilder.swift */,
+				F149CDB923E5EB1B009B2B7F /* Spied.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -592,6 +602,7 @@
 				5FCAD0635277EC7F24086E2A /* SpyLevelTests.swift */,
 				4D2A75209F0ADFD824A7846E /* SpyTests-Bridging-Header.h */,
 				DB04DC49C011B23DF8C3389E /* TestColoredSpyLevelNameDecorator.swift */,
+				F12DE9E223E82C81006D9FD4 /* SpiedTests.swift */,
 			);
 			path = SpyTests;
 			sourceTree = "<group>";
@@ -1066,6 +1077,7 @@
 				FBA3D2AAF03BCAE7EDABF818 /* AnyLevelDecorator.swift in Sources */,
 				981EEC6855191D72F55509F1 /* AnySpy.swift in Sources */,
 				79E02880AB96459CC2A22701 /* ColoredSpyLevelNameDecorator.swift in Sources */,
+				F149CDBB23E5EB1B009B2B7F /* Spied.swift in Sources */,
 				AB084605CDACB9B7E3605C7A /* CompositeSpy.swift in Sources */,
 				8FCFB3833011AE89281E023B /* ConsoleSpy.swift in Sources */,
 				F5CF317CC6C31D366651B8BF /* CurrentTimestampProvider.swift in Sources */,
@@ -1097,6 +1109,7 @@
 				38A7C74931843540C1801D5E /* AnyLevelDecorator.swift in Sources */,
 				9B89D1D5F99812C232E51E89 /* AnySpy.swift in Sources */,
 				895283B869B2AB34764BE357 /* ColoredSpyLevelNameDecorator.swift in Sources */,
+				F149CDBA23E5EB1B009B2B7F /* Spied.swift in Sources */,
 				82276828C327F059A980D12E /* CompositeSpy.swift in Sources */,
 				6C26BFB55872028C592AA5E6 /* ConsoleSpy.swift in Sources */,
 				44243EEFD83ECAA405CE47D8 /* CurrentTimestampProvider.swift in Sources */,
@@ -1128,6 +1141,7 @@
 				7C44E3AFAE84A6A99BFB4161 /* AnyLevelDecorator.swift in Sources */,
 				485CF3835F477BB652A3378E /* AnySpy.swift in Sources */,
 				C18E26A9C71439922FEE77BE /* ColoredSpyLevelNameDecorator.swift in Sources */,
+				F149CDBC23E5EB1B009B2B7F /* Spied.swift in Sources */,
 				D9709249E601964C25B4D812 /* CompositeSpy.swift in Sources */,
 				F79F86D94319BDFB8B6A1041 /* ConsoleSpy.swift in Sources */,
 				C99A87C0ED390D32FB658163 /* CurrentTimestampProvider.swift in Sources */,
@@ -1159,6 +1173,7 @@
 				AA1ADA45BC367897E26CBCCD /* AnySpyTests.swift in Sources */,
 				2262A63FF401FB90F7D45B67 /* AutoMockable.generated.swift in Sources */,
 				3C1F26ED92D01B47E2D3007E /* CompositeSpyTests.swift in Sources */,
+				F12DE9E523E82C81006D9FD4 /* SpiedTests.swift in Sources */,
 				40674627A0381137B894A72A /* ConsoleSpyTests.swift in Sources */,
 				4F315EB0E68EC114E14BA0A7 /* DecoratedSpyFormatterTests.swift in Sources */,
 				2A62E9C38A57BF5DD82A36AD /* EmojiPrefixedSpyLevelNameDecoratorTests.swift in Sources */,
@@ -1181,6 +1196,7 @@
 				743375A5138CDAF1E181FCA7 /* AnyLevelDecorator.swift in Sources */,
 				E4FB454F9DC865BCB2282CE2 /* AnySpy.swift in Sources */,
 				CBFF90ABE45499573540B414 /* ColoredSpyLevelNameDecorator.swift in Sources */,
+				F149CDBD23E5EB1B009B2B7F /* Spied.swift in Sources */,
 				42175CE58C2866720C3E3DC9 /* CompositeSpy.swift in Sources */,
 				C620CBE9088160BA86699938 /* ConsoleSpy.swift in Sources */,
 				9E5DEB16749087CB0CB5339E /* CurrentTimestampProvider.swift in Sources */,
@@ -1224,6 +1240,7 @@
 				3C05462E6DF63DE1F0997C66 /* AnySpyTests.swift in Sources */,
 				EC640757F0DF68788CB2E307 /* AutoMockable.generated.swift in Sources */,
 				CE63C4AE38E15F61A2389431 /* CompositeSpyTests.swift in Sources */,
+				F12DE9E323E82C81006D9FD4 /* SpiedTests.swift in Sources */,
 				AA95200FE6E47BAA72C42FF4 /* ConsoleSpyTests.swift in Sources */,
 				747E2C1E6608D27B31A11543 /* DecoratedSpyFormatterTests.swift in Sources */,
 				CEA58439D3FE9FBDA34AB8E6 /* EmojiPrefixedSpyLevelNameDecoratorTests.swift in Sources */,
@@ -1246,6 +1263,7 @@
 				B1550E19429EFA8A6E60ACD0 /* AnySpyTests.swift in Sources */,
 				FBF6654AE8F7E3DC0AE1FF88 /* AutoMockable.generated.swift in Sources */,
 				1FCAA0FF0B43AE7ACD7B48C6 /* CompositeSpyTests.swift in Sources */,
+				F12DE9E423E82C81006D9FD4 /* SpiedTests.swift in Sources */,
 				5BDEC228E142161495F28987 /* ConsoleSpyTests.swift in Sources */,
 				7B1724B853FD434EFB0706B8 /* DecoratedSpyFormatterTests.swift in Sources */,
 				97B5920715A544FA22458037 /* EmojiPrefixedSpyLevelNameDecoratorTests.swift in Sources */,
