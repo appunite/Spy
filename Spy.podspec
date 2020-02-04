@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name         = "Spy"
-  spec.version      = "0.3.1"
+  spec.version      = "0.4.0"
   spec.summary      = "Spy is a flexible, lightweight, multiplatform logging utility written in pure Swift."
   spec.description = <<-DESC
   Spy is a flexible, lightweight, multiplatform logging utility written in pure Swift. It allows to log on different levels and channels which you can define on your own depending on your needs.
@@ -12,7 +12,7 @@ Pod::Spec.new do |spec|
   spec.source_files  = "Spy/**/*.swift"
   spec.swift_versions = "5.1"
   spec.ios.deployment_target = '8.0'
-  spec.osx.deployment_target = '10.9'
+  spec.osx.deployment_target = '10.10'
   spec.tvos.deployment_target = '9.0'
   spec.watchos.deployment_target = '2.0'
 end
