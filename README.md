@@ -49,7 +49,7 @@ github "appunite/Spy"
 
 To install Spy using **Swift Package Manager** go through following steps:
 
-1. Add following package dependency in you **Package.swift** ``` .package(url: "https://github.com/appunite/Spy.git", from: "0.3.1") ```
+1. Add following package dependency in you **Package.swift** ``` .package(url: "https://github.com/appunite/Spy.git", from: "0.4.0") ```
 2. Add following target dependency in your **Package.swift** ``` dependencies: ["Spy"]) ```
 
 For instance this is how it might look like:
@@ -64,7 +64,7 @@ let package = Package(
             targets: ["YourLibrary"])
     ],
     dependencies: [
-        .package(url: "https://github.com/appunite/Spy.git", from: "0.3.1")
+        .package(url: "https://github.com/appunite/Spy.git", from: "0.4.0")
     ],
     targets: [
         .target(
@@ -110,6 +110,14 @@ SpyConfigurationBuilder()
 
 ### Spyable
 Spyable is a entity that can be logged. It has to implement *PSpyable* protocol. You can define your own spyables or use string as a basic one.
+
+### Spied
+Spied is a property wrapper that allows to log all changes and accesses to a property. Example usage:
+```swift
+class Foo {
+    @Spied(spy: Environment.spy, onLevel: .info, onChannel: .foo) var foo = "foo"
+}
+```
 
 ### Spy
 Spy is anything that implements *PSpy* protocol. There are a few spies already defined for you:

@@ -6,6 +6,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## Unreleased
 
+## [0.4.0]
+- Added Spied property wrapper for logging property access & changes
+
 ## [0.3.1]
 - Fixed changelog
 
