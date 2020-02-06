@@ -26,7 +26,19 @@ public struct Environment {
                     .add(level: .severe)
                     .add(channels: [.foo, .bar])
                     .build()).any()
-        ).any()
+            )
+            .add(spy: FileSpy<SpyLevel, SpyChannel, DecoratedSpyFormatter>(
+                directoryURL: logDirectoryURL,
+                spyFormatter: DecoratedSpyFormatter(
+                    levelNameBuilder: DecoratedLevelNameBuilder<SpyLevel>()
+                        .add(decorator: EmojiPrefixedSpyLevelNameDecorator().any())
+                ),
+                timestampProvider: CurrentTimestampProvider(),
+                configuration: SpyConfigurationBuilder()
+                    .add(levels: SpyLevel.levelsFrom(loggingLevel))
+                    .add(channel: .foo)
+                    .build()).any()
+            ).any()
     }()
     
     static var loggingLevel: SpyLevel {
@@ -35,5 +47,18 @@ public struct Environment {
         #else
         return .warning
         #endif
+    }
+    
+    static var logDirectoryURL: URL {
+        do {
+            return try FileManager.default.url(
+                for: .documentDirectory,
+                in: .userDomainMask,
+                appropriateFor: nil,
+                create: false
+            ).appendingPathComponent("spy_test_logs", isDirectory: true)
+        } catch {
+            fatalError()
+        }
     }
 }

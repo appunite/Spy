@@ -25,6 +25,138 @@ import AppKit
 
 
 
+final class PFileHandleMock: PFileHandle {
+
+    //MARK: - write
+
+    var writeCallsCount = 0
+    var writeCalled: Bool {
+        return writeCallsCount > 0
+    }
+    var writeReceivedData: Data?
+    var writeReceivedInvocations: [Data] = []
+    var writeClosure: ((Data) -> Void)?
+
+    func write(_ data: Data) {
+        writeCallsCount += 1
+        writeReceivedData = data
+        writeReceivedInvocations.append(data)
+        writeClosure?(data)
+    }
+
+    //MARK: - seekToEndOfFile
+
+    var seekToEndOfFileCallsCount = 0
+    var seekToEndOfFileCalled: Bool {
+        return seekToEndOfFileCallsCount > 0
+    }
+    var seekToEndOfFileReturnValue: UInt64!
+    var seekToEndOfFileClosure: (() -> UInt64)?
+
+    func seekToEndOfFile() -> UInt64 {
+        seekToEndOfFileCallsCount += 1
+        return seekToEndOfFileClosure.map({ $0() }) ?? seekToEndOfFileReturnValue
+    }
+
+    //MARK: - closeFile
+
+    var closeFileCallsCount = 0
+    var closeFileCalled: Bool {
+        return closeFileCallsCount > 0
+    }
+    var closeFileClosure: (() -> Void)?
+
+    func closeFile() {
+        closeFileCallsCount += 1
+        closeFileClosure?()
+    }
+
+}
+final class PFileHandleFactoryMock: PFileHandleFactory {
+
+    //MARK: - createFileHandle
+
+    var createFileHandleFileURLThrowableError: Error?
+    var createFileHandleFileURLCallsCount = 0
+    var createFileHandleFileURLCalled: Bool {
+        return createFileHandleFileURLCallsCount > 0
+    }
+    var createFileHandleFileURLReceivedFileURL: URL?
+    var createFileHandleFileURLReceivedInvocations: [URL] = []
+    var createFileHandleFileURLReturnValue: PFileHandle!
+    var createFileHandleFileURLClosure: ((URL) throws -> PFileHandle)?
+
+    func createFileHandle(fileURL: URL) throws -> PFileHandle {
+        if let error = createFileHandleFileURLThrowableError {
+            throw error
+        }
+        createFileHandleFileURLCallsCount += 1
+        createFileHandleFileURLReceivedFileURL = fileURL
+        createFileHandleFileURLReceivedInvocations.append(fileURL)
+        return try createFileHandleFileURLClosure.map({ try $0(fileURL) }) ?? createFileHandleFileURLReturnValue
+    }
+
+}
+final class PFileManagerMock: PFileManager {
+
+    //MARK: - fileExists
+
+    var fileExistsAtPathCallsCount = 0
+    var fileExistsAtPathCalled: Bool {
+        return fileExistsAtPathCallsCount > 0
+    }
+    var fileExistsAtPathReceivedAtPath: String?
+    var fileExistsAtPathReceivedInvocations: [String] = []
+    var fileExistsAtPathReturnValue: Bool!
+    var fileExistsAtPathClosure: ((String) -> Bool)?
+
+    func fileExists(atPath: String) -> Bool {
+        fileExistsAtPathCallsCount += 1
+        fileExistsAtPathReceivedAtPath = atPath
+        fileExistsAtPathReceivedInvocations.append(atPath)
+        return fileExistsAtPathClosure.map({ $0(atPath) }) ?? fileExistsAtPathReturnValue
+    }
+
+    //MARK: - createDirectory
+
+    var createDirectoryAtWithIntermediateDirectoriesAttributesThrowableError: Error?
+    var createDirectoryAtWithIntermediateDirectoriesAttributesCallsCount = 0
+    var createDirectoryAtWithIntermediateDirectoriesAttributesCalled: Bool {
+        return createDirectoryAtWithIntermediateDirectoriesAttributesCallsCount > 0
+    }
+    var createDirectoryAtWithIntermediateDirectoriesAttributesReceivedArguments: (at: URL, withIntermediateDirectories: Bool, attributes: [FileAttributeKey: Any]?)?
+    var createDirectoryAtWithIntermediateDirectoriesAttributesReceivedInvocations: [(at: URL, withIntermediateDirectories: Bool, attributes: [FileAttributeKey: Any]?)] = []
+    var createDirectoryAtWithIntermediateDirectoriesAttributesClosure: ((URL, Bool, [FileAttributeKey: Any]?) throws -> Void)?
+
+    func createDirectory(at: URL, withIntermediateDirectories: Bool, attributes: [FileAttributeKey: Any]?) throws {
+        if let error = createDirectoryAtWithIntermediateDirectoriesAttributesThrowableError {
+            throw error
+        }
+        createDirectoryAtWithIntermediateDirectoriesAttributesCallsCount += 1
+        createDirectoryAtWithIntermediateDirectoriesAttributesReceivedArguments = (at: at, withIntermediateDirectories: withIntermediateDirectories, attributes: attributes)
+        createDirectoryAtWithIntermediateDirectoriesAttributesReceivedInvocations.append((at: at, withIntermediateDirectories: withIntermediateDirectories, attributes: attributes))
+        try createDirectoryAtWithIntermediateDirectoriesAttributesClosure?(at, withIntermediateDirectories, attributes)
+    }
+
+    //MARK: - createFile
+
+    var createFileAtPathContentsAttributesCallsCount = 0
+    var createFileAtPathContentsAttributesCalled: Bool {
+        return createFileAtPathContentsAttributesCallsCount > 0
+    }
+    var createFileAtPathContentsAttributesReceivedArguments: (atPath: String, contents: Data?, attributes: [FileAttributeKey: Any]?)?
+    var createFileAtPathContentsAttributesReceivedInvocations: [(atPath: String, contents: Data?, attributes: [FileAttributeKey: Any]?)] = []
+    var createFileAtPathContentsAttributesReturnValue: Bool!
+    var createFileAtPathContentsAttributesClosure: ((String, Data?, [FileAttributeKey: Any]?) -> Bool)?
+
+    func createFile(atPath: String, contents: Data?, attributes: [FileAttributeKey: Any]?) -> Bool {
+        createFileAtPathContentsAttributesCallsCount += 1
+        createFileAtPathContentsAttributesReceivedArguments = (atPath: atPath, contents: contents, attributes: attributes)
+        createFileAtPathContentsAttributesReceivedInvocations.append((atPath: atPath, contents: contents, attributes: attributes))
+        return createFileAtPathContentsAttributesClosure.map({ $0(atPath, contents, attributes) }) ?? createFileAtPathContentsAttributesReturnValue
+    }
+
+}
 final class PSpyMock<Level: PSpyLevel, Channel: PSpyChannel>: PSpy {
     var configuration: SpyConfiguration<Level, Channel> {
         get { return underlyingConfiguration }
