@@ -122,6 +122,7 @@ class Foo {
 ### Spy
 Spy is anything that implements *PSpy* protocol. There are a few spies already defined for you:
 - *ConsoleSpy* - spy that logs spyables by using print command
+- *FileSpy* - spy that logs spyables into the filesystem (allows to create *monolith* or *chunked* logs)
 - *CompositeSpy* - spy that groups multiple spies into one
 - *AnySpy* - type-erased spy - every spy can be converted to AnySpy
 
