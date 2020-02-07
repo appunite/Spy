@@ -122,6 +122,7 @@ class Foo {
 ### Spy
 Spy is anything that implements *PSpy* protocol. There are a few spies already defined for you:
 - *ConsoleSpy* - spy that logs spyables by using print command
+- *FileSpy* - spy that logs spyables into the filesystem (allows to create *monolith* or *chunked* logs)
 - *CompositeSpy* - spy that groups multiple spies into one
 - *AnySpy* - type-erased spy - every spy can be converted to AnySpy
 
@@ -146,29 +147,35 @@ And example output for *DecoratedSpyFormatter* may look like:
 
 ## Example
 This is an example definition of the spies.
-It utilizes *CompositeSpy* to allow you to log onto multiple destinations (*Console* and *Network*). Please note that *ConsoleSpy* is shipped with the *Spy* and *NetworkSpy* is not.
+It utilizes *CompositeSpy* to allow you to log onto multiple destinations (*Console* and *File*).
 ```swift
-public struct Environment {
-    public static var spy: AnySpy<SpyLevel, SpyChannel> = {
-        return CompositeSpy()
-            .add(spy: ConsoleSpy<SpyLevel, SpyChannel, DecoratedSpyFormatter>(
-                spyFormatter: DecoratedSpyFormatter(
-                    levelNameBuilder: DecoratedLevelNameBuilder<SpyLevel>()
-                        .add(decorator: EmojiPrefixedSpyLevelNameDecorator().any())
-                        ),
-                timestampProvider: CurrentTimestampProvider(),
-                configuration: SpyConfigurationBuilder()
-                    .add(levels: SpyLevel.levelsFrom(loggingLevel))
-                    .add(channel: .foo)
-                .build()).any())
-            .add(spy: NetworkSpy()
-                .apply(configuration: SpyConfigurationBuilder()
-                    .add(level: .severe)
-                    .add(channels: [.foo, .bar])
-                    .build()).any()
+public static var spy: AnySpy<SpyLevel, SpyChannel> = {
+    return CompositeSpy()
+        .add(spy: ConsoleSpy<SpyLevel, SpyChannel, DecoratedSpyFormatter>(
+            spyFormatter: DecoratedSpyFormatter(
+                levelNameBuilder: DecoratedLevelNameBuilder<SpyLevel>()
+                    .add(decorator: EmojiPrefixedSpyLevelNameDecorator().any())
+                    ),
+            timestampProvider: CurrentTimestampProvider(),
+            configuration: SpyConfigurationBuilder()
+                .add(levels: SpyLevel.levelsFrom(loggingLevel))
+                .add(channel: .foo)
+            .build()).any())
+        .add(spy: FileSpy<SpyLevel, SpyChannel, DecoratedSpyFormatter>(
+            logFile: LogFile(
+                type: .chunked(maxLogsPerFile: 3),
+                directoryURL: logDirectoryURL),
+            spyFormatter: DecoratedSpyFormatter(
+                levelNameBuilder: DecoratedLevelNameBuilder<SpyLevel>()
+                    .add(decorator: EmojiPrefixedSpyLevelNameDecorator().any())
+            ),
+            timestampProvider: CurrentTimestampProvider(),
+            configuration: SpyConfigurationBuilder()
+                .add(level: .severe)
+                .add(channels: [.foo, .bar])
+                .build()).any()
         ).any()
-    }()
-}
+}()
 ```
 By using preprocessor we can define different logging levels for debug and release. That way we won't forget about switching off unimportant logs before release.
 ```swift    
