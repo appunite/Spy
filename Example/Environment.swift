@@ -31,8 +31,8 @@ public struct Environment {
                 ),
                 timestampProvider: CurrentTimestampProvider(),
                 configuration: SpyConfigurationBuilder()
-                    .add(levels: SpyLevel.levelsFrom(loggingLevel))
-                    .add(channel: .foo)
+                    .add(level: .severe)
+                    .add(channels: [.foo, .bar])
                     .build()).any()
             ).any()
     }()
