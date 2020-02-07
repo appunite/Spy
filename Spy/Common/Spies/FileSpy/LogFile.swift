@@ -6,7 +6,7 @@
 //  Copyright © 2020 AppUnite Sp. z o.o. All rights reserved.
 //
 
-public final class LogFile {
+public final class LogFile: PLogFile {
     private let type: LogFileType
     private let directoryURL: URL
     private let fileNameProvider: PFileNameProvider
@@ -69,7 +69,7 @@ public final class LogFile {
     }
     
     private func createFileIfNeeded() -> URL {
-        let fileURL = directoryURL.appendingPathComponent(fileNameProvider.fileName()).appendingPathExtension("log")
+        let fileURL = directoryURL.appendingPathComponent(fileNameProvider.fileName()).appendingPathExtension(fileNameProvider.fileExtension())
         if !fileManager.fileExists(atPath: fileURL.path) {
             fileManager.createFile(atPath: fileURL.path, contents: nil, attributes: nil)
         }

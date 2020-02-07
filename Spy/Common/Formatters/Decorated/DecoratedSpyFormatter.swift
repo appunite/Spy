@@ -19,6 +19,6 @@ public final class DecoratedSpyFormatter<Level: PSpyLevel, Channel: PSpyChannel>
     }
     
     public func format(timestamp: TimeInterval, level: Level, channel: Channel, message: PSpyable) -> String {
-        return "\(dateFormatter.string(from: Date(timeIntervalSince1970: timestamp)))::\(levelNameBuilder.build(withLevel: level))::\(channel.channelName)::\(message.spyMessage)"
+        return "\(dateFormatter.string(from: Date(timeIntervalSince1970: timestamp))) \(levelNameBuilder.build(withLevel: level))::\(channel.channelName)::\(message.spyMessage)"
     }
 }

@@ -16,10 +16,10 @@ public final class FileSpy<Level, Channel, Formatter: PSpyFormatter>: PSpy where
     public private(set) var configuration: SpyConfiguration<Level, Channel>
     private let spyFormatter: Formatter
     private let timestampProvider: PTimestampProvider
-    private let logFile: LogFile
+    private let logFile: PLogFile
 
     /// Initializes FileSpy to create logs in given directory with given formatter, timestamp provider and configuration
-    public init(logFile: LogFile,
+    public init(logFile: PLogFile,
                 spyFormatter: Formatter,
                 timestampProvider: PTimestampProvider,
                 configuration: SpyConfiguration<Level, Channel> = SpyConfiguration()) {

@@ -18,4 +18,8 @@ public class DateFileNameProvider: PFileNameProvider {
     public func fileName() -> String {
         return dateFormatter.string(from: Date(timeIntervalSince1970: timestampProvider.timestamp))
     }
+    
+    public func fileExtension() -> String {
+        return "log"
+    }
 }

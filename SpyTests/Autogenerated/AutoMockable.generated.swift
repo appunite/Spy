@@ -157,6 +157,57 @@ final class PFileManagerMock: PFileManager {
     }
 
 }
+final class PFileNameProviderMock: PFileNameProvider {
+
+    //MARK: - fileName
+
+    var fileNameCallsCount = 0
+    var fileNameCalled: Bool {
+        return fileNameCallsCount > 0
+    }
+    var fileNameReturnValue: String!
+    var fileNameClosure: (() -> String)?
+
+    func fileName() -> String {
+        fileNameCallsCount += 1
+        return fileNameClosure.map({ $0() }) ?? fileNameReturnValue
+    }
+
+    //MARK: - fileExtension
+
+    var fileExtensionCallsCount = 0
+    var fileExtensionCalled: Bool {
+        return fileExtensionCallsCount > 0
+    }
+    var fileExtensionReturnValue: String!
+    var fileExtensionClosure: (() -> String)?
+
+    func fileExtension() -> String {
+        fileExtensionCallsCount += 1
+        return fileExtensionClosure.map({ $0() }) ?? fileExtensionReturnValue
+    }
+
+}
+final class PLogFileMock: PLogFile {
+
+    //MARK: - write
+
+    var writeCallsCount = 0
+    var writeCalled: Bool {
+        return writeCallsCount > 0
+    }
+    var writeReceivedData: Data?
+    var writeReceivedInvocations: [Data] = []
+    var writeClosure: ((Data) -> Void)?
+
+    func write(_ data: Data) {
+        writeCallsCount += 1
+        writeReceivedData = data
+        writeReceivedInvocations.append(data)
+        writeClosure?(data)
+    }
+
+}
 final class PSpyMock<Level: PSpyLevel, Channel: PSpyChannel>: PSpy {
     var configuration: SpyConfiguration<Level, Channel> {
         get { return underlyingConfiguration }

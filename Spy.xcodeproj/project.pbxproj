@@ -217,6 +217,19 @@
 		F164CC9623ECE3020067C268 /* SpyDateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F164CC9423ECE3020067C268 /* SpyDateFormatter.swift */; };
 		F164CC9723ECE3020067C268 /* SpyDateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F164CC9423ECE3020067C268 /* SpyDateFormatter.swift */; };
 		F164CC9823ECE3020067C268 /* SpyDateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F164CC9423ECE3020067C268 /* SpyDateFormatter.swift */; };
+		F164CC9A23ECE8620067C268 /* DateFileNameProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F164CC9923ECE8620067C268 /* DateFileNameProviderTests.swift */; };
+		F164CC9B23ECE8620067C268 /* DateFileNameProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F164CC9923ECE8620067C268 /* DateFileNameProviderTests.swift */; };
+		F164CC9C23ECE8620067C268 /* DateFileNameProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F164CC9923ECE8620067C268 /* DateFileNameProviderTests.swift */; };
+		F164CCA223ECEAE10067C268 /* LogFileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F164CCA123ECEAE10067C268 /* LogFileTests.swift */; };
+		F164CCA323ECEAE10067C268 /* LogFileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F164CCA123ECEAE10067C268 /* LogFileTests.swift */; };
+		F164CCA423ECEAE10067C268 /* LogFileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F164CCA123ECEAE10067C268 /* LogFileTests.swift */; };
+		F164CCA623ECEE950067C268 /* FileSpyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F164CCA523ECEE950067C268 /* FileSpyTests.swift */; };
+		F164CCA723ECEE950067C268 /* FileSpyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F164CCA523ECEE950067C268 /* FileSpyTests.swift */; };
+		F164CCA823ECEE950067C268 /* FileSpyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F164CCA523ECEE950067C268 /* FileSpyTests.swift */; };
+		F164CCAA23ECEF300067C268 /* PLogFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = F164CCA923ECEF300067C268 /* PLogFile.swift */; };
+		F164CCAB23ECEF300067C268 /* PLogFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = F164CCA923ECEF300067C268 /* PLogFile.swift */; };
+		F164CCAC23ECEF300067C268 /* PLogFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = F164CCA923ECEF300067C268 /* PLogFile.swift */; };
+		F164CCAD23ECEF300067C268 /* PLogFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = F164CCA923ECEF300067C268 /* PLogFile.swift */; };
 		F1A0395ABBF615489F73A323 /* TestColoredSpyLevelNameDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB04DC49C011B23DF8C3389E /* TestColoredSpyLevelNameDecorator.swift */; };
 		F364290C14EEF7CC68ACF6E0 /* FileManager+PFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E14FE1FAFF017554EA89F55 /* FileManager+PFileManager.swift */; };
 		F3AC5B799C1B94D8207DD56A /* CompositeSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3721D08304B478CCE5C9E9 /* CompositeSpy.swift */; };
@@ -411,6 +424,10 @@
 		F164CC8A23ECDCE10067C268 /* DateFileNameProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFileNameProvider.swift; sourceTree = "<group>"; };
 		F164CC8F23ECDD7D0067C268 /* PFileNameProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PFileNameProvider.swift; sourceTree = "<group>"; };
 		F164CC9423ECE3020067C268 /* SpyDateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpyDateFormatter.swift; sourceTree = "<group>"; };
+		F164CC9923ECE8620067C268 /* DateFileNameProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFileNameProviderTests.swift; sourceTree = "<group>"; };
+		F164CCA123ECEAE10067C268 /* LogFileTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogFileTests.swift; sourceTree = "<group>"; };
+		F164CCA523ECEE950067C268 /* FileSpyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileSpyTests.swift; sourceTree = "<group>"; };
+		F164CCA923ECEF300067C268 /* PLogFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PLogFile.swift; sourceTree = "<group>"; };
 		F2850AE714DB254464B02DDD /* Spy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Spy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F532A7B8168E805A2735D1F1 /* RawSpyFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RawSpyFormatter.swift; sourceTree = "<group>"; };
 		F89E7AB26C7CC111444C2F77 /* Spy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Spy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -539,6 +556,7 @@
 				F164CC8523ECD0B00067C268 /* LogFile.swift */,
 				F164CC8A23ECDCE10067C268 /* DateFileNameProvider.swift */,
 				F164CC8F23ECDD7D0067C268 /* PFileNameProvider.swift */,
+				F164CCA923ECEF300067C268 /* PLogFile.swift */,
 			);
 			path = FileSpy;
 			sourceTree = "<group>";
@@ -574,9 +592,9 @@
 		8A85DC9A0F5D34AB1561B422 /* Spies */ = {
 			isa = PBXGroup;
 			children = (
+				F164CCAE23ECF04F0067C268 /* Console */,
 				5BB66F790BED7DEF7FA8D2A7 /* FileSpy */,
 				4B3721D08304B478CCE5C9E9 /* CompositeSpy.swift */,
-				0CEB4932676666D032930956 /* ConsoleSpy.swift */,
 			);
 			path = Spies;
 			sourceTree = "<group>";
@@ -699,6 +717,9 @@
 				5FCAD0635277EC7F24086E2A /* SpyLevelTests.swift */,
 				4D2A75209F0ADFD824A7846E /* SpyTests-Bridging-Header.h */,
 				DB04DC49C011B23DF8C3389E /* TestColoredSpyLevelNameDecorator.swift */,
+				F164CC9923ECE8620067C268 /* DateFileNameProviderTests.swift */,
+				F164CCA123ECEAE10067C268 /* LogFileTests.swift */,
+				F164CCA523ECEE950067C268 /* FileSpyTests.swift */,
 			);
 			path = SpyTests;
 			sourceTree = "<group>";
@@ -711,6 +732,14 @@
 				C9D02D06CCB2020EE4E5E901 /* Release.xcconfig */,
 			);
 			path = Configurations;
+			sourceTree = "<group>";
+		};
+		F164CCAE23ECF04F0067C268 /* Console */ = {
+			isa = PBXGroup;
+			children = (
+				0CEB4932676666D032930956 /* ConsoleSpy.swift */,
+			);
+			path = Console;
 			sourceTree = "<group>";
 		};
 		F9D3C2E2AFB761F8D3F4894E /* Decorated */ = {
@@ -1204,6 +1233,7 @@
 				65F6F9D33FE128469B6F18BB /* DecoratedSpyFormatter.swift in Sources */,
 				CE56933529D554A751313222 /* EmojiPrefixedSpyLevelDecorator.swift in Sources */,
 				CB3E2547EA0C00326ACF207C /* FileHandle+PFileHandle.swift in Sources */,
+				F164CCAB23ECEF300067C268 /* PLogFile.swift in Sources */,
 				26DD05EC1B1FE12870589ED0 /* FileHandleFactory.swift in Sources */,
 				F164CC8C23ECDCE10067C268 /* DateFileNameProvider.swift in Sources */,
 				F5133789810EDEF82DDA60CB /* FileManager+PFileManager.swift in Sources */,
@@ -1248,6 +1278,7 @@
 				41D050A2F33AC838763DCA80 /* DecoratedSpyFormatter.swift in Sources */,
 				3983E0B3AFB0323C312E3F0D /* EmojiPrefixedSpyLevelDecorator.swift in Sources */,
 				2BE9170A7A66FB15E31F33D7 /* FileHandle+PFileHandle.swift in Sources */,
+				F164CCAA23ECEF300067C268 /* PLogFile.swift in Sources */,
 				0E2E0E7B411CC7DAD77F05FD /* FileHandleFactory.swift in Sources */,
 				F164CC8B23ECDCE10067C268 /* DateFileNameProvider.swift in Sources */,
 				7082AC54F404C5B16ABA4DF3 /* FileManager+PFileManager.swift in Sources */,
@@ -1292,6 +1323,7 @@
 				55937733DF64DF3094150778 /* DecoratedSpyFormatter.swift in Sources */,
 				CAD749F4F0BD805A46752680 /* EmojiPrefixedSpyLevelDecorator.swift in Sources */,
 				781EFDA97711EE3A86A3B56D /* FileHandle+PFileHandle.swift in Sources */,
+				F164CCAC23ECEF300067C268 /* PLogFile.swift in Sources */,
 				3EFD3C6D3FF851DF2E177BA0 /* FileHandleFactory.swift in Sources */,
 				F164CC8D23ECDCE10067C268 /* DateFileNameProvider.swift in Sources */,
 				7FBFC4EEA770D2CC60164AF2 /* FileManager+PFileManager.swift in Sources */,
@@ -1336,7 +1368,10 @@
 				EF3A7793E1C0E0F5733618A2 /* SpiedTests.swift in Sources */,
 				6D342CD13E60B9F5AF3FE963 /* SpyChannel.swift in Sources */,
 				B242FB7D157350BF3C52AF5F /* SpyColorTests.swift in Sources */,
+				F164CC9C23ECE8620067C268 /* DateFileNameProviderTests.swift in Sources */,
+				F164CCA423ECEAE10067C268 /* LogFileTests.swift in Sources */,
 				6E75553A990E9E21C5A46086 /* SpyConfigurationBuilderTests.swift in Sources */,
+				F164CCA823ECEE950067C268 /* FileSpyTests.swift in Sources */,
 				3AC7008E7D17C907BE2DE52D /* SpyConfigurationTests.swift in Sources */,
 				B2421BD4F629D52D4231ADBE /* SpyLevelTests.swift in Sources */,
 				19DA90F1AA80C6743BB06779 /* SpyableStringTests.swift in Sources */,
@@ -1359,6 +1394,7 @@
 				7D89F6836B7E1992A7BC274C /* DecoratedSpyFormatter.swift in Sources */,
 				611243FF16D40C61191EAB88 /* EmojiPrefixedSpyLevelDecorator.swift in Sources */,
 				942E09BCE4BD5684AF4CA0E3 /* FileHandle+PFileHandle.swift in Sources */,
+				F164CCAD23ECEF300067C268 /* PLogFile.swift in Sources */,
 				64A30E7E686CED58DBD38F4D /* FileHandleFactory.swift in Sources */,
 				F164CC8E23ECDCE10067C268 /* DateFileNameProvider.swift in Sources */,
 				F364290C14EEF7CC68ACF6E0 /* FileManager+PFileManager.swift in Sources */,
@@ -1415,7 +1451,10 @@
 				3C0F64939563EADEBE668408 /* SpiedTests.swift in Sources */,
 				C0962F28B8B09664B1A667EE /* SpyChannel.swift in Sources */,
 				9B3FD0BB2566700EFB118DA2 /* SpyColorTests.swift in Sources */,
+				F164CC9A23ECE8620067C268 /* DateFileNameProviderTests.swift in Sources */,
+				F164CCA223ECEAE10067C268 /* LogFileTests.swift in Sources */,
 				E65242FA8DE42CEF964BFF32 /* SpyConfigurationBuilderTests.swift in Sources */,
+				F164CCA623ECEE950067C268 /* FileSpyTests.swift in Sources */,
 				06E623625255BD2C37780B70 /* SpyConfigurationTests.swift in Sources */,
 				0B1E4BECF222C9816D8B377B /* SpyLevelTests.swift in Sources */,
 				AFF10C2452455326925C8D6C /* SpyableStringTests.swift in Sources */,
@@ -1438,7 +1477,10 @@
 				3027593B0CA259AFD8E92DEB /* SpiedTests.swift in Sources */,
 				FC980D0C4924363F9FD1AEA4 /* SpyChannel.swift in Sources */,
 				39672CB6F32864A32B83F830 /* SpyColorTests.swift in Sources */,
+				F164CC9B23ECE8620067C268 /* DateFileNameProviderTests.swift in Sources */,
+				F164CCA323ECEAE10067C268 /* LogFileTests.swift in Sources */,
 				6AF426DCA1E3D154730C05A9 /* SpyConfigurationBuilderTests.swift in Sources */,
+				F164CCA723ECEE950067C268 /* FileSpyTests.swift in Sources */,
 				D05742190967E771291030A7 /* SpyConfigurationTests.swift in Sources */,
 				C9767B7941C887F87CB15FED /* SpyLevelTests.swift in Sources */,
 				8C26251481FA08C43C7F898B /* SpyableStringTests.swift in Sources */,

@@ -1,5 +1,5 @@
 //
-//  PFileNameProvider.swift
+//  PLogFile.swift
 //  Spy
 //
 //  Created by Tomasz Lewandowski on 07/02/2020.
@@ -7,7 +7,6 @@
 //
 
 // sourcery: AutoMockable
-public protocol PFileNameProvider {
-    func fileName() -> String
-    func fileExtension() -> String
+public protocol PLogFile {
+    func write(_ data: Data)
 }
