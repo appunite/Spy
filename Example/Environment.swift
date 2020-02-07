@@ -23,7 +23,7 @@ public struct Environment {
                 .build()).any())
             .add(spy: FileSpy<SpyLevel, SpyChannel, DecoratedSpyFormatter>(
                 logFile: LogFile(
-                    type: .chunked(maxLogsPerFile: 4),
+                    type: .chunked(maxLogsPerFile: 3),
                     directoryURL: logDirectoryURL),
                 spyFormatter: DecoratedSpyFormatter(
                     levelNameBuilder: DecoratedLevelNameBuilder<SpyLevel>()
@@ -52,7 +52,7 @@ public struct Environment {
                 in: .userDomainMask,
                 appropriateFor: nil,
                 create: false
-            ).appendingPathComponent("spy_test_logs", isDirectory: true)
+            ).appendingPathComponent("spy_example", isDirectory: true)
         } catch {
             fatalError()
         }
