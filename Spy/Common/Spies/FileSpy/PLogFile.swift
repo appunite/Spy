@@ -8,7 +8,9 @@
 
 import Foundation
 
+/// LogFile abstraction that grants access to current file that the logs are written to.
 // sourcery: AutoMockable
 public protocol PLogFile {
+    /// Writes data to an underlying log file
     func write(_ data: Data)
 }

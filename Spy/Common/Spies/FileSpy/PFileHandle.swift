@@ -8,9 +8,13 @@
 
 import Foundation
 
+/// Represents a handle to file
 // sourcery: AutoMockable
 public protocol PFileHandle {
+    /// Writes given data to the file at cursor position
     func write(_ data: Data)
+    /// Places writting cursor on the end of the file
     @discardableResult func seekToEndOfFile() -> UInt64
+    /// Closes a file and frees a resource
     func closeFile()
 }

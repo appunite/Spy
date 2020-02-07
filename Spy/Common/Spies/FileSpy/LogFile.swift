@@ -8,6 +8,11 @@
 
 import Foundation
 
+/** LogFile grants access to current file that the logs are written to.
+It can be one of two types:
+- monolith - single log file per session
+- chunked - multiple log files per session
+*/
 public final class LogFile: PLogFile {
     private let type: LogFileType
     private let directoryURL: URL
@@ -19,6 +24,7 @@ public final class LogFile: PLogFile {
         return createNewLogFile()
     }()
 
+    /// Initializes the LogFile
     public init(
         type: LogFileType,
         directoryURL: URL,
@@ -38,6 +44,7 @@ public final class LogFile: PLogFile {
         currentLogFile?.closeFile()
     }
     
+    /// Writes data to an underlying log file and creates new one if needed
     public func write(_ data: Data) {
         defer {
             currentLogFile.write(data)

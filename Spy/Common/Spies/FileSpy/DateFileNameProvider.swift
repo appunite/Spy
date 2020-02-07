@@ -8,10 +8,12 @@
 
 import Foundation
 
+/// Provides name and extension for log files by using current date
 public class DateFileNameProvider: PFileNameProvider {
     private let timestampProvider: PTimestampProvider
     private let dateFormatter: DateFormatter
     
+    /// Initializes name provider
     public init(timestampProvider: PTimestampProvider, dateFormatter: DateFormatter = SpyDateFormatter.default) {
         self.timestampProvider = timestampProvider
         self.dateFormatter = dateFormatter

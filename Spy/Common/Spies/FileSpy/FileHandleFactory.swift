@@ -9,6 +9,7 @@
 import Foundation
 
 public final class FileHandleFactory: PFileHandleFactory {
+    /// Creates a FIleHandleFactory
     public init() {
         
     }

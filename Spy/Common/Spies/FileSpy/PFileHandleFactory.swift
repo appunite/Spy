@@ -8,7 +8,9 @@
 
 import Foundation
 
+/// Factory for creating file handles as PFileHandle to absract out FileHandle.
 // sourcery: AutoMockable
 public protocol PFileHandleFactory {
+    /// Creates a file handle for given url
     func createFileHandle(fileURL: URL) throws -> PFileHandle
 }
