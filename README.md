@@ -163,7 +163,7 @@ public static var spy: AnySpy<SpyLevel, SpyChannel> = {
             .build()).any())
         .add(spy: FileSpy<SpyLevel, SpyChannel, DecoratedSpyFormatter>(
             logFile: LogFile(
-                type: .chunked(maxLogsPerFile: 4),
+                type: .chunked(maxLogsPerFile: 3),
                 directoryURL: logDirectoryURL),
             spyFormatter: DecoratedSpyFormatter(
                 levelNameBuilder: DecoratedLevelNameBuilder<SpyLevel>()
@@ -171,8 +171,8 @@ public static var spy: AnySpy<SpyLevel, SpyChannel> = {
             ),
             timestampProvider: CurrentTimestampProvider(),
             configuration: SpyConfigurationBuilder()
-                .add(levels: SpyLevel.levelsFrom(loggingLevel))
-                .add(channel: .foo)
+                .add(level: .severe)
+                .add(channels: [.foo, .bar])
                 .build()).any()
         ).any()
 }()
