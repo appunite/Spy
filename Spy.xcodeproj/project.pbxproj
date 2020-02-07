@@ -229,6 +229,18 @@
 		F164CCAB23ECEF300067C268 /* PLogFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = F164CCA923ECEF300067C268 /* PLogFile.swift */; };
 		F164CCAC23ECEF300067C268 /* PLogFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = F164CCA923ECEF300067C268 /* PLogFile.swift */; };
 		F164CCAD23ECEF300067C268 /* PLogFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = F164CCA923ECEF300067C268 /* PLogFile.swift */; };
+		F17EC3F723EDE7E8000F41DF /* ThreadSafeSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17EC3F623EDE7E8000F41DF /* ThreadSafeSpy.swift */; };
+		F17EC3F823EDE7E8000F41DF /* ThreadSafeSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17EC3F623EDE7E8000F41DF /* ThreadSafeSpy.swift */; };
+		F17EC3F923EDE7E8000F41DF /* ThreadSafeSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17EC3F623EDE7E8000F41DF /* ThreadSafeSpy.swift */; };
+		F17EC3FA23EDE7E8000F41DF /* ThreadSafeSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17EC3F623EDE7E8000F41DF /* ThreadSafeSpy.swift */; };
+		F17EC3FC23EDEB93000F41DF /* PLock.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17EC3FB23EDEB93000F41DF /* PLock.swift */; };
+		F17EC3FD23EDEB93000F41DF /* PLock.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17EC3FB23EDEB93000F41DF /* PLock.swift */; };
+		F17EC3FE23EDEB93000F41DF /* PLock.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17EC3FB23EDEB93000F41DF /* PLock.swift */; };
+		F17EC3FF23EDEB93000F41DF /* PLock.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17EC3FB23EDEB93000F41DF /* PLock.swift */; };
+		F17EC40123EDEC1A000F41DF /* NSLock+PLock.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17EC40023EDEC1A000F41DF /* NSLock+PLock.swift */; };
+		F17EC40223EDEC1A000F41DF /* NSLock+PLock.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17EC40023EDEC1A000F41DF /* NSLock+PLock.swift */; };
+		F17EC40323EDEC1A000F41DF /* NSLock+PLock.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17EC40023EDEC1A000F41DF /* NSLock+PLock.swift */; };
+		F17EC40423EDEC1A000F41DF /* NSLock+PLock.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17EC40023EDEC1A000F41DF /* NSLock+PLock.swift */; };
 		F1A0395ABBF615489F73A323 /* TestColoredSpyLevelNameDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB04DC49C011B23DF8C3389E /* TestColoredSpyLevelNameDecorator.swift */; };
 		F364290C14EEF7CC68ACF6E0 /* FileManager+PFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E14FE1FAFF017554EA89F55 /* FileManager+PFileManager.swift */; };
 		F3AC5B799C1B94D8207DD56A /* CompositeSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3721D08304B478CCE5C9E9 /* CompositeSpy.swift */; };
@@ -426,6 +438,9 @@
 		F164CCA123ECEAE10067C268 /* LogFileTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogFileTests.swift; sourceTree = "<group>"; };
 		F164CCA523ECEE950067C268 /* FileSpyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileSpyTests.swift; sourceTree = "<group>"; };
 		F164CCA923ECEF300067C268 /* PLogFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PLogFile.swift; sourceTree = "<group>"; };
+		F17EC3F623EDE7E8000F41DF /* ThreadSafeSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadSafeSpy.swift; sourceTree = "<group>"; };
+		F17EC3FB23EDEB93000F41DF /* PLock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PLock.swift; sourceTree = "<group>"; };
+		F17EC40023EDEC1A000F41DF /* NSLock+PLock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSLock+PLock.swift"; sourceTree = "<group>"; };
 		F2850AE714DB254464B02DDD /* Spy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Spy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F532A7B8168E805A2735D1F1 /* RawSpyFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RawSpyFormatter.swift; sourceTree = "<group>"; };
 		F89E7AB26C7CC111444C2F77 /* Spy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Spy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -590,6 +605,7 @@
 		8A85DC9A0F5D34AB1561B422 /* Spies */ = {
 			isa = PBXGroup;
 			children = (
+				F17EC3F523EDE7C7000F41DF /* ThreadSafeSpy */,
 				F164CCAE23ECF04F0067C268 /* Console */,
 				5BB66F790BED7DEF7FA8D2A7 /* FileSpy */,
 				4B3721D08304B478CCE5C9E9 /* CompositeSpy.swift */,
@@ -737,6 +753,16 @@
 				0CEB4932676666D032930956 /* ConsoleSpy.swift */,
 			);
 			path = Console;
+			sourceTree = "<group>";
+		};
+		F17EC3F523EDE7C7000F41DF /* ThreadSafeSpy */ = {
+			isa = PBXGroup;
+			children = (
+				F17EC3F623EDE7E8000F41DF /* ThreadSafeSpy.swift */,
+				F17EC3FB23EDEB93000F41DF /* PLock.swift */,
+				F17EC40023EDEC1A000F41DF /* NSLock+PLock.swift */,
+			);
+			path = ThreadSafeSpy;
 			sourceTree = "<group>";
 		};
 		F9D3C2E2AFB761F8D3F4894E /* Decorated */ = {
@@ -1226,6 +1252,7 @@
 				EE2271B2816C451658931DB0 /* ConsoleSpy.swift in Sources */,
 				F5CF317CC6C31D366651B8BF /* CurrentTimestampProvider.swift in Sources */,
 				F164CC9123ECDD7D0067C268 /* PFileNameProvider.swift in Sources */,
+				F17EC3FD23EDEB93000F41DF /* PLock.swift in Sources */,
 				3FEBC2D512FF67DBC4BEAC50 /* DecoratedLevelBuilder.swift in Sources */,
 				65F6F9D33FE128469B6F18BB /* DecoratedSpyFormatter.swift in Sources */,
 				CE56933529D554A751313222 /* EmojiPrefixedSpyLevelDecorator.swift in Sources */,
@@ -1233,6 +1260,7 @@
 				F164CCAB23ECEF300067C268 /* PLogFile.swift in Sources */,
 				26DD05EC1B1FE12870589ED0 /* FileHandleFactory.swift in Sources */,
 				F164CC8C23ECDCE10067C268 /* DateFileNameProvider.swift in Sources */,
+				F17EC3F823EDE7E8000F41DF /* ThreadSafeSpy.swift in Sources */,
 				F5133789810EDEF82DDA60CB /* FileManager+PFileManager.swift in Sources */,
 				092629F64335AD2891FDA227 /* FileSpy.swift in Sources */,
 				99E219E709D0AD5B7F6BEE10 /* PFileHandle.swift in Sources */,
@@ -1253,6 +1281,7 @@
 				62AFD6CA6344AF0F4D8F1CCD /* SpyColor.swift in Sources */,
 				F164CC8723ECD0B00067C268 /* LogFile.swift in Sources */,
 				FD176C5DC60F5BF88F166576 /* SpyConfiguration.swift in Sources */,
+				F17EC40223EDEC1A000F41DF /* NSLock+PLock.swift in Sources */,
 				19450A771F401CB4FC681C44 /* SpyConfigurationBuilder.swift in Sources */,
 				75519EF5B192426192E12476 /* SpyLevel.swift in Sources */,
 				353C2184989E65ABD598E90B /* String+Colored.swift in Sources */,
@@ -1271,6 +1300,7 @@
 				290B2C3E4938A66DDD8878F1 /* ConsoleSpy.swift in Sources */,
 				44243EEFD83ECAA405CE47D8 /* CurrentTimestampProvider.swift in Sources */,
 				F164CC9023ECDD7D0067C268 /* PFileNameProvider.swift in Sources */,
+				F17EC3FC23EDEB93000F41DF /* PLock.swift in Sources */,
 				537CC9E38E37E0DB168FFD00 /* DecoratedLevelBuilder.swift in Sources */,
 				41D050A2F33AC838763DCA80 /* DecoratedSpyFormatter.swift in Sources */,
 				3983E0B3AFB0323C312E3F0D /* EmojiPrefixedSpyLevelDecorator.swift in Sources */,
@@ -1278,6 +1308,7 @@
 				F164CCAA23ECEF300067C268 /* PLogFile.swift in Sources */,
 				0E2E0E7B411CC7DAD77F05FD /* FileHandleFactory.swift in Sources */,
 				F164CC8B23ECDCE10067C268 /* DateFileNameProvider.swift in Sources */,
+				F17EC3F723EDE7E8000F41DF /* ThreadSafeSpy.swift in Sources */,
 				7082AC54F404C5B16ABA4DF3 /* FileManager+PFileManager.swift in Sources */,
 				9CB0ACC88779167DDBFC8244 /* FileSpy.swift in Sources */,
 				482E77F6640801895897D50F /* PFileHandle.swift in Sources */,
@@ -1298,6 +1329,7 @@
 				EA4102CDEC2FA0F762242CF9 /* SpyColor.swift in Sources */,
 				F164CC8623ECD0B00067C268 /* LogFile.swift in Sources */,
 				C00E6ACCAD78C4BFEFDA7A5A /* SpyConfiguration.swift in Sources */,
+				F17EC40123EDEC1A000F41DF /* NSLock+PLock.swift in Sources */,
 				C2CDAB2DB07EA3A221F45346 /* SpyConfigurationBuilder.swift in Sources */,
 				C2E7B779989D9DBFF18A62EC /* SpyLevel.swift in Sources */,
 				D862FA68866D424B9B0521CB /* String+Colored.swift in Sources */,
@@ -1316,6 +1348,7 @@
 				ED8830C9C9F5B2E78BE2C89E /* ConsoleSpy.swift in Sources */,
 				C99A87C0ED390D32FB658163 /* CurrentTimestampProvider.swift in Sources */,
 				F164CC9223ECDD7D0067C268 /* PFileNameProvider.swift in Sources */,
+				F17EC3FE23EDEB93000F41DF /* PLock.swift in Sources */,
 				51AD4ACDFC2CCF4051A3A48A /* DecoratedLevelBuilder.swift in Sources */,
 				55937733DF64DF3094150778 /* DecoratedSpyFormatter.swift in Sources */,
 				CAD749F4F0BD805A46752680 /* EmojiPrefixedSpyLevelDecorator.swift in Sources */,
@@ -1323,6 +1356,7 @@
 				F164CCAC23ECEF300067C268 /* PLogFile.swift in Sources */,
 				3EFD3C6D3FF851DF2E177BA0 /* FileHandleFactory.swift in Sources */,
 				F164CC8D23ECDCE10067C268 /* DateFileNameProvider.swift in Sources */,
+				F17EC3F923EDE7E8000F41DF /* ThreadSafeSpy.swift in Sources */,
 				7FBFC4EEA770D2CC60164AF2 /* FileManager+PFileManager.swift in Sources */,
 				8F7F1EFD2E4E598526880130 /* FileSpy.swift in Sources */,
 				8EA8E02160BF2DBE80075DE3 /* PFileHandle.swift in Sources */,
@@ -1343,6 +1377,7 @@
 				9A1EB1FD313D3F5F095C3DB4 /* SpyColor.swift in Sources */,
 				F164CC8823ECD0B00067C268 /* LogFile.swift in Sources */,
 				DAC461D0CDA627AFAC0E33F8 /* SpyConfiguration.swift in Sources */,
+				F17EC40323EDEC1A000F41DF /* NSLock+PLock.swift in Sources */,
 				71C3E5188C68CD679A7E3BD3 /* SpyConfigurationBuilder.swift in Sources */,
 				2E177EFC11792493BE363631 /* SpyLevel.swift in Sources */,
 				60EF1293F6688808E82F14F5 /* String+Colored.swift in Sources */,
@@ -1387,6 +1422,7 @@
 				37DE98D41EE68EF7A373738E /* ConsoleSpy.swift in Sources */,
 				9E5DEB16749087CB0CB5339E /* CurrentTimestampProvider.swift in Sources */,
 				F164CC9323ECDD7D0067C268 /* PFileNameProvider.swift in Sources */,
+				F17EC3FF23EDEB93000F41DF /* PLock.swift in Sources */,
 				01DC729040BB0735C4C88EC0 /* DecoratedLevelBuilder.swift in Sources */,
 				7D89F6836B7E1992A7BC274C /* DecoratedSpyFormatter.swift in Sources */,
 				611243FF16D40C61191EAB88 /* EmojiPrefixedSpyLevelDecorator.swift in Sources */,
@@ -1394,6 +1430,7 @@
 				F164CCAD23ECEF300067C268 /* PLogFile.swift in Sources */,
 				64A30E7E686CED58DBD38F4D /* FileHandleFactory.swift in Sources */,
 				F164CC8E23ECDCE10067C268 /* DateFileNameProvider.swift in Sources */,
+				F17EC3FA23EDE7E8000F41DF /* ThreadSafeSpy.swift in Sources */,
 				F364290C14EEF7CC68ACF6E0 /* FileManager+PFileManager.swift in Sources */,
 				25EFD0CFA31D2389BAC5B4B4 /* FileSpy.swift in Sources */,
 				144730EEDF57DD0FC333ABD6 /* PFileHandle.swift in Sources */,
@@ -1414,6 +1451,7 @@
 				AEA11A8D41458C45890DD2FC /* SpyColor.swift in Sources */,
 				F164CC8923ECD0B00067C268 /* LogFile.swift in Sources */,
 				C1739893893ED4397E244D5C /* SpyConfiguration.swift in Sources */,
+				F17EC40423EDEC1A000F41DF /* NSLock+PLock.swift in Sources */,
 				A30368B5C48757EC721B8C5E /* SpyConfigurationBuilder.swift in Sources */,
 				8910FD3712967C56851A303E /* SpyLevel.swift in Sources */,
 				FF178CD83D8835E8EEDA8FC7 /* String+Colored.swift in Sources */,

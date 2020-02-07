@@ -35,4 +35,9 @@ public extension PSpy {
     func any() -> AnySpy<Level, Channel> {
         return AnySpy(self)
     }
+    
+    /// Converts PSpy to thread safe spy
+    func safe() -> ThreadSafeSpy<Self> {
+        return ThreadSafeSpy(self)
+    }
 }
