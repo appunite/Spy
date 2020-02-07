@@ -6,6 +6,8 @@
 //  Copyright © 2020 AppUnite Sp. z o.o. All rights reserved.
 //
 
+import Foundation
+
 public class DateFileNameProvider: PFileNameProvider {
     private let timestampProvider: PTimestampProvider
     private let dateFormatter: DateFormatter
