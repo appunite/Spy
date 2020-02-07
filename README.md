@@ -146,29 +146,35 @@ And example output for *DecoratedSpyFormatter* may look like:
 
 ## Example
 This is an example definition of the spies.
-It utilizes *CompositeSpy* to allow you to log onto multiple destinations (*Console* and *Network*). Please note that *ConsoleSpy* is shipped with the *Spy* and *NetworkSpy* is not.
+It utilizes *CompositeSpy* to allow you to log onto multiple destinations (*Console* and *File*).
 ```swift
-public struct Environment {
-    public static var spy: AnySpy<SpyLevel, SpyChannel> = {
-        return CompositeSpy()
-            .add(spy: ConsoleSpy<SpyLevel, SpyChannel, DecoratedSpyFormatter>(
-                spyFormatter: DecoratedSpyFormatter(
-                    levelNameBuilder: DecoratedLevelNameBuilder<SpyLevel>()
-                        .add(decorator: EmojiPrefixedSpyLevelNameDecorator().any())
-                        ),
-                timestampProvider: CurrentTimestampProvider(),
-                configuration: SpyConfigurationBuilder()
-                    .add(levels: SpyLevel.levelsFrom(loggingLevel))
-                    .add(channel: .foo)
-                .build()).any())
-            .add(spy: NetworkSpy()
-                .apply(configuration: SpyConfigurationBuilder()
-                    .add(level: .severe)
-                    .add(channels: [.foo, .bar])
-                    .build()).any()
+public static var spy: AnySpy<SpyLevel, SpyChannel> = {
+    return CompositeSpy()
+        .add(spy: ConsoleSpy<SpyLevel, SpyChannel, DecoratedSpyFormatter>(
+            spyFormatter: DecoratedSpyFormatter(
+                levelNameBuilder: DecoratedLevelNameBuilder<SpyLevel>()
+                    .add(decorator: EmojiPrefixedSpyLevelNameDecorator().any())
+                    ),
+            timestampProvider: CurrentTimestampProvider(),
+            configuration: SpyConfigurationBuilder()
+                .add(levels: SpyLevel.levelsFrom(loggingLevel))
+                .add(channel: .foo)
+            .build()).any())
+        .add(spy: FileSpy<SpyLevel, SpyChannel, DecoratedSpyFormatter>(
+            logFile: LogFile(
+                type: .chunked(maxLogsPerFile: 4),
+                directoryURL: logDirectoryURL),
+            spyFormatter: DecoratedSpyFormatter(
+                levelNameBuilder: DecoratedLevelNameBuilder<SpyLevel>()
+                    .add(decorator: EmojiPrefixedSpyLevelNameDecorator().any())
+            ),
+            timestampProvider: CurrentTimestampProvider(),
+            configuration: SpyConfigurationBuilder()
+                .add(levels: SpyLevel.levelsFrom(loggingLevel))
+                .add(channel: .foo)
+                .build()).any()
         ).any()
-    }()
-}
+}()
 ```
 By using preprocessor we can define different logging levels for debug and release. That way we won't forget about switching off unimportant logs before release.
 ```swift    

@@ -8,6 +8,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - Use DateFormatter to format log timestamp
 - Change time format to 'YYYY-MM-dd HH:mm:ss.SSSSSSZ'
 - Introduce FileSpy that allows to log into files
+- Remove NetworkSpy from example & readme
 
 ## [0.4.0]
 - Added Spied property wrapper for logging property access & changes

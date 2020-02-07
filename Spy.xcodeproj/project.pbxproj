@@ -106,7 +106,6 @@
 		7B85E5EA3D0B84FDE1D6FF01 /* CompositeSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3721D08304B478CCE5C9E9 /* CompositeSpy.swift */; };
 		7C44E3AFAE84A6A99BFB4161 /* AnyLevelDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67253CF8104AD95F0C363B9E /* AnyLevelDecorator.swift */; };
 		7D89F6836B7E1992A7BC274C /* DecoratedSpyFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5166096A04677805A734720 /* DecoratedSpyFormatter.swift */; };
-		7E6F4EFDED1399C3C21A5C27 /* NetworkSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3C0B931D6E8C457DB3AC0E /* NetworkSpy.swift */; };
 		7F500EE1B575C69C06BEE07C /* Spy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2850AE714DB254464B02DDD /* Spy.framework */; };
 		7F7AC611D87F5A755F2FD60D /* PSpyLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA4577B8A05FCCE23974CA3 /* PSpyLevel.swift */; };
 		7FBFC4EEA770D2CC60164AF2 /* FileManager+PFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E14FE1FAFF017554EA89F55 /* FileManager+PFileManager.swift */; };
@@ -337,7 +336,6 @@
 		0CAA1AD1672C247F882F0E2A /* PFileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PFileManager.swift; sourceTree = "<group>"; };
 		0CEB4932676666D032930956 /* ConsoleSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsoleSpy.swift; sourceTree = "<group>"; };
 		0E6F2544402457A3D984DAE9 /* SpyChannel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpyChannel.swift; sourceTree = "<group>"; };
-		0F3C0B931D6E8C457DB3AC0E /* NetworkSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkSpy.swift; sourceTree = "<group>"; };
 		118C16754FC38E5A07685006 /* SpyLevel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpyLevel.swift; sourceTree = "<group>"; };
 		17C12F479779F885FFD5947B /* PSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSpy.swift; sourceTree = "<group>"; };
 		1ACE6EFE1738957011107C20 /* SpyColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpyColor.swift; sourceTree = "<group>"; };
@@ -681,7 +679,6 @@
 				5880FCBC4A68A8F18CAA1D99 /* Example.entitlements */,
 				212C0F1ADFE8F1F7DE292679 /* Info.plist */,
 				B41911F9890DE920ABEED9EF /* Main.storyboard */,
-				0F3C0B931D6E8C457DB3AC0E /* NetworkSpy.swift */,
 				0E6F2544402457A3D984DAE9 /* SpyChannel.swift */,
 				58A84B16AF7E4301E34B9862 /* ViewController.swift */,
 			);
@@ -1430,7 +1427,6 @@
 			files = (
 				0BC32ADA821AA7BBA4C4E632 /* AppDelegate.swift in Sources */,
 				AD8946BE1EB5312AE328E1E3 /* Environment.swift in Sources */,
-				7E6F4EFDED1399C3C21A5C27 /* NetworkSpy.swift in Sources */,
 				DCC3E89A37F3AE94C22BA575 /* SpyChannel.swift in Sources */,
 				B68D37D441F7931F9805F067 /* ViewController.swift in Sources */,
 			);

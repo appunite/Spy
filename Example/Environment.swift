@@ -21,12 +21,6 @@ public struct Environment {
                     .add(levels: SpyLevel.levelsFrom(loggingLevel))
                     .add(channel: .foo)
                 .build()).any())
-            .add(spy: NetworkSpy()
-                .apply(configuration: SpyConfigurationBuilder()
-                    .add(level: .severe)
-                    .add(channels: [.foo, .bar])
-                    .build()).any()
-            )
             .add(spy: FileSpy<SpyLevel, SpyChannel, DecoratedSpyFormatter>(
                 logFile: LogFile(
                     type: .chunked(maxLogsPerFile: 4),
