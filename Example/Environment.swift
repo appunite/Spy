@@ -28,7 +28,9 @@ public struct Environment {
                     .build()).any()
             )
             .add(spy: FileSpy<SpyLevel, SpyChannel, DecoratedSpyFormatter>(
-                directoryURL: logDirectoryURL,
+                logFile: LogFile(
+                    type: .chunked(maxLogsPerFile: 4),
+                    directoryURL: logDirectoryURL),
                 spyFormatter: DecoratedSpyFormatter(
                     levelNameBuilder: DecoratedLevelNameBuilder<SpyLevel>()
                         .add(decorator: EmojiPrefixedSpyLevelNameDecorator().any())

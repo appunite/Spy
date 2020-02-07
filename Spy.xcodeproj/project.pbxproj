@@ -197,6 +197,26 @@
 		ED8830C9C9F5B2E78BE2C89E /* ConsoleSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CEB4932676666D032930956 /* ConsoleSpy.swift */; };
 		EE2271B2816C451658931DB0 /* ConsoleSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CEB4932676666D032930956 /* ConsoleSpy.swift */; };
 		EF3A7793E1C0E0F5733618A2 /* SpiedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0D945A0C721DC409CDF027 /* SpiedTests.swift */; };
+		F164CC8123ECD0600067C268 /* LogFileType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F164CC8023ECD0600067C268 /* LogFileType.swift */; };
+		F164CC8223ECD0600067C268 /* LogFileType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F164CC8023ECD0600067C268 /* LogFileType.swift */; };
+		F164CC8323ECD0600067C268 /* LogFileType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F164CC8023ECD0600067C268 /* LogFileType.swift */; };
+		F164CC8423ECD0600067C268 /* LogFileType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F164CC8023ECD0600067C268 /* LogFileType.swift */; };
+		F164CC8623ECD0B00067C268 /* LogFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = F164CC8523ECD0B00067C268 /* LogFile.swift */; };
+		F164CC8723ECD0B00067C268 /* LogFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = F164CC8523ECD0B00067C268 /* LogFile.swift */; };
+		F164CC8823ECD0B00067C268 /* LogFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = F164CC8523ECD0B00067C268 /* LogFile.swift */; };
+		F164CC8923ECD0B00067C268 /* LogFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = F164CC8523ECD0B00067C268 /* LogFile.swift */; };
+		F164CC8B23ECDCE10067C268 /* DateFileNameProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F164CC8A23ECDCE10067C268 /* DateFileNameProvider.swift */; };
+		F164CC8C23ECDCE10067C268 /* DateFileNameProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F164CC8A23ECDCE10067C268 /* DateFileNameProvider.swift */; };
+		F164CC8D23ECDCE10067C268 /* DateFileNameProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F164CC8A23ECDCE10067C268 /* DateFileNameProvider.swift */; };
+		F164CC8E23ECDCE10067C268 /* DateFileNameProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F164CC8A23ECDCE10067C268 /* DateFileNameProvider.swift */; };
+		F164CC9023ECDD7D0067C268 /* PFileNameProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F164CC8F23ECDD7D0067C268 /* PFileNameProvider.swift */; };
+		F164CC9123ECDD7D0067C268 /* PFileNameProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F164CC8F23ECDD7D0067C268 /* PFileNameProvider.swift */; };
+		F164CC9223ECDD7D0067C268 /* PFileNameProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F164CC8F23ECDD7D0067C268 /* PFileNameProvider.swift */; };
+		F164CC9323ECDD7D0067C268 /* PFileNameProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F164CC8F23ECDD7D0067C268 /* PFileNameProvider.swift */; };
+		F164CC9523ECE3020067C268 /* SpyDateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F164CC9423ECE3020067C268 /* SpyDateFormatter.swift */; };
+		F164CC9623ECE3020067C268 /* SpyDateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F164CC9423ECE3020067C268 /* SpyDateFormatter.swift */; };
+		F164CC9723ECE3020067C268 /* SpyDateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F164CC9423ECE3020067C268 /* SpyDateFormatter.swift */; };
+		F164CC9823ECE3020067C268 /* SpyDateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F164CC9423ECE3020067C268 /* SpyDateFormatter.swift */; };
 		F1A0395ABBF615489F73A323 /* TestColoredSpyLevelNameDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB04DC49C011B23DF8C3389E /* TestColoredSpyLevelNameDecorator.swift */; };
 		F364290C14EEF7CC68ACF6E0 /* FileManager+PFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E14FE1FAFF017554EA89F55 /* FileManager+PFileManager.swift */; };
 		F3AC5B799C1B94D8207DD56A /* CompositeSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3721D08304B478CCE5C9E9 /* CompositeSpy.swift */; };
@@ -386,6 +406,11 @@
 		DB04DC49C011B23DF8C3389E /* TestColoredSpyLevelNameDecorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestColoredSpyLevelNameDecorator.swift; sourceTree = "<group>"; };
 		DF0D945A0C721DC409CDF027 /* SpiedTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpiedTests.swift; sourceTree = "<group>"; };
 		F066CF5C12BC433A4D0339C8 /* PTimestampProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PTimestampProvider.swift; sourceTree = "<group>"; };
+		F164CC8023ECD0600067C268 /* LogFileType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogFileType.swift; sourceTree = "<group>"; };
+		F164CC8523ECD0B00067C268 /* LogFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogFile.swift; sourceTree = "<group>"; };
+		F164CC8A23ECDCE10067C268 /* DateFileNameProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFileNameProvider.swift; sourceTree = "<group>"; };
+		F164CC8F23ECDD7D0067C268 /* PFileNameProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PFileNameProvider.swift; sourceTree = "<group>"; };
+		F164CC9423ECE3020067C268 /* SpyDateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpyDateFormatter.swift; sourceTree = "<group>"; };
 		F2850AE714DB254464B02DDD /* Spy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Spy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F532A7B8168E805A2735D1F1 /* RawSpyFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RawSpyFormatter.swift; sourceTree = "<group>"; };
 		F89E7AB26C7CC111444C2F77 /* Spy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Spy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -510,6 +535,10 @@
 				9E92CB99B32E931D67A6E1DB /* PFileHandle.swift */,
 				0B9913ADBBC907DD53F6125D /* PFileHandleFactory.swift */,
 				0CAA1AD1672C247F882F0E2A /* PFileManager.swift */,
+				F164CC8023ECD0600067C268 /* LogFileType.swift */,
+				F164CC8523ECD0B00067C268 /* LogFile.swift */,
+				F164CC8A23ECDCE10067C268 /* DateFileNameProvider.swift */,
+				F164CC8F23ECDD7D0067C268 /* PFileNameProvider.swift */,
 			);
 			path = FileSpy;
 			sourceTree = "<group>";
@@ -588,6 +617,7 @@
 			children = (
 				F9D3C2E2AFB761F8D3F4894E /* Decorated */,
 				906E45A426D867A4FCADF3CE /* Raw */,
+				F164CC9423ECE3020067C268 /* SpyDateFormatter.swift */,
 			);
 			path = Formatters;
 			sourceTree = "<group>";
@@ -1169,14 +1199,17 @@
 				D9F6A7721E854989F19E4AB2 /* CompositeSpy.swift in Sources */,
 				EE2271B2816C451658931DB0 /* ConsoleSpy.swift in Sources */,
 				F5CF317CC6C31D366651B8BF /* CurrentTimestampProvider.swift in Sources */,
+				F164CC9123ECDD7D0067C268 /* PFileNameProvider.swift in Sources */,
 				3FEBC2D512FF67DBC4BEAC50 /* DecoratedLevelBuilder.swift in Sources */,
 				65F6F9D33FE128469B6F18BB /* DecoratedSpyFormatter.swift in Sources */,
 				CE56933529D554A751313222 /* EmojiPrefixedSpyLevelDecorator.swift in Sources */,
 				CB3E2547EA0C00326ACF207C /* FileHandle+PFileHandle.swift in Sources */,
 				26DD05EC1B1FE12870589ED0 /* FileHandleFactory.swift in Sources */,
+				F164CC8C23ECDCE10067C268 /* DateFileNameProvider.swift in Sources */,
 				F5133789810EDEF82DDA60CB /* FileManager+PFileManager.swift in Sources */,
 				092629F64335AD2891FDA227 /* FileSpy.swift in Sources */,
 				99E219E709D0AD5B7F6BEE10 /* PFileHandle.swift in Sources */,
+				F164CC8223ECD0600067C268 /* LogFileType.swift in Sources */,
 				827BB9C02FFD8BB7E358B2C3 /* PFileHandleFactory.swift in Sources */,
 				5DAD76481839FCB075FA86DD /* PFileManager.swift in Sources */,
 				886A7BD2543444F89389CC16 /* PSpy.swift in Sources */,
@@ -1185,11 +1218,13 @@
 				4F128AC60B1145DE3F616BC0 /* PSpyLevel.swift in Sources */,
 				EAF3C9B3FF05CA164F540D0C /* PSpyLevelDecorator.swift in Sources */,
 				6632657E0F9024B622C384F2 /* PSpyable.swift in Sources */,
+				F164CC9623ECE3020067C268 /* SpyDateFormatter.swift in Sources */,
 				B8B4D55060E2DA4A225E54EB /* PTimestampProvider.swift in Sources */,
 				D4663683690C94988F8D93DE /* PlainLevelNameDecorator.swift in Sources */,
 				D004DDB2F3FD98F552B769C2 /* RawSpyFormatter.swift in Sources */,
 				EA88018E4F9BA9D58270ED71 /* Spied.swift in Sources */,
 				62AFD6CA6344AF0F4D8F1CCD /* SpyColor.swift in Sources */,
+				F164CC8723ECD0B00067C268 /* LogFile.swift in Sources */,
 				FD176C5DC60F5BF88F166576 /* SpyConfiguration.swift in Sources */,
 				19450A771F401CB4FC681C44 /* SpyConfigurationBuilder.swift in Sources */,
 				75519EF5B192426192E12476 /* SpyLevel.swift in Sources */,
@@ -1208,14 +1243,17 @@
 				590450D7D694B7E1B0EF3C04 /* CompositeSpy.swift in Sources */,
 				290B2C3E4938A66DDD8878F1 /* ConsoleSpy.swift in Sources */,
 				44243EEFD83ECAA405CE47D8 /* CurrentTimestampProvider.swift in Sources */,
+				F164CC9023ECDD7D0067C268 /* PFileNameProvider.swift in Sources */,
 				537CC9E38E37E0DB168FFD00 /* DecoratedLevelBuilder.swift in Sources */,
 				41D050A2F33AC838763DCA80 /* DecoratedSpyFormatter.swift in Sources */,
 				3983E0B3AFB0323C312E3F0D /* EmojiPrefixedSpyLevelDecorator.swift in Sources */,
 				2BE9170A7A66FB15E31F33D7 /* FileHandle+PFileHandle.swift in Sources */,
 				0E2E0E7B411CC7DAD77F05FD /* FileHandleFactory.swift in Sources */,
+				F164CC8B23ECDCE10067C268 /* DateFileNameProvider.swift in Sources */,
 				7082AC54F404C5B16ABA4DF3 /* FileManager+PFileManager.swift in Sources */,
 				9CB0ACC88779167DDBFC8244 /* FileSpy.swift in Sources */,
 				482E77F6640801895897D50F /* PFileHandle.swift in Sources */,
+				F164CC8123ECD0600067C268 /* LogFileType.swift in Sources */,
 				8B13AD0E2500267C9AD71B75 /* PFileHandleFactory.swift in Sources */,
 				AFE51C393388FE43EB281CC9 /* PFileManager.swift in Sources */,
 				1D6B29087959EE09A0E38A1E /* PSpy.swift in Sources */,
@@ -1224,11 +1262,13 @@
 				83C426EEA71209EFF73B8C33 /* PSpyLevel.swift in Sources */,
 				FA1C94B0513C52E102F2B2EE /* PSpyLevelDecorator.swift in Sources */,
 				D60C6F7CF9D93E8FB7885B95 /* PSpyable.swift in Sources */,
+				F164CC9523ECE3020067C268 /* SpyDateFormatter.swift in Sources */,
 				E0A8B1F68A1D77F737BDFC61 /* PTimestampProvider.swift in Sources */,
 				60BAA8F401079244275AF8A2 /* PlainLevelNameDecorator.swift in Sources */,
 				49FA3E13ED495EFB67F09577 /* RawSpyFormatter.swift in Sources */,
 				27318BCDBBCFBEA006A752A3 /* Spied.swift in Sources */,
 				EA4102CDEC2FA0F762242CF9 /* SpyColor.swift in Sources */,
+				F164CC8623ECD0B00067C268 /* LogFile.swift in Sources */,
 				C00E6ACCAD78C4BFEFDA7A5A /* SpyConfiguration.swift in Sources */,
 				C2CDAB2DB07EA3A221F45346 /* SpyConfigurationBuilder.swift in Sources */,
 				C2E7B779989D9DBFF18A62EC /* SpyLevel.swift in Sources */,
@@ -1247,14 +1287,17 @@
 				F3AC5B799C1B94D8207DD56A /* CompositeSpy.swift in Sources */,
 				ED8830C9C9F5B2E78BE2C89E /* ConsoleSpy.swift in Sources */,
 				C99A87C0ED390D32FB658163 /* CurrentTimestampProvider.swift in Sources */,
+				F164CC9223ECDD7D0067C268 /* PFileNameProvider.swift in Sources */,
 				51AD4ACDFC2CCF4051A3A48A /* DecoratedLevelBuilder.swift in Sources */,
 				55937733DF64DF3094150778 /* DecoratedSpyFormatter.swift in Sources */,
 				CAD749F4F0BD805A46752680 /* EmojiPrefixedSpyLevelDecorator.swift in Sources */,
 				781EFDA97711EE3A86A3B56D /* FileHandle+PFileHandle.swift in Sources */,
 				3EFD3C6D3FF851DF2E177BA0 /* FileHandleFactory.swift in Sources */,
+				F164CC8D23ECDCE10067C268 /* DateFileNameProvider.swift in Sources */,
 				7FBFC4EEA770D2CC60164AF2 /* FileManager+PFileManager.swift in Sources */,
 				8F7F1EFD2E4E598526880130 /* FileSpy.swift in Sources */,
 				8EA8E02160BF2DBE80075DE3 /* PFileHandle.swift in Sources */,
+				F164CC8323ECD0600067C268 /* LogFileType.swift in Sources */,
 				554488C8A22DB492F06C24CC /* PFileHandleFactory.swift in Sources */,
 				35DC689824AD25DFA2B1C17F /* PFileManager.swift in Sources */,
 				21B02C3179425E712098BB8F /* PSpy.swift in Sources */,
@@ -1263,11 +1306,13 @@
 				0E8A240FB1BD894915DB91FC /* PSpyLevel.swift in Sources */,
 				995190404832857DC9455482 /* PSpyLevelDecorator.swift in Sources */,
 				5ED5122DDB798AC53EE3C8B3 /* PSpyable.swift in Sources */,
+				F164CC9723ECE3020067C268 /* SpyDateFormatter.swift in Sources */,
 				F3D6BF8A86265329889ED41C /* PTimestampProvider.swift in Sources */,
 				20DECD204218C72EB0004F11 /* PlainLevelNameDecorator.swift in Sources */,
 				D63CBC505EDF849AD0751B6E /* RawSpyFormatter.swift in Sources */,
 				8C88E8770908130451C6E60F /* Spied.swift in Sources */,
 				9A1EB1FD313D3F5F095C3DB4 /* SpyColor.swift in Sources */,
+				F164CC8823ECD0B00067C268 /* LogFile.swift in Sources */,
 				DAC461D0CDA627AFAC0E33F8 /* SpyConfiguration.swift in Sources */,
 				71C3E5188C68CD679A7E3BD3 /* SpyConfigurationBuilder.swift in Sources */,
 				2E177EFC11792493BE363631 /* SpyLevel.swift in Sources */,
@@ -1309,14 +1354,17 @@
 				7B85E5EA3D0B84FDE1D6FF01 /* CompositeSpy.swift in Sources */,
 				37DE98D41EE68EF7A373738E /* ConsoleSpy.swift in Sources */,
 				9E5DEB16749087CB0CB5339E /* CurrentTimestampProvider.swift in Sources */,
+				F164CC9323ECDD7D0067C268 /* PFileNameProvider.swift in Sources */,
 				01DC729040BB0735C4C88EC0 /* DecoratedLevelBuilder.swift in Sources */,
 				7D89F6836B7E1992A7BC274C /* DecoratedSpyFormatter.swift in Sources */,
 				611243FF16D40C61191EAB88 /* EmojiPrefixedSpyLevelDecorator.swift in Sources */,
 				942E09BCE4BD5684AF4CA0E3 /* FileHandle+PFileHandle.swift in Sources */,
 				64A30E7E686CED58DBD38F4D /* FileHandleFactory.swift in Sources */,
+				F164CC8E23ECDCE10067C268 /* DateFileNameProvider.swift in Sources */,
 				F364290C14EEF7CC68ACF6E0 /* FileManager+PFileManager.swift in Sources */,
 				25EFD0CFA31D2389BAC5B4B4 /* FileSpy.swift in Sources */,
 				144730EEDF57DD0FC333ABD6 /* PFileHandle.swift in Sources */,
+				F164CC8423ECD0600067C268 /* LogFileType.swift in Sources */,
 				FEAB9234253255DE36D50125 /* PFileHandleFactory.swift in Sources */,
 				3E0B406758C6DE22A108903B /* PFileManager.swift in Sources */,
 				3870206ABDFC01485BBF19AC /* PSpy.swift in Sources */,
@@ -1325,11 +1373,13 @@
 				7F7AC611D87F5A755F2FD60D /* PSpyLevel.swift in Sources */,
 				AE5CCB62E1C4924EB767F3C4 /* PSpyLevelDecorator.swift in Sources */,
 				54843A4085FFD5237E5E6E59 /* PSpyable.swift in Sources */,
+				F164CC9823ECE3020067C268 /* SpyDateFormatter.swift in Sources */,
 				73BF06596792ACCE96D05F8C /* PTimestampProvider.swift in Sources */,
 				66F5EFA3C14E939E4E3C8E8A /* PlainLevelNameDecorator.swift in Sources */,
 				E853FF141B439C68A77C24BD /* RawSpyFormatter.swift in Sources */,
 				39529FD52B2201DDB43A09DC /* Spied.swift in Sources */,
 				AEA11A8D41458C45890DD2FC /* SpyColor.swift in Sources */,
+				F164CC8923ECD0B00067C268 /* LogFile.swift in Sources */,
 				C1739893893ED4397E244D5C /* SpyConfiguration.swift in Sources */,
 				A30368B5C48757EC721B8C5E /* SpyConfigurationBuilder.swift in Sources */,
 				8910FD3712967C56851A303E /* SpyLevel.swift in Sources */,
