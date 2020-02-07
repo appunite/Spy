@@ -38,6 +38,6 @@ public extension PSpy {
     
     /// Converts PSpy to thread safe spy
     func safe() -> ThreadSafeSpy<Self> {
-        return ThreadSafeSpy(self)
+        return ThreadSafeSpy(spy: self)
     }
 }

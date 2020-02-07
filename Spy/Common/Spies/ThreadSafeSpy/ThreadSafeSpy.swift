@@ -18,7 +18,7 @@ public final class ThreadSafeSpy<Spy: PSpy>: PSpy {
     private let lock: PLock
     private let underlyingSpy: Spy
     
-    init(_ underlyingSpy: Spy, lock: PLock = NSLock()) {
+    init(spy underlyingSpy: Spy, lock: PLock = NSLock()) {
         self.underlyingSpy = underlyingSpy
         self.lock = lock
     }
@@ -27,14 +27,21 @@ public final class ThreadSafeSpy<Spy: PSpy>: PSpy {
         return underlyingSpy.configuration
     }
     
-    public func apply(configuration: SpyConfiguration<Level, Channel>) -> Self {
+    @discardableResult public func log(level: Level, channel: Channel, message: PSpyable) -> Self {
+        lock.lock()
+        underlyingSpy.log(level: level, channel: channel, message: message)
+        lock.unlock()
+        return self
+    }
+    
+    @discardableResult public func apply(configuration: SpyConfiguration<Level, Channel>) -> Self {
         lock.lock()
         underlyingSpy.apply(configuration: configuration)
         lock.unlock()
         return self
     }
     
-    public func forceLog(level: Level, channel: Channel, message: PSpyable) -> Self {
+    @discardableResult public func forceLog(level: Level, channel: Channel, message: PSpyable) -> Self {
         lock.lock()
         underlyingSpy.forceLog(level: level, channel: channel, message: message)
         lock.unlock()

@@ -188,6 +188,35 @@ final class PFileNameProviderMock: PFileNameProvider {
     }
 
 }
+final class PLockMock: PLock {
+
+    //MARK: - lock
+
+    var lockCallsCount = 0
+    var lockCalled: Bool {
+        return lockCallsCount > 0
+    }
+    var lockClosure: (() -> Void)?
+
+    func lock() {
+        lockCallsCount += 1
+        lockClosure?()
+    }
+
+    //MARK: - unlock
+
+    var unlockCallsCount = 0
+    var unlockCalled: Bool {
+        return unlockCallsCount > 0
+    }
+    var unlockClosure: (() -> Void)?
+
+    func unlock() {
+        unlockCallsCount += 1
+        unlockClosure?()
+    }
+
+}
 final class PLogFileMock: PLogFile {
 
     //MARK: - write
