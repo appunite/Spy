@@ -5,6 +5,9 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## Unreleased
+- Use DateFormatter to format log timestamp
+- Change time format to 'YYYY-MM-dd HH:mm:ss.SSSSSSZ'
+- Introduce FileSpy that allows to log into files
 
 ## [0.4.0]
 - Added Spied property wrapper for logging property access & changes
