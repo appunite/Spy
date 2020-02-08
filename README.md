@@ -173,7 +173,7 @@ public static var spy: AnySpy<SpyLevel, SpyChannel> = {
             configuration: SpyConfigurationBuilder()
                 .add(level: .severe)
                 .add(channels: [.foo, .bar])
-                .build()).any()
+                .build()).safe().any()
         ).any()
 }()
 ```

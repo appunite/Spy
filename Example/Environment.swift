@@ -33,7 +33,7 @@ public struct Environment {
                 configuration: SpyConfigurationBuilder()
                     .add(level: .severe)
                     .add(channels: [.foo, .bar])
-                    .build()).any()
+                    .build()).safe().any()
             ).any()
     }()
     

@@ -12,18 +12,23 @@
 		067547D57836983449BD37FF /* PSpyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E7BF75BAB70741E76324A4D /* PSpyTests.swift */; };
 		068C3F82F2F30FCE9337F719 /* PSpyChannel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7ECD0B3052BFA8AC94D83E2 /* PSpyChannel.swift */; };
 		06E623625255BD2C37780B70 /* SpyConfigurationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A225A817646067EBD729D1B /* SpyConfigurationTests.swift */; };
-		07929E12000E9861466961F5 /* Pods_Spy_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E6494A43623BC73C9B9105D /* Pods_Spy_iOS.framework */; };
+		085DE103B7FDF5AA9B271F9F /* DateFileNameProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCA6D8DE7C927F23D89E195 /* DateFileNameProvider.swift */; };
 		092629F64335AD2891FDA227 /* FileSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 692954C115330B3101F59907 /* FileSpy.swift */; };
 		0960B5AD3CD9DC8D3F164F8F /* Spy-Swift.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B38C06DFA82FEE0B6018DFE /* Spy-Swift.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		0AC667038AC75191D02E9C1C /* SpyDateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB7600052166F665D04538E /* SpyDateFormatter.swift */; };
 		0B1E4BECF222C9816D8B377B /* SpyLevelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FCAD0635277EC7F24086E2A /* SpyLevelTests.swift */; };
 		0BC32ADA821AA7BBA4C4E632 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A3D91C2EC2DD101CF21ACEE /* AppDelegate.swift */; };
+		0C2D07060362C042415301D6 /* PLogFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54467CDEAB70160A3F6A122 /* PLogFile.swift */; };
 		0D3A37DE86601FE16EF5D1D8 /* TestColoredSpyLevelNameDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB04DC49C011B23DF8C3389E /* TestColoredSpyLevelNameDecorator.swift */; };
 		0E2E0E7B411CC7DAD77F05FD /* FileHandleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B18D63B0434DD624675FF7 /* FileHandleFactory.swift */; };
 		0E8A240FB1BD894915DB91FC /* PSpyLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA4577B8A05FCCE23974CA3 /* PSpyLevel.swift */; };
+		125709E3EC9E31FBED2FC674 /* DateFileNameProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85D822D1CDB87F87023DE6C2 /* DateFileNameProviderTests.swift */; };
+		12B9126E60B1ED0F0F1CE643 /* ThreadSafeSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7710BBD98F325A361F57A3 /* ThreadSafeSpy.swift */; };
 		144730EEDF57DD0FC333ABD6 /* PFileHandle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E92CB99B32E931D67A6E1DB /* PFileHandle.swift */; };
 		1509C1F557AB15F513F207C5 /* String+PSpyable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEC108A3832B5E814A0FD72 /* String+PSpyable.swift */; };
 		173FE8DE0B940BD6F0376872 /* String+PSpyable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEC108A3832B5E814A0FD72 /* String+PSpyable.swift */; };
 		17C29D64A8EDA4C3E0FEE686 /* Spy.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F2850AE714DB254464B02DDD /* Spy.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1902689495F7B82D9AD44FFE /* Pods_Spy_tvOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E22F366F1637F87613612810 /* Pods_Spy_tvOS.framework */; };
 		19450A771F401CB4FC681C44 /* SpyConfigurationBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D2E0EF783D972A969685BB /* SpyConfigurationBuilder.swift */; };
 		19DA90F1AA80C6743BB06779 /* SpyableStringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B712E56E1BBE344098456A06 /* SpyableStringTests.swift */; };
 		1D6B29087959EE09A0E38A1E /* PSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C12F479779F885FFD5947B /* PSpy.swift */; };
@@ -32,21 +37,21 @@
 		20DECD204218C72EB0004F11 /* PlainLevelNameDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261E26B8CACFF52BFAF23F24 /* PlainLevelNameDecorator.swift */; };
 		21B02C3179425E712098BB8F /* PSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C12F479779F885FFD5947B /* PSpy.swift */; };
 		2262A63FF401FB90F7D45B67 /* AutoMockable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB98796A3C79A11981558DD /* AutoMockable.generated.swift */; };
-		24A252318B26C0D43834ADCC /* Pods_Spy_tvOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 946188DCED9AF5ADA99C0BDB /* Pods_Spy_tvOS.framework */; };
 		25EFD0CFA31D2389BAC5B4B4 /* FileSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 692954C115330B3101F59907 /* FileSpy.swift */; };
-		260EEA54D45561AB75DBE223 /* Pods_SpyTests_tvOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C4C6DD5B24CB8897F88D73A /* Pods_SpyTests_tvOS.framework */; };
 		26DD05EC1B1FE12870589ED0 /* FileHandleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B18D63B0434DD624675FF7 /* FileHandleFactory.swift */; };
 		27318BCDBBCFBEA006A752A3 /* Spied.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2560C4B1D751177F1BC0AB2 /* Spied.swift */; };
-		290B2C3E4938A66DDD8878F1 /* ConsoleSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CEB4932676666D032930956 /* ConsoleSpy.swift */; };
+		27A3DBC75C568025DC92CF73 /* ThreadSafeSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7710BBD98F325A361F57A3 /* ThreadSafeSpy.swift */; };
+		27AE807ADDE180D188330EEB /* LogFileType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92C52EC59F3B46B0A7C61A7 /* LogFileType.swift */; };
 		2A31A3E5B2EA6A521BF0095B /* Spy.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F2850AE714DB254464B02DDD /* Spy.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2A62E9C38A57BF5DD82A36AD /* EmojiPrefixedSpyLevelNameDecoratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9108D395F05EFA68F906AC /* EmojiPrefixedSpyLevelNameDecoratorTests.swift */; };
 		2BE9170A7A66FB15E31F33D7 /* FileHandle+PFileHandle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7748A8F3D5607CC20FEE40 /* FileHandle+PFileHandle.swift */; };
 		2E177EFC11792493BE363631 /* SpyLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118C16754FC38E5A07685006 /* SpyLevel.swift */; };
+		2E25EF5243D9CE200E23A2FB /* ThreadSafeSpyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9EADEB37E50F9AAFCB9112 /* ThreadSafeSpyTests.swift */; };
 		3027593B0CA259AFD8E92DEB /* SpiedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0D945A0C721DC409CDF027 /* SpiedTests.swift */; };
 		33393E3C5A2987D7177F6D82 /* Spy.h in Headers */ = {isa = PBXBuildFile; fileRef = 797BE01EEE903051BF964652 /* Spy.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		353C2184989E65ABD598E90B /* String+Colored.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D80E77E946C234FA70A60CB /* String+Colored.swift */; };
+		35ACD21735D41ADE8629ADE3 /* ThreadSafeSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7710BBD98F325A361F57A3 /* ThreadSafeSpy.swift */; };
 		35DC689824AD25DFA2B1C17F /* PFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAA1AD1672C247F882F0E2A /* PFileManager.swift */; };
-		37DE98D41EE68EF7A373738E /* ConsoleSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CEB4932676666D032930956 /* ConsoleSpy.swift */; };
 		3870206ABDFC01485BBF19AC /* PSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C12F479779F885FFD5947B /* PSpy.swift */; };
 		38A7C74931843540C1801D5E /* AnyLevelDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67253CF8104AD95F0C363B9E /* AnyLevelDecorator.swift */; };
 		39529FD52B2201DDB43A09DC /* Spied.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2560C4B1D751177F1BC0AB2 /* Spied.swift */; };
@@ -61,8 +66,10 @@
 		3FEBC2D512FF67DBC4BEAC50 /* DecoratedLevelBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FDC8804C6F3833807DCE0D /* DecoratedLevelBuilder.swift */; };
 		40674627A0381137B894A72A /* ConsoleSpyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC5AAEA8A89B929C95B321B /* ConsoleSpyTests.swift */; };
 		41D050A2F33AC838763DCA80 /* DecoratedSpyFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5166096A04677805A734720 /* DecoratedSpyFormatter.swift */; };
+		43445E67B81362F3ECDB6036 /* PLock.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14A1C7F92CF140C3ECF4C18 /* PLock.swift */; };
+		43CA154E27B20A83499D4FC3 /* PLock.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14A1C7F92CF140C3ECF4C18 /* PLock.swift */; };
 		44243EEFD83ECAA405CE47D8 /* CurrentTimestampProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC720605A9EFD7D25659B56D /* CurrentTimestampProvider.swift */; };
-		461A51E880A1103167F085A2 /* Pods_SpyTests_macOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95F5E763C71CB604D4F4BD98 /* Pods_SpyTests_macOS.framework */; };
+		4440E25E101CD8A4C3FDD2B2 /* Pods_SpyTests_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DCFAF47C65A5E39B5E3FC5E /* Pods_SpyTests_iOS.framework */; };
 		482E77F6640801895897D50F /* PFileHandle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E92CB99B32E931D67A6E1DB /* PFileHandle.swift */; };
 		485CF3835F477BB652A3378E /* AnySpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2977004EA2EB53528A4F35 /* AnySpy.swift */; };
 		49FA3E13ED495EFB67F09577 /* RawSpyFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F532A7B8168E805A2735D1F1 /* RawSpyFormatter.swift */; };
@@ -70,29 +77,39 @@
 		4D633D03FCDD3CBBFF332C99 /* Spy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2850AE714DB254464B02DDD /* Spy.framework */; };
 		4F128AC60B1145DE3F616BC0 /* PSpyLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA4577B8A05FCCE23974CA3 /* PSpyLevel.swift */; };
 		4F315EB0E68EC114E14BA0A7 /* DecoratedSpyFormatterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F7DAD6349DEB9B9C93E502 /* DecoratedSpyFormatterTests.swift */; };
+		50D9BBE435674DE9D50D047E /* DateFileNameProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85D822D1CDB87F87023DE6C2 /* DateFileNameProviderTests.swift */; };
+		50DED3CA1AC648864848C9BF /* ConsoleSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B4903ACC944A882F4BD11C /* ConsoleSpy.swift */; };
 		51AD4ACDFC2CCF4051A3A48A /* DecoratedLevelBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FDC8804C6F3833807DCE0D /* DecoratedLevelBuilder.swift */; };
 		537CC9E38E37E0DB168FFD00 /* DecoratedLevelBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FDC8804C6F3833807DCE0D /* DecoratedLevelBuilder.swift */; };
 		54843A4085FFD5237E5E6E59 /* PSpyable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 083BA954DE1B5FDE0E92AFBA /* PSpyable.swift */; };
+		54A1269D75EDED46F1256029 /* SpyDateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB7600052166F665D04538E /* SpyDateFormatter.swift */; };
 		554488C8A22DB492F06C24CC /* PFileHandleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9913ADBBC907DD53F6125D /* PFileHandleFactory.swift */; };
 		55937733DF64DF3094150778 /* DecoratedSpyFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5166096A04677805A734720 /* DecoratedSpyFormatter.swift */; };
+		566C381A7EBFBD4ABC489E26 /* LogFileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5674AE2DEC55C024790BF7D7 /* LogFileTests.swift */; };
 		590450D7D694B7E1B0EF3C04 /* CompositeSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3721D08304B478CCE5C9E9 /* CompositeSpy.swift */; };
 		5B752801F7316FD953E39D25 /* Spy.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F2850AE714DB254464B02DDD /* Spy.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5BDEC228E142161495F28987 /* ConsoleSpyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC5AAEA8A89B929C95B321B /* ConsoleSpyTests.swift */; };
+		5CE16D2ED336EA75E04F1D4C /* PLogFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54467CDEAB70160A3F6A122 /* PLogFile.swift */; };
 		5DAD76481839FCB075FA86DD /* PFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAA1AD1672C247F882F0E2A /* PFileManager.swift */; };
 		5ED5122DDB798AC53EE3C8B3 /* PSpyable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 083BA954DE1B5FDE0E92AFBA /* PSpyable.swift */; };
 		60BAA8F401079244275AF8A2 /* PlainLevelNameDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261E26B8CACFF52BFAF23F24 /* PlainLevelNameDecorator.swift */; };
 		60EF1293F6688808E82F14F5 /* String+Colored.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D80E77E946C234FA70A60CB /* String+Colored.swift */; };
 		611243FF16D40C61191EAB88 /* EmojiPrefixedSpyLevelDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58899DBC3D1E553C565C8431 /* EmojiPrefixedSpyLevelDecorator.swift */; };
 		62AFD6CA6344AF0F4D8F1CCD /* SpyColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ACE6EFE1738957011107C20 /* SpyColor.swift */; };
+		639D44A02D3EED621AFB9D0A /* PLogFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54467CDEAB70160A3F6A122 /* PLogFile.swift */; };
 		64A30E7E686CED58DBD38F4D /* FileHandleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B18D63B0434DD624675FF7 /* FileHandleFactory.swift */; };
 		65F6F9D33FE128469B6F18BB /* DecoratedSpyFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5166096A04677805A734720 /* DecoratedSpyFormatter.swift */; };
 		6632657E0F9024B622C384F2 /* PSpyable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 083BA954DE1B5FDE0E92AFBA /* PSpyable.swift */; };
 		663DC4AAE9CBB4B181773A0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BBC8875BEB948A2868F8F4A /* Assets.xcassets */; };
+		66C138CF1F2510D9A868A484 /* ConsoleSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B4903ACC944A882F4BD11C /* ConsoleSpy.swift */; };
 		66F5EFA3C14E939E4E3C8E8A /* PlainLevelNameDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261E26B8CACFF52BFAF23F24 /* PlainLevelNameDecorator.swift */; };
 		6AF426DCA1E3D154730C05A9 /* SpyConfigurationBuilderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B94A3F1FD6044C741CFAA7 /* SpyConfigurationBuilderTests.swift */; };
 		6D342CD13E60B9F5AF3FE963 /* SpyChannel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521793EF050158ABA07595D0 /* SpyChannel.swift */; };
 		6E75553A990E9E21C5A46086 /* SpyConfigurationBuilderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B94A3F1FD6044C741CFAA7 /* SpyConfigurationBuilderTests.swift */; };
+		6EB4D3A22136556613155A74 /* PFileNameProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABB2FA9F6C20AD01BFE5FDF /* PFileNameProvider.swift */; };
+		6F78C933E48B08D54A600574 /* DateFileNameProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCA6D8DE7C927F23D89E195 /* DateFileNameProvider.swift */; };
 		7082AC54F404C5B16ABA4DF3 /* FileManager+PFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E14FE1FAFF017554EA89F55 /* FileManager+PFileManager.swift */; };
+		7197EC7C7449AF48F209BB22 /* Pods_Spy_watchOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14D326240B6C7E1DDBE7B930 /* Pods_Spy_watchOS.framework */; };
 		71C3E5188C68CD679A7E3BD3 /* SpyConfigurationBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D2E0EF783D972A969685BB /* SpyConfigurationBuilder.swift */; };
 		73BF06596792ACCE96D05F8C /* PTimestampProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F066CF5C12BC433A4D0339C8 /* PTimestampProvider.swift */; };
 		743375A5138CDAF1E181FCA7 /* AnyLevelDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67253CF8104AD95F0C363B9E /* AnyLevelDecorator.swift */; };
@@ -100,6 +117,7 @@
 		75519EF5B192426192E12476 /* SpyLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118C16754FC38E5A07685006 /* SpyLevel.swift */; };
 		75B1B84566E71D5B8B25E261 /* PSpyFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BDE36DD5E247B5B28C8A0F1 /* PSpyFormatter.swift */; };
 		781EFDA97711EE3A86A3B56D /* FileHandle+PFileHandle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7748A8F3D5607CC20FEE40 /* FileHandle+PFileHandle.swift */; };
+		78FF0AE282B9E4498B5A3B80 /* ConsoleSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B4903ACC944A882F4BD11C /* ConsoleSpy.swift */; };
 		79E02880AB96459CC2A22701 /* ColoredSpyLevelNameDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9213F0F5618C324C5387D8 /* ColoredSpyLevelNameDecorator.swift */; };
 		79FA4FB2CD9CE24FAF55CA50 /* RawSpyFormatterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1892C116E484C0A9CEE11F /* RawSpyFormatterTests.swift */; };
 		7B1724B853FD434EFB0706B8 /* DecoratedSpyFormatterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F7DAD6349DEB9B9C93E502 /* DecoratedSpyFormatterTests.swift */; };
@@ -108,22 +126,28 @@
 		7D89F6836B7E1992A7BC274C /* DecoratedSpyFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5166096A04677805A734720 /* DecoratedSpyFormatter.swift */; };
 		7F500EE1B575C69C06BEE07C /* Spy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2850AE714DB254464B02DDD /* Spy.framework */; };
 		7F7AC611D87F5A755F2FD60D /* PSpyLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA4577B8A05FCCE23974CA3 /* PSpyLevel.swift */; };
+		7F8AF205BADAC8D5F9D57FD3 /* PLogFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54467CDEAB70160A3F6A122 /* PLogFile.swift */; };
 		7FBFC4EEA770D2CC60164AF2 /* FileManager+PFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E14FE1FAFF017554EA89F55 /* FileManager+PFileManager.swift */; };
+		810F2FE0F716EBC67A017A82 /* ThreadSafeSpyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9EADEB37E50F9AAFCB9112 /* ThreadSafeSpyTests.swift */; };
 		827BB9C02FFD8BB7E358B2C3 /* PFileHandleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9913ADBBC907DD53F6125D /* PFileHandleFactory.swift */; };
 		83C426EEA71209EFF73B8C33 /* PSpyLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA4577B8A05FCCE23974CA3 /* PSpyLevel.swift */; };
 		8412EDEAA2D85CEEA805E0EF /* PSpyFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BDE36DD5E247B5B28C8A0F1 /* PSpyFormatter.swift */; };
+		8460200FCFF6F82A77E2A59D /* FileSpyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D17C70F0F2B27ABF85066F2F /* FileSpyTests.swift */; };
+		84CF509BC35B1B9041791B81 /* NSLock+PLock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F58DB368B8DBB39F278304 /* NSLock+PLock.swift */; };
 		87A3C79ABA2B4A87465F2168 /* Spy.h in Headers */ = {isa = PBXBuildFile; fileRef = 797BE01EEE903051BF964652 /* Spy.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		886A7BD2543444F89389CC16 /* PSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C12F479779F885FFD5947B /* PSpy.swift */; };
 		8910FD3712967C56851A303E /* SpyLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118C16754FC38E5A07685006 /* SpyLevel.swift */; };
 		892B171B9B79D82756032DEE /* PSpyFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BDE36DD5E247B5B28C8A0F1 /* PSpyFormatter.swift */; };
 		895283B869B2AB34764BE357 /* ColoredSpyLevelNameDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9213F0F5618C324C5387D8 /* ColoredSpyLevelNameDecorator.swift */; };
 		8B13AD0E2500267C9AD71B75 /* PFileHandleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9913ADBBC907DD53F6125D /* PFileHandleFactory.swift */; };
-		8B6D678E1C6A5DCD4C2C61BE /* Pods_Spy_watchOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E94DEF6FF63EF568038A56A /* Pods_Spy_watchOS.framework */; };
 		8C26251481FA08C43C7F898B /* SpyableStringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B712E56E1BBE344098456A06 /* SpyableStringTests.swift */; };
+		8C62BDA4E99D99966A64F6F3 /* Pods_SpyTests_macOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D12E735E7D33A22BDF9DC81B /* Pods_SpyTests_macOS.framework */; };
 		8C88E8770908130451C6E60F /* Spied.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2560C4B1D751177F1BC0AB2 /* Spied.swift */; };
 		8EA8E02160BF2DBE80075DE3 /* PFileHandle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E92CB99B32E931D67A6E1DB /* PFileHandle.swift */; };
 		8F7F1EFD2E4E598526880130 /* FileSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 692954C115330B3101F59907 /* FileSpy.swift */; };
 		942E09BCE4BD5684AF4CA0E3 /* FileHandle+PFileHandle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7748A8F3D5607CC20FEE40 /* FileHandle+PFileHandle.swift */; };
+		966F6E5B202A3B7C37FD9D69 /* LogFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80ECB002013CBFF6F6766501 /* LogFile.swift */; };
+		97AF66778738225D6BBAFA81 /* LogFileType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92C52EC59F3B46B0A7C61A7 /* LogFileType.swift */; };
 		97B5920715A544FA22458037 /* EmojiPrefixedSpyLevelNameDecoratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9108D395F05EFA68F906AC /* EmojiPrefixedSpyLevelNameDecoratorTests.swift */; };
 		981EEC6855191D72F55509F1 /* AnySpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2977004EA2EB53528A4F35 /* AnySpy.swift */; };
 		995190404832857DC9455482 /* PSpyLevelDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B2E0089964BB5D760E0F77 /* PSpyLevelDecorator.swift */; };
@@ -134,22 +158,34 @@
 		9B89D1D5F99812C232E51E89 /* AnySpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2977004EA2EB53528A4F35 /* AnySpy.swift */; };
 		9CB0ACC88779167DDBFC8244 /* FileSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 692954C115330B3101F59907 /* FileSpy.swift */; };
 		9E5DEB16749087CB0CB5339E /* CurrentTimestampProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC720605A9EFD7D25659B56D /* CurrentTimestampProvider.swift */; };
+		9EA591AB0419AA35537A5C3C /* PFileNameProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABB2FA9F6C20AD01BFE5FDF /* PFileNameProvider.swift */; };
+		9F86CD17A283A16C9A6FA08C /* DateFileNameProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCA6D8DE7C927F23D89E195 /* DateFileNameProvider.swift */; };
+		A25FACA0B361974B28F61BAC /* LogFileType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92C52EC59F3B46B0A7C61A7 /* LogFileType.swift */; };
 		A30368B5C48757EC721B8C5E /* SpyConfigurationBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D2E0EF783D972A969685BB /* SpyConfigurationBuilder.swift */; };
-		A88168B591B237C28FD5101E /* Pods_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 969680E6FAF99D88278F0BB4 /* Pods_Example.framework */; };
+		A36F4389A975747698B4A03C /* Pods_Spy_macOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BE843604C80E1143C2F2F1F /* Pods_Spy_macOS.framework */; };
+		A5EA157501855A3D9A05F47B /* Pods_SpyTests_tvOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71B4246829FA34D02662B05D /* Pods_SpyTests_tvOS.framework */; };
+		A600FDE4868078CE83CE92E0 /* SpyDateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB7600052166F665D04538E /* SpyDateFormatter.swift */; };
 		AA1ADA45BC367897E26CBCCD /* AnySpyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19ADD9D7DF5A76D1ADFDAA2 /* AnySpyTests.swift */; };
 		AA95200FE6E47BAA72C42FF4 /* ConsoleSpyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC5AAEA8A89B929C95B321B /* ConsoleSpyTests.swift */; };
 		AB29D838E29A56E2F3BC1687 /* PSpyChannel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7ECD0B3052BFA8AC94D83E2 /* PSpyChannel.swift */; };
+		ABA43AF9955A9D3AB6F9E92F /* ConsoleSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B4903ACC944A882F4BD11C /* ConsoleSpy.swift */; };
 		AD8946BE1EB5312AE328E1E3 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044627ED90B7A4C5A51AB9F2 /* Environment.swift */; };
+		ADBBD473E22EF74054B87732 /* LogFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80ECB002013CBFF6F6766501 /* LogFile.swift */; };
+		AE0BEF6D4B67CFEABCFFFA72 /* PFileNameProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABB2FA9F6C20AD01BFE5FDF /* PFileNameProvider.swift */; };
 		AE5CCB62E1C4924EB767F3C4 /* PSpyLevelDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B2E0089964BB5D760E0F77 /* PSpyLevelDecorator.swift */; };
+		AE88E23A2BB0401D1EA292C6 /* Pods_Spy_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BD150BD91D23469CA1A49EC /* Pods_Spy_iOS.framework */; };
 		AEA11A8D41458C45890DD2FC /* SpyColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ACE6EFE1738957011107C20 /* SpyColor.swift */; };
-		AEE9AD829D602A8F279EC8E6 /* Pods_SpyTests_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01EC251448FF700F9878D3E5 /* Pods_SpyTests_iOS.framework */; };
 		AFE51C393388FE43EB281CC9 /* PFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAA1AD1672C247F882F0E2A /* PFileManager.swift */; };
 		AFF10C2452455326925C8D6C /* SpyableStringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B712E56E1BBE344098456A06 /* SpyableStringTests.swift */; };
+		B00232352FCCCB7F30B33FE2 /* LogFileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5674AE2DEC55C024790BF7D7 /* LogFileTests.swift */; };
+		B0C590D71B1350866EDE16BE /* NSLock+PLock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F58DB368B8DBB39F278304 /* NSLock+PLock.swift */; };
 		B1550E19429EFA8A6E60ACD0 /* AnySpyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19ADD9D7DF5A76D1ADFDAA2 /* AnySpyTests.swift */; };
 		B2421BD4F629D52D4231ADBE /* SpyLevelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FCAD0635277EC7F24086E2A /* SpyLevelTests.swift */; };
 		B242FB7D157350BF3C52AF5F /* SpyColorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04409B4774F92016C6901F69 /* SpyColorTests.swift */; };
 		B4464A8896B59E2B598D6190 /* Spy-Swift.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B38C06DFA82FEE0B6018DFE /* Spy-Swift.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		B45CC84CD996DEA921A3799B /* PLock.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14A1C7F92CF140C3ECF4C18 /* PLock.swift */; };
 		B68D37D441F7931F9805F067 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58A84B16AF7E4301E34B9862 /* ViewController.swift */; };
+		B891BF807C11FA44775D5799 /* LogFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80ECB002013CBFF6F6766501 /* LogFile.swift */; };
 		B8B4D55060E2DA4A225E54EB /* PTimestampProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F066CF5C12BC433A4D0339C8 /* PTimestampProvider.swift */; };
 		BE6460A87A2BE44E50B45E09 /* PSpyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E7BF75BAB70741E76324A4D /* PSpyTests.swift */; };
 		BFD3C8954E99A4A1BFA557A8 /* TestColoredSpyLevelNameDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB04DC49C011B23DF8C3389E /* TestColoredSpyLevelNameDecorator.swift */; };
@@ -157,11 +193,15 @@
 		C0962F28B8B09664B1A667EE /* SpyChannel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521793EF050158ABA07595D0 /* SpyChannel.swift */; };
 		C1739893893ED4397E244D5C /* SpyConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8002EB9A67043BABE9E9E729 /* SpyConfiguration.swift */; };
 		C18E26A9C71439922FEE77BE /* ColoredSpyLevelNameDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9213F0F5618C324C5387D8 /* ColoredSpyLevelNameDecorator.swift */; };
+		C1E609CD2AA176BC33EFA8F6 /* LogFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80ECB002013CBFF6F6766501 /* LogFile.swift */; };
 		C2CDAB2DB07EA3A221F45346 /* SpyConfigurationBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D2E0EF783D972A969685BB /* SpyConfigurationBuilder.swift */; };
 		C2E7B779989D9DBFF18A62EC /* SpyLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118C16754FC38E5A07685006 /* SpyLevel.swift */; };
+		C49EC977807DBB2A3FC294B7 /* NSLock+PLock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F58DB368B8DBB39F278304 /* NSLock+PLock.swift */; };
 		C8629831D1D56B4BB934DF1A /* String+PSpyable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEC108A3832B5E814A0FD72 /* String+PSpyable.swift */; };
+		C9596DE63212A136C4FB9D29 /* NSLock+PLock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F58DB368B8DBB39F278304 /* NSLock+PLock.swift */; };
 		C9767B7941C887F87CB15FED /* SpyLevelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FCAD0635277EC7F24086E2A /* SpyLevelTests.swift */; };
 		C99A87C0ED390D32FB658163 /* CurrentTimestampProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC720605A9EFD7D25659B56D /* CurrentTimestampProvider.swift */; };
+		CAD435F5BBF2D5BDE46AB69E /* LogFileType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92C52EC59F3B46B0A7C61A7 /* LogFileType.swift */; };
 		CAD749F4F0BD805A46752680 /* EmojiPrefixedSpyLevelDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58899DBC3D1E553C565C8431 /* EmojiPrefixedSpyLevelDecorator.swift */; };
 		CB3E2547EA0C00326ACF207C /* FileHandle+PFileHandle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7748A8F3D5607CC20FEE40 /* FileHandle+PFileHandle.swift */; };
 		CBFF90ABE45499573540B414 /* ColoredSpyLevelNameDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9213F0F5618C324C5387D8 /* ColoredSpyLevelNameDecorator.swift */; };
@@ -176,66 +216,40 @@
 		D4F8CBC3E2FCD93A2FD4EF6D /* PSpyFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BDE36DD5E247B5B28C8A0F1 /* PSpyFormatter.swift */; };
 		D60C6F7CF9D93E8FB7885B95 /* PSpyable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 083BA954DE1B5FDE0E92AFBA /* PSpyable.swift */; };
 		D63CBC505EDF849AD0751B6E /* RawSpyFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F532A7B8168E805A2735D1F1 /* RawSpyFormatter.swift */; };
+		D6DC1AA7E887561C4CB515C2 /* ThreadSafeSpyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9EADEB37E50F9AAFCB9112 /* ThreadSafeSpyTests.swift */; };
 		D6F11216ABB18B4691F4E657 /* Spy.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F2850AE714DB254464B02DDD /* Spy.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D7141490EBB26EC850680167 /* DateFileNameProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCA6D8DE7C927F23D89E195 /* DateFileNameProvider.swift */; };
 		D862FA68866D424B9B0521CB /* String+Colored.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D80E77E946C234FA70A60CB /* String+Colored.swift */; };
 		D9F6A7721E854989F19E4AB2 /* CompositeSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3721D08304B478CCE5C9E9 /* CompositeSpy.swift */; };
 		DAC461D0CDA627AFAC0E33F8 /* SpyConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8002EB9A67043BABE9E9E729 /* SpyConfiguration.swift */; };
 		DCC3E89A37F3AE94C22BA575 /* SpyChannel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6F2544402457A3D984DAE9 /* SpyChannel.swift */; };
 		DDC287FB5C2DB6B0045A0549 /* Spy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2850AE714DB254464B02DDD /* Spy.framework */; };
+		DEB89DB7FD7690611A5CB079 /* PFileNameProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABB2FA9F6C20AD01BFE5FDF /* PFileNameProvider.swift */; };
+		E09B8D2C10AE942C77AD2C40 /* FileSpyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D17C70F0F2B27ABF85066F2F /* FileSpyTests.swift */; };
 		E0A8B1F68A1D77F737BDFC61 /* PTimestampProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F066CF5C12BC433A4D0339C8 /* PTimestampProvider.swift */; };
 		E3D4662BAB047881F16F9768 /* Spy.h in Headers */ = {isa = PBXBuildFile; fileRef = 797BE01EEE903051BF964652 /* Spy.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E4FB454F9DC865BCB2282CE2 /* AnySpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2977004EA2EB53528A4F35 /* AnySpy.swift */; };
 		E65242FA8DE42CEF964BFF32 /* SpyConfigurationBuilderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B94A3F1FD6044C741CFAA7 /* SpyConfigurationBuilderTests.swift */; };
+		E79E3A78D9BB58E1EAD3C659 /* ThreadSafeSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7710BBD98F325A361F57A3 /* ThreadSafeSpy.swift */; };
 		E853FF141B439C68A77C24BD /* RawSpyFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F532A7B8168E805A2735D1F1 /* RawSpyFormatter.swift */; };
-		E99AA7E6942BFA30BDBABD66 /* Pods_Spy_macOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94BE6AB849CC552FE08D23BE /* Pods_Spy_macOS.framework */; };
+		E8E6C6663968A5F21F531434 /* LogFileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5674AE2DEC55C024790BF7D7 /* LogFileTests.swift */; };
 		EA4102CDEC2FA0F762242CF9 /* SpyColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ACE6EFE1738957011107C20 /* SpyColor.swift */; };
 		EA88018E4F9BA9D58270ED71 /* Spied.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2560C4B1D751177F1BC0AB2 /* Spied.swift */; };
 		EAF3C9B3FF05CA164F540D0C /* PSpyLevelDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B2E0089964BB5D760E0F77 /* PSpyLevelDecorator.swift */; };
 		EC640757F0DF68788CB2E307 /* AutoMockable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB98796A3C79A11981558DD /* AutoMockable.generated.swift */; };
 		ED1D9880D0FE92EC326A5113 /* Spy-Swift.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B38C06DFA82FEE0B6018DFE /* Spy-Swift.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		ED8830C9C9F5B2E78BE2C89E /* ConsoleSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CEB4932676666D032930956 /* ConsoleSpy.swift */; };
-		EE2271B2816C451658931DB0 /* ConsoleSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CEB4932676666D032930956 /* ConsoleSpy.swift */; };
 		EF3A7793E1C0E0F5733618A2 /* SpiedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0D945A0C721DC409CDF027 /* SpiedTests.swift */; };
-		F164CC8123ECD0600067C268 /* LogFileType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F164CC8023ECD0600067C268 /* LogFileType.swift */; };
-		F164CC8223ECD0600067C268 /* LogFileType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F164CC8023ECD0600067C268 /* LogFileType.swift */; };
-		F164CC8323ECD0600067C268 /* LogFileType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F164CC8023ECD0600067C268 /* LogFileType.swift */; };
-		F164CC8423ECD0600067C268 /* LogFileType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F164CC8023ECD0600067C268 /* LogFileType.swift */; };
-		F164CC8623ECD0B00067C268 /* LogFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = F164CC8523ECD0B00067C268 /* LogFile.swift */; };
-		F164CC8723ECD0B00067C268 /* LogFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = F164CC8523ECD0B00067C268 /* LogFile.swift */; };
-		F164CC8823ECD0B00067C268 /* LogFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = F164CC8523ECD0B00067C268 /* LogFile.swift */; };
-		F164CC8923ECD0B00067C268 /* LogFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = F164CC8523ECD0B00067C268 /* LogFile.swift */; };
-		F164CC8B23ECDCE10067C268 /* DateFileNameProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F164CC8A23ECDCE10067C268 /* DateFileNameProvider.swift */; };
-		F164CC8C23ECDCE10067C268 /* DateFileNameProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F164CC8A23ECDCE10067C268 /* DateFileNameProvider.swift */; };
-		F164CC8D23ECDCE10067C268 /* DateFileNameProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F164CC8A23ECDCE10067C268 /* DateFileNameProvider.swift */; };
-		F164CC8E23ECDCE10067C268 /* DateFileNameProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F164CC8A23ECDCE10067C268 /* DateFileNameProvider.swift */; };
-		F164CC9023ECDD7D0067C268 /* PFileNameProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F164CC8F23ECDD7D0067C268 /* PFileNameProvider.swift */; };
-		F164CC9123ECDD7D0067C268 /* PFileNameProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F164CC8F23ECDD7D0067C268 /* PFileNameProvider.swift */; };
-		F164CC9223ECDD7D0067C268 /* PFileNameProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F164CC8F23ECDD7D0067C268 /* PFileNameProvider.swift */; };
-		F164CC9323ECDD7D0067C268 /* PFileNameProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F164CC8F23ECDD7D0067C268 /* PFileNameProvider.swift */; };
-		F164CC9523ECE3020067C268 /* SpyDateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F164CC9423ECE3020067C268 /* SpyDateFormatter.swift */; };
-		F164CC9623ECE3020067C268 /* SpyDateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F164CC9423ECE3020067C268 /* SpyDateFormatter.swift */; };
-		F164CC9723ECE3020067C268 /* SpyDateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F164CC9423ECE3020067C268 /* SpyDateFormatter.swift */; };
-		F164CC9823ECE3020067C268 /* SpyDateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F164CC9423ECE3020067C268 /* SpyDateFormatter.swift */; };
-		F164CC9A23ECE8620067C268 /* DateFileNameProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F164CC9923ECE8620067C268 /* DateFileNameProviderTests.swift */; };
-		F164CC9B23ECE8620067C268 /* DateFileNameProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F164CC9923ECE8620067C268 /* DateFileNameProviderTests.swift */; };
-		F164CC9C23ECE8620067C268 /* DateFileNameProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F164CC9923ECE8620067C268 /* DateFileNameProviderTests.swift */; };
-		F164CCA223ECEAE10067C268 /* LogFileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F164CCA123ECEAE10067C268 /* LogFileTests.swift */; };
-		F164CCA323ECEAE10067C268 /* LogFileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F164CCA123ECEAE10067C268 /* LogFileTests.swift */; };
-		F164CCA423ECEAE10067C268 /* LogFileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F164CCA123ECEAE10067C268 /* LogFileTests.swift */; };
-		F164CCA623ECEE950067C268 /* FileSpyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F164CCA523ECEE950067C268 /* FileSpyTests.swift */; };
-		F164CCA723ECEE950067C268 /* FileSpyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F164CCA523ECEE950067C268 /* FileSpyTests.swift */; };
-		F164CCA823ECEE950067C268 /* FileSpyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F164CCA523ECEE950067C268 /* FileSpyTests.swift */; };
-		F164CCAA23ECEF300067C268 /* PLogFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = F164CCA923ECEF300067C268 /* PLogFile.swift */; };
-		F164CCAB23ECEF300067C268 /* PLogFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = F164CCA923ECEF300067C268 /* PLogFile.swift */; };
-		F164CCAC23ECEF300067C268 /* PLogFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = F164CCA923ECEF300067C268 /* PLogFile.swift */; };
-		F164CCAD23ECEF300067C268 /* PLogFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = F164CCA923ECEF300067C268 /* PLogFile.swift */; };
 		F1A0395ABBF615489F73A323 /* TestColoredSpyLevelNameDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB04DC49C011B23DF8C3389E /* TestColoredSpyLevelNameDecorator.swift */; };
+		F2BFF752E84D6008FAB7FD89 /* FileSpyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D17C70F0F2B27ABF85066F2F /* FileSpyTests.swift */; };
 		F364290C14EEF7CC68ACF6E0 /* FileManager+PFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E14FE1FAFF017554EA89F55 /* FileManager+PFileManager.swift */; };
 		F3AC5B799C1B94D8207DD56A /* CompositeSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3721D08304B478CCE5C9E9 /* CompositeSpy.swift */; };
 		F3D6BF8A86265329889ED41C /* PTimestampProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F066CF5C12BC433A4D0339C8 /* PTimestampProvider.swift */; };
 		F5133789810EDEF82DDA60CB /* FileManager+PFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E14FE1FAFF017554EA89F55 /* FileManager+PFileManager.swift */; };
+		F534441A4AD1D4B3B4E47928 /* Pods_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D0EB95D8E672FF678C156CD /* Pods_Example.framework */; };
 		F5CF317CC6C31D366651B8BF /* CurrentTimestampProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC720605A9EFD7D25659B56D /* CurrentTimestampProvider.swift */; };
+		F78B74E8BC1BDA19340FB52B /* PLock.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14A1C7F92CF140C3ECF4C18 /* PLock.swift */; };
 		F923CDB15CA708C9A4F9918A /* PSpyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E7BF75BAB70741E76324A4D /* PSpyTests.swift */; };
+		FA06E17C2DA9B34B4118946B /* SpyDateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB7600052166F665D04538E /* SpyDateFormatter.swift */; };
 		FA1C94B0513C52E102F2B2EE /* PSpyLevelDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B2E0089964BB5D760E0F77 /* PSpyLevelDecorator.swift */; };
 		FBA3D2AAF03BCAE7EDABF818 /* AnyLevelDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67253CF8104AD95F0C363B9E /* AnyLevelDecorator.swift */; };
 		FBB8940D9542B4DD3CB38558 /* PSpyChannel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7ECD0B3052BFA8AC94D83E2 /* PSpyChannel.swift */; };
@@ -246,6 +260,7 @@
 		FD176C5DC60F5BF88F166576 /* SpyConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8002EB9A67043BABE9E9E729 /* SpyConfiguration.swift */; };
 		FEAB9234253255DE36D50125 /* PFileHandleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9913ADBBC907DD53F6125D /* PFileHandleFactory.swift */; };
 		FF178CD83D8835E8EEDA8FC7 /* String+Colored.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D80E77E946C234FA70A60CB /* String+Colored.swift */; };
+		FF7595D23F548C94BF92668D /* DateFileNameProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85D822D1CDB87F87023DE6C2 /* DateFileNameProviderTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -327,76 +342,83 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		01EC251448FF700F9878D3E5 /* Pods_SpyTests_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpyTests_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0425927E9058F5F15A45775F /* Pods-Spy_tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Spy_tvOS.release.xcconfig"; path = "Target Support Files/Pods-Spy_tvOS/Pods-Spy_tvOS.release.xcconfig"; sourceTree = "<group>"; };
 		04409B4774F92016C6901F69 /* SpyColorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpyColorTests.swift; sourceTree = "<group>"; };
 		044627ED90B7A4C5A51AB9F2 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
-		0715498166643281437381FC /* Pods-SpyTests_iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpyTests_iOS.debug.xcconfig"; path = "Target Support Files/Pods-SpyTests_iOS/Pods-SpyTests_iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		06F58DB368B8DBB39F278304 /* NSLock+PLock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSLock+PLock.swift"; sourceTree = "<group>"; };
 		083BA954DE1B5FDE0E92AFBA /* PSpyable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSpyable.swift; sourceTree = "<group>"; };
+		0A7710BBD98F325A361F57A3 /* ThreadSafeSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadSafeSpy.swift; sourceTree = "<group>"; };
 		0B9913ADBBC907DD53F6125D /* PFileHandleFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PFileHandleFactory.swift; sourceTree = "<group>"; };
 		0CAA1AD1672C247F882F0E2A /* PFileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PFileManager.swift; sourceTree = "<group>"; };
-		0CEB4932676666D032930956 /* ConsoleSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsoleSpy.swift; sourceTree = "<group>"; };
 		0E6F2544402457A3D984DAE9 /* SpyChannel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpyChannel.swift; sourceTree = "<group>"; };
 		118C16754FC38E5A07685006 /* SpyLevel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpyLevel.swift; sourceTree = "<group>"; };
+		1320E0055D82A780AA11D996 /* Pods-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.release.xcconfig"; path = "Target Support Files/Pods-Example/Pods-Example.release.xcconfig"; sourceTree = "<group>"; };
+		14D326240B6C7E1DDBE7B930 /* Pods_Spy_watchOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Spy_watchOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		17C12F479779F885FFD5947B /* PSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSpy.swift; sourceTree = "<group>"; };
 		1ACE6EFE1738957011107C20 /* SpyColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpyColor.swift; sourceTree = "<group>"; };
+		1BCA6D8DE7C927F23D89E195 /* DateFileNameProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFileNameProvider.swift; sourceTree = "<group>"; };
+		1D0EB95D8E672FF678C156CD /* Pods_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E14FE1FAFF017554EA89F55 /* FileManager+PFileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileManager+PFileManager.swift"; sourceTree = "<group>"; };
-		1E6494A43623BC73C9B9105D /* Pods_Spy_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Spy_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		20FDC8804C6F3833807DCE0D /* DecoratedLevelBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecoratedLevelBuilder.swift; sourceTree = "<group>"; };
 		212C0F1ADFE8F1F7DE292679 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		257AFF4EFD684FF8914153BA /* Pods-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.debug.xcconfig"; path = "Target Support Files/Pods-Example/Pods-Example.debug.xcconfig"; sourceTree = "<group>"; };
 		261E26B8CACFF52BFAF23F24 /* PlainLevelNameDecorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlainLevelNameDecorator.swift; sourceTree = "<group>"; };
-		2E5F3F5AABA8A982517FCB1F /* Pods-Spy_iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Spy_iOS.debug.xcconfig"; path = "Target Support Files/Pods-Spy_iOS/Pods-Spy_iOS.debug.xcconfig"; sourceTree = "<group>"; };
-		2E94DEF6FF63EF568038A56A /* Pods_Spy_watchOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Spy_watchOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		406C0FECA905C943E712F21E /* Pods-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.debug.xcconfig"; path = "Target Support Files/Pods-Example/Pods-Example.debug.xcconfig"; sourceTree = "<group>"; };
-		4154F4A0AE5CBBF520924100 /* Pods-Spy_macOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Spy_macOS.release.xcconfig"; path = "Target Support Files/Pods-Spy_macOS/Pods-Spy_macOS.release.xcconfig"; sourceTree = "<group>"; };
+		2BD150BD91D23469CA1A49EC /* Pods_Spy_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Spy_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		310B52D305500C473E09D4BB /* Pods-Spy_macOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Spy_macOS.release.xcconfig"; path = "Target Support Files/Pods-Spy_macOS/Pods-Spy_macOS.release.xcconfig"; sourceTree = "<group>"; };
+		3D9EADEB37E50F9AAFCB9112 /* ThreadSafeSpyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadSafeSpyTests.swift; sourceTree = "<group>"; };
 		4B3721D08304B478CCE5C9E9 /* CompositeSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositeSpy.swift; sourceTree = "<group>"; };
 		4BBC8875BEB948A2868F8F4A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4BF49A28950F4E849D00C2F6 /* Pods-Spy_iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Spy_iOS.debug.xcconfig"; path = "Target Support Files/Pods-Spy_iOS/Pods-Spy_iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		4D2A75209F0ADFD824A7846E /* SpyTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SpyTests-Bridging-Header.h"; sourceTree = "<group>"; };
 		4E7BF75BAB70741E76324A4D /* PSpyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSpyTests.swift; sourceTree = "<group>"; };
 		4E9FB7FE9330CAEDE9B9405B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		4F7748A8F3D5607CC20FEE40 /* FileHandle+PFileHandle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileHandle+PFileHandle.swift"; sourceTree = "<group>"; };
 		521793EF050158ABA07595D0 /* SpyChannel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpyChannel.swift; sourceTree = "<group>"; };
 		5489AA9BC65AF9E7441610A7 /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5674AE2DEC55C024790BF7D7 /* LogFileTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogFileTests.swift; sourceTree = "<group>"; };
 		5880FCBC4A68A8F18CAA1D99 /* Example.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Example.entitlements; sourceTree = "<group>"; };
 		58899DBC3D1E553C565C8431 /* EmojiPrefixedSpyLevelDecorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiPrefixedSpyLevelDecorator.swift; sourceTree = "<group>"; };
 		58A84B16AF7E4301E34B9862 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5B38C06DFA82FEE0B6018DFE /* Spy-Swift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Spy-Swift.h"; sourceTree = "<group>"; };
-		5D03CBF7BC2D2260F721680B /* Pods-Spy_watchOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Spy_watchOS.debug.xcconfig"; path = "Target Support Files/Pods-Spy_watchOS/Pods-Spy_watchOS.debug.xcconfig"; sourceTree = "<group>"; };
-		5E133CB695639A2C9BEABD96 /* Pods-SpyTests_macOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpyTests_macOS.release.xcconfig"; path = "Target Support Files/Pods-SpyTests_macOS/Pods-SpyTests_macOS.release.xcconfig"; sourceTree = "<group>"; };
 		5FCAD0635277EC7F24086E2A /* SpyLevelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpyLevelTests.swift; sourceTree = "<group>"; };
-		648F9B523D182E89CE93150D /* Pods-SpyTests_tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpyTests_tvOS.debug.xcconfig"; path = "Target Support Files/Pods-SpyTests_tvOS/Pods-SpyTests_tvOS.debug.xcconfig"; sourceTree = "<group>"; };
-		66FC2DD6F1BB55364E976230 /* Pods-SpyTests_macOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpyTests_macOS.debug.xcconfig"; path = "Target Support Files/Pods-SpyTests_macOS/Pods-SpyTests_macOS.debug.xcconfig"; sourceTree = "<group>"; };
+		601B37680E28D23E7A94D7C8 /* Pods-Spy_macOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Spy_macOS.debug.xcconfig"; path = "Target Support Files/Pods-Spy_macOS/Pods-Spy_macOS.debug.xcconfig"; sourceTree = "<group>"; };
 		67253CF8104AD95F0C363B9E /* AnyLevelDecorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyLevelDecorator.swift; sourceTree = "<group>"; };
 		6772CCD175E542765B2DCE45 /* SpyTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = SpyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		692954C115330B3101F59907 /* FileSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileSpy.swift; sourceTree = "<group>"; };
-		6C4C6DD5B24CB8897F88D73A /* Pods_SpyTests_tvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpyTests_tvOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6BE20DB7F455DDBF93B48DF2 /* Pods-Spy_watchOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Spy_watchOS.release.xcconfig"; path = "Target Support Files/Pods-Spy_watchOS/Pods-Spy_watchOS.release.xcconfig"; sourceTree = "<group>"; };
 		6D80E77E946C234FA70A60CB /* String+Colored.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Colored.swift"; sourceTree = "<group>"; };
 		6E00BBCA9E4F5B96DBACDEAA /* CompositeSpyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositeSpyTests.swift; sourceTree = "<group>"; };
+		70FE4B0963EC50F2359D77F4 /* Pods-SpyTests_macOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpyTests_macOS.debug.xcconfig"; path = "Target Support Files/Pods-SpyTests_macOS/Pods-SpyTests_macOS.debug.xcconfig"; sourceTree = "<group>"; };
+		71B4246829FA34D02662B05D /* Pods_SpyTests_tvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpyTests_tvOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		735CEEE934CEFFC83D2901FE /* Pods-SpyTests_macOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpyTests_macOS.release.xcconfig"; path = "Target Support Files/Pods-SpyTests_macOS/Pods-SpyTests_macOS.release.xcconfig"; sourceTree = "<group>"; };
 		797BE01EEE903051BF964652 /* Spy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Spy.h; sourceTree = "<group>"; };
+		79A0E0F42767C527590BA24D /* Pods-SpyTests_tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpyTests_tvOS.release.xcconfig"; path = "Target Support Files/Pods-SpyTests_tvOS/Pods-SpyTests_tvOS.release.xcconfig"; sourceTree = "<group>"; };
+		7BE843604C80E1143C2F2F1F /* Pods_Spy_macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Spy_macOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8002EB9A67043BABE9E9E729 /* SpyConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpyConfiguration.swift; sourceTree = "<group>"; };
+		80ECB002013CBFF6F6766501 /* LogFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogFile.swift; sourceTree = "<group>"; };
 		82A24CF2E792F20511B7B4CC /* SpyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		85D822D1CDB87F87023DE6C2 /* DateFileNameProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFileNameProviderTests.swift; sourceTree = "<group>"; };
 		88B18D63B0434DD624675FF7 /* FileHandleFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileHandleFactory.swift; sourceTree = "<group>"; };
 		8A225A817646067EBD729D1B /* SpyConfigurationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpyConfigurationTests.swift; sourceTree = "<group>"; };
 		8A3D91C2EC2DD101CF21ACEE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		92F35F256075C8FD7F58F6AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		946188DCED9AF5ADA99C0BDB /* Pods_Spy_tvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Spy_tvOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		94B02152FA5F1BF520D7032F /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
-		94BE6AB849CC552FE08D23BE /* Pods_Spy_macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Spy_macOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		95F5E763C71CB604D4F4BD98 /* Pods_SpyTests_macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpyTests_macOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		969680E6FAF99D88278F0BB4 /* Pods_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BDE36DD5E247B5B28C8A0F1 /* PSpyFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSpyFormatter.swift; sourceTree = "<group>"; };
+		9DCFAF47C65A5E39B5E3FC5E /* Pods_SpyTests_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpyTests_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E92CB99B32E931D67A6E1DB /* PFileHandle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PFileHandle.swift; sourceTree = "<group>"; };
-		9F4915A63BB1F628F6118A0F /* Pods-Spy_iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Spy_iOS.release.xcconfig"; path = "Target Support Files/Pods-Spy_iOS/Pods-Spy_iOS.release.xcconfig"; sourceTree = "<group>"; };
 		A2560C4B1D751177F1BC0AB2 /* Spied.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spied.swift; sourceTree = "<group>"; };
-		A738721FC0E27B446B20EF18 /* Pods-Spy_watchOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Spy_watchOS.release.xcconfig"; path = "Target Support Files/Pods-Spy_watchOS/Pods-Spy_watchOS.release.xcconfig"; sourceTree = "<group>"; };
+		A36D6365EE4F272BCF143CBF /* Pods-Spy_iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Spy_iOS.release.xcconfig"; path = "Target Support Files/Pods-Spy_iOS/Pods-Spy_iOS.release.xcconfig"; sourceTree = "<group>"; };
 		A74F2C395D1B8DECBD10C145 /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
 		A7ECD0B3052BFA8AC94D83E2 /* PSpyChannel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSpyChannel.swift; sourceTree = "<group>"; };
+		A92C52EC59F3B46B0A7C61A7 /* LogFileType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogFileType.swift; sourceTree = "<group>"; };
 		AA470997515CFFB38C44689C /* Common.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Common.xcconfig; sourceTree = "<group>"; };
 		AC9108D395F05EFA68F906AC /* EmojiPrefixedSpyLevelNameDecoratorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiPrefixedSpyLevelNameDecoratorTests.swift; sourceTree = "<group>"; };
 		AE9213F0F5618C324C5387D8 /* ColoredSpyLevelNameDecorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColoredSpyLevelNameDecorator.swift; sourceTree = "<group>"; };
-		B42D1074B51CD40022C3CABA /* Pods-SpyTests_iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpyTests_iOS.release.xcconfig"; path = "Target Support Files/Pods-SpyTests_iOS/Pods-SpyTests_iOS.release.xcconfig"; sourceTree = "<group>"; };
+		B1D14B2903DD11E0A9F862CE /* Pods-Spy_tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Spy_tvOS.debug.xcconfig"; path = "Target Support Files/Pods-Spy_tvOS/Pods-Spy_tvOS.debug.xcconfig"; sourceTree = "<group>"; };
 		B4D2E0EF783D972A969685BB /* SpyConfigurationBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpyConfigurationBuilder.swift; sourceTree = "<group>"; };
 		B5166096A04677805A734720 /* DecoratedSpyFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecoratedSpyFormatter.swift; sourceTree = "<group>"; };
-		B5449DEE35DE95C8502F47E3 /* Pods-Spy_macOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Spy_macOS.debug.xcconfig"; path = "Target Support Files/Pods-Spy_macOS/Pods-Spy_macOS.debug.xcconfig"; sourceTree = "<group>"; };
+		B54467CDEAB70160A3F6A122 /* PLogFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PLogFile.swift; sourceTree = "<group>"; };
+		B59DDD31050940F10E4712EF /* Pods-SpyTests_iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpyTests_iOS.release.xcconfig"; path = "Target Support Files/Pods-SpyTests_iOS/Pods-SpyTests_iOS.release.xcconfig"; sourceTree = "<group>"; };
 		B689C2640382401D7124B39C /* Spy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Spy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6B2E0089964BB5D760E0F77 /* PSpyLevelDecorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSpyLevelDecorator.swift; sourceTree = "<group>"; };
 		B712E56E1BBE344098456A06 /* SpyableStringTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpyableStringTests.swift; sourceTree = "<group>"; };
@@ -406,32 +428,29 @@
 		BDC5AAEA8A89B929C95B321B /* ConsoleSpyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsoleSpyTests.swift; sourceTree = "<group>"; };
 		BEA4577B8A05FCCE23974CA3 /* PSpyLevel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSpyLevel.swift; sourceTree = "<group>"; };
 		BF2977004EA2EB53528A4F35 /* AnySpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnySpy.swift; sourceTree = "<group>"; };
-		C22396A83D00CD2278A03331 /* Pods-SpyTests_tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpyTests_tvOS.release.xcconfig"; path = "Target Support Files/Pods-SpyTests_tvOS/Pods-SpyTests_tvOS.release.xcconfig"; sourceTree = "<group>"; };
-		C7103667F17C920280C7E6DF /* Pods-Spy_tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Spy_tvOS.release.xcconfig"; path = "Target Support Files/Pods-Spy_tvOS/Pods-Spy_tvOS.release.xcconfig"; sourceTree = "<group>"; };
 		C9D02D06CCB2020EE4E5E901 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
 		CA898462C74354F0C07F6D32 /* SpyTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = SpyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CB84D125C4E64FF90F89C351 /* Pods-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.release.xcconfig"; path = "Target Support Files/Pods-Example/Pods-Example.release.xcconfig"; sourceTree = "<group>"; };
 		CF49C862AFF8344692F93D42 /* Spy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Spy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D12E735E7D33A22BDF9DC81B /* Pods_SpyTests_macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpyTests_macOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D17C70F0F2B27ABF85066F2F /* FileSpyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileSpyTests.swift; sourceTree = "<group>"; };
 		D19ADD9D7DF5A76D1ADFDAA2 /* AnySpyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnySpyTests.swift; sourceTree = "<group>"; };
+		D776199A5E80D5D737682928 /* Pods-SpyTests_iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpyTests_iOS.debug.xcconfig"; path = "Target Support Files/Pods-SpyTests_iOS/Pods-SpyTests_iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		D9B94A3F1FD6044C741CFAA7 /* SpyConfigurationBuilderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpyConfigurationBuilderTests.swift; sourceTree = "<group>"; };
 		DB04DC49C011B23DF8C3389E /* TestColoredSpyLevelNameDecorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestColoredSpyLevelNameDecorator.swift; sourceTree = "<group>"; };
+		DBB7600052166F665D04538E /* SpyDateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpyDateFormatter.swift; sourceTree = "<group>"; };
 		DF0D945A0C721DC409CDF027 /* SpiedTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpiedTests.swift; sourceTree = "<group>"; };
+		E22F366F1637F87613612810 /* Pods_Spy_tvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Spy_tvOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7988F87357A11FD2AC2C1A7 /* Pods-Spy_watchOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Spy_watchOS.debug.xcconfig"; path = "Target Support Files/Pods-Spy_watchOS/Pods-Spy_watchOS.debug.xcconfig"; sourceTree = "<group>"; };
 		F066CF5C12BC433A4D0339C8 /* PTimestampProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PTimestampProvider.swift; sourceTree = "<group>"; };
-		F164CC8023ECD0600067C268 /* LogFileType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogFileType.swift; sourceTree = "<group>"; };
-		F164CC8523ECD0B00067C268 /* LogFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogFile.swift; sourceTree = "<group>"; };
-		F164CC8A23ECDCE10067C268 /* DateFileNameProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFileNameProvider.swift; sourceTree = "<group>"; };
-		F164CC8F23ECDD7D0067C268 /* PFileNameProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PFileNameProvider.swift; sourceTree = "<group>"; };
-		F164CC9423ECE3020067C268 /* SpyDateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpyDateFormatter.swift; sourceTree = "<group>"; };
-		F164CC9923ECE8620067C268 /* DateFileNameProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFileNameProviderTests.swift; sourceTree = "<group>"; };
-		F164CCA123ECEAE10067C268 /* LogFileTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogFileTests.swift; sourceTree = "<group>"; };
-		F164CCA523ECEE950067C268 /* FileSpyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileSpyTests.swift; sourceTree = "<group>"; };
-		F164CCA923ECEF300067C268 /* PLogFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PLogFile.swift; sourceTree = "<group>"; };
+		F14A1C7F92CF140C3ECF4C18 /* PLock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PLock.swift; sourceTree = "<group>"; };
+		F1EF242C65897C93735F3484 /* Pods-SpyTests_tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpyTests_tvOS.debug.xcconfig"; path = "Target Support Files/Pods-SpyTests_tvOS/Pods-SpyTests_tvOS.debug.xcconfig"; sourceTree = "<group>"; };
 		F2850AE714DB254464B02DDD /* Spy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Spy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F532A7B8168E805A2735D1F1 /* RawSpyFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RawSpyFormatter.swift; sourceTree = "<group>"; };
+		F5B4903ACC944A882F4BD11C /* ConsoleSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsoleSpy.swift; sourceTree = "<group>"; };
 		F89E7AB26C7CC111444C2F77 /* Spy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Spy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FABB2FA9F6C20AD01BFE5FDF /* PFileNameProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PFileNameProvider.swift; sourceTree = "<group>"; };
 		FB1892C116E484C0A9CEE11F /* RawSpyFormatterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RawSpyFormatterTests.swift; sourceTree = "<group>"; };
 		FC720605A9EFD7D25659B56D /* CurrentTimestampProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentTimestampProvider.swift; sourceTree = "<group>"; };
-		FEEFAF5636BEDD1866D42993 /* Pods-Spy_tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Spy_tvOS.debug.xcconfig"; path = "Target Support Files/Pods-Spy_tvOS/Pods-Spy_tvOS.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -440,15 +459,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				4D633D03FCDD3CBBFF332C99 /* Spy.framework in Frameworks */,
-				461A51E880A1103167F085A2 /* Pods_SpyTests_macOS.framework in Frameworks */,
+				8C62BDA4E99D99966A64F6F3 /* Pods_SpyTests_macOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		12E42BF1BD6829C47F4D45D5 /* Frameworks */ = {
+		0D7EC39666CFD0E1C744BC9C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E99AA7E6942BFA30BDBABD66 /* Pods_Spy_macOS.framework in Frameworks */,
+				7197EC7C7449AF48F209BB22 /* Pods_Spy_watchOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -457,7 +476,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7F500EE1B575C69C06BEE07C /* Spy.framework in Frameworks */,
-				AEE9AD829D602A8F279EC8E6 /* Pods_SpyTests_iOS.framework in Frameworks */,
+				4440E25E101CD8A4C3FDD2B2 /* Pods_SpyTests_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -466,7 +485,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DDC287FB5C2DB6B0045A0549 /* Spy.framework in Frameworks */,
-				A88168B591B237C28FD5101E /* Pods_Example.framework in Frameworks */,
+				F534441A4AD1D4B3B4E47928 /* Pods_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -475,31 +494,31 @@
 			buildActionMask = 2147483647;
 			files = (
 				FC9A196D90E55547356AB223 /* Spy.framework in Frameworks */,
-				260EEA54D45561AB75DBE223 /* Pods_SpyTests_tvOS.framework in Frameworks */,
+				A5EA157501855A3D9A05F47B /* Pods_SpyTests_tvOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		456F7547DF24AEF989D6321D /* Frameworks */ = {
+		779A2FE6C24C15C93DE8AECE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				24A252318B26C0D43834ADCC /* Pods_Spy_tvOS.framework in Frameworks */,
+				AE88E23A2BB0401D1EA292C6 /* Pods_Spy_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C7568F3B7C3F30FA99631453 /* Frameworks */ = {
+		CAE66213676A0AB9ADE53D36 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8B6D678E1C6A5DCD4C2C61BE /* Pods_Spy_watchOS.framework in Frameworks */,
+				1902689495F7B82D9AD44FFE /* Pods_Spy_tvOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E3016C21D449CA2F8A353A64 /* Frameworks */ = {
+		E184689203FC536B2FA7701F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				07929E12000E9861466961F5 /* Pods_Spy_iOS.framework in Frameworks */,
+				A36F4389A975747698B4A03C /* Pods_Spy_macOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -519,6 +538,29 @@
 				6772CCD175E542765B2DCE45 /* SpyTests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		3E52196A9FD0D284C7324B16 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				257AFF4EFD684FF8914153BA /* Pods-Example.debug.xcconfig */,
+				1320E0055D82A780AA11D996 /* Pods-Example.release.xcconfig */,
+				D776199A5E80D5D737682928 /* Pods-SpyTests_iOS.debug.xcconfig */,
+				B59DDD31050940F10E4712EF /* Pods-SpyTests_iOS.release.xcconfig */,
+				70FE4B0963EC50F2359D77F4 /* Pods-SpyTests_macOS.debug.xcconfig */,
+				735CEEE934CEFFC83D2901FE /* Pods-SpyTests_macOS.release.xcconfig */,
+				F1EF242C65897C93735F3484 /* Pods-SpyTests_tvOS.debug.xcconfig */,
+				79A0E0F42767C527590BA24D /* Pods-SpyTests_tvOS.release.xcconfig */,
+				4BF49A28950F4E849D00C2F6 /* Pods-Spy_iOS.debug.xcconfig */,
+				A36D6365EE4F272BCF143CBF /* Pods-Spy_iOS.release.xcconfig */,
+				601B37680E28D23E7A94D7C8 /* Pods-Spy_macOS.debug.xcconfig */,
+				310B52D305500C473E09D4BB /* Pods-Spy_macOS.release.xcconfig */,
+				B1D14B2903DD11E0A9F862CE /* Pods-Spy_tvOS.debug.xcconfig */,
+				0425927E9058F5F15A45775F /* Pods-Spy_tvOS.release.xcconfig */,
+				E7988F87357A11FD2AC2C1A7 /* Pods-Spy_watchOS.debug.xcconfig */,
+				6BE20DB7F455DDBF93B48DF2 /* Pods-Spy_watchOS.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 		4764231C48B131FAAB5CA0A7 /* Autogenerated */ = {
@@ -543,18 +585,18 @@
 		5BB66F790BED7DEF7FA8D2A7 /* FileSpy */ = {
 			isa = PBXGroup;
 			children = (
+				1BCA6D8DE7C927F23D89E195 /* DateFileNameProvider.swift */,
 				4F7748A8F3D5607CC20FEE40 /* FileHandle+PFileHandle.swift */,
 				88B18D63B0434DD624675FF7 /* FileHandleFactory.swift */,
 				1E14FE1FAFF017554EA89F55 /* FileManager+PFileManager.swift */,
 				692954C115330B3101F59907 /* FileSpy.swift */,
+				80ECB002013CBFF6F6766501 /* LogFile.swift */,
+				A92C52EC59F3B46B0A7C61A7 /* LogFileType.swift */,
 				9E92CB99B32E931D67A6E1DB /* PFileHandle.swift */,
 				0B9913ADBBC907DD53F6125D /* PFileHandleFactory.swift */,
 				0CAA1AD1672C247F882F0E2A /* PFileManager.swift */,
-				F164CC8023ECD0600067C268 /* LogFileType.swift */,
-				F164CC8523ECD0B00067C268 /* LogFile.swift */,
-				F164CC8A23ECDCE10067C268 /* DateFileNameProvider.swift */,
-				F164CC8F23ECDD7D0067C268 /* PFileNameProvider.swift */,
-				F164CCA923ECEF300067C268 /* PLogFile.swift */,
+				FABB2FA9F6C20AD01BFE5FDF /* PFileNameProvider.swift */,
+				B54467CDEAB70160A3F6A122 /* PLogFile.swift */,
 			);
 			path = FileSpy;
 			sourceTree = "<group>";
@@ -572,26 +614,12 @@
 			path = Spy;
 			sourceTree = "<group>";
 		};
-		70BFE9041453B428777DEAD8 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				969680E6FAF99D88278F0BB4 /* Pods_Example.framework */,
-				01EC251448FF700F9878D3E5 /* Pods_SpyTests_iOS.framework */,
-				95F5E763C71CB604D4F4BD98 /* Pods_SpyTests_macOS.framework */,
-				6C4C6DD5B24CB8897F88D73A /* Pods_SpyTests_tvOS.framework */,
-				1E6494A43623BC73C9B9105D /* Pods_Spy_iOS.framework */,
-				94BE6AB849CC552FE08D23BE /* Pods_Spy_macOS.framework */,
-				946188DCED9AF5ADA99C0BDB /* Pods_Spy_tvOS.framework */,
-				2E94DEF6FF63EF568038A56A /* Pods_Spy_watchOS.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		8A85DC9A0F5D34AB1561B422 /* Spies */ = {
 			isa = PBXGroup;
 			children = (
-				F164CCAE23ECF04F0067C268 /* Console */,
+				BA771AA1CBF4B2BAD3BF9728 /* Console */,
 				5BB66F790BED7DEF7FA8D2A7 /* FileSpy */,
+				B7B39CD3D2B4912D3473E28C /* ThreadSafeSpy */,
 				4B3721D08304B478CCE5C9E9 /* CompositeSpy.swift */,
 			);
 			path = Spies;
@@ -605,35 +633,12 @@
 			path = Raw;
 			sourceTree = "<group>";
 		};
-		A4AA93727928534EB02C5E19 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				406C0FECA905C943E712F21E /* Pods-Example.debug.xcconfig */,
-				CB84D125C4E64FF90F89C351 /* Pods-Example.release.xcconfig */,
-				0715498166643281437381FC /* Pods-SpyTests_iOS.debug.xcconfig */,
-				B42D1074B51CD40022C3CABA /* Pods-SpyTests_iOS.release.xcconfig */,
-				66FC2DD6F1BB55364E976230 /* Pods-SpyTests_macOS.debug.xcconfig */,
-				5E133CB695639A2C9BEABD96 /* Pods-SpyTests_macOS.release.xcconfig */,
-				648F9B523D182E89CE93150D /* Pods-SpyTests_tvOS.debug.xcconfig */,
-				C22396A83D00CD2278A03331 /* Pods-SpyTests_tvOS.release.xcconfig */,
-				2E5F3F5AABA8A982517FCB1F /* Pods-Spy_iOS.debug.xcconfig */,
-				9F4915A63BB1F628F6118A0F /* Pods-Spy_iOS.release.xcconfig */,
-				B5449DEE35DE95C8502F47E3 /* Pods-Spy_macOS.debug.xcconfig */,
-				4154F4A0AE5CBBF520924100 /* Pods-Spy_macOS.release.xcconfig */,
-				FEEFAF5636BEDD1866D42993 /* Pods-Spy_tvOS.debug.xcconfig */,
-				C7103667F17C920280C7E6DF /* Pods-Spy_tvOS.release.xcconfig */,
-				5D03CBF7BC2D2260F721680B /* Pods-Spy_watchOS.debug.xcconfig */,
-				A738721FC0E27B446B20EF18 /* Pods-Spy_watchOS.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
 		A6749E03B0AB542323C88810 /* Formatters */ = {
 			isa = PBXGroup;
 			children = (
 				F9D3C2E2AFB761F8D3F4894E /* Decorated */,
 				906E45A426D867A4FCADF3CE /* Raw */,
-				F164CC9423ECE3020067C268 /* SpyDateFormatter.swift */,
+				DBB7600052166F665D04538E /* SpyDateFormatter.swift */,
 			);
 			path = Formatters;
 			sourceTree = "<group>";
@@ -665,8 +670,8 @@
 				E069343808C95096117CBA7D /* SpyTests */,
 				94B02152FA5F1BF520D7032F /* Package.swift */,
 				0326187113199AEC92CFE93C /* Products */,
-				A4AA93727928534EB02C5E19 /* Pods */,
-				70BFE9041453B428777DEAD8 /* Frameworks */,
+				3E52196A9FD0D284C7324B16 /* Pods */,
+				DE942C8F591AAA3347A29C67 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -685,6 +690,24 @@
 			path = Example;
 			sourceTree = "<group>";
 		};
+		B7B39CD3D2B4912D3473E28C /* ThreadSafeSpy */ = {
+			isa = PBXGroup;
+			children = (
+				06F58DB368B8DBB39F278304 /* NSLock+PLock.swift */,
+				F14A1C7F92CF140C3ECF4C18 /* PLock.swift */,
+				0A7710BBD98F325A361F57A3 /* ThreadSafeSpy.swift */,
+			);
+			path = ThreadSafeSpy;
+			sourceTree = "<group>";
+		};
+		BA771AA1CBF4B2BAD3BF9728 /* Console */ = {
+			isa = PBXGroup;
+			children = (
+				F5B4903ACC944A882F4BD11C /* ConsoleSpy.swift */,
+			);
+			path = Console;
+			sourceTree = "<group>";
+		};
 		BE5F5B14E5C05B142B2239C2 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -694,6 +717,21 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		DE942C8F591AAA3347A29C67 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1D0EB95D8E672FF678C156CD /* Pods_Example.framework */,
+				9DCFAF47C65A5E39B5E3FC5E /* Pods_SpyTests_iOS.framework */,
+				D12E735E7D33A22BDF9DC81B /* Pods_SpyTests_macOS.framework */,
+				71B4246829FA34D02662B05D /* Pods_SpyTests_tvOS.framework */,
+				2BD150BD91D23469CA1A49EC /* Pods_Spy_iOS.framework */,
+				7BE843604C80E1143C2F2F1F /* Pods_Spy_macOS.framework */,
+				E22F366F1637F87613612810 /* Pods_Spy_tvOS.framework */,
+				14D326240B6C7E1DDBE7B930 /* Pods_Spy_watchOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E069343808C95096117CBA7D /* SpyTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -701,8 +739,11 @@
 				D19ADD9D7DF5A76D1ADFDAA2 /* AnySpyTests.swift */,
 				6E00BBCA9E4F5B96DBACDEAA /* CompositeSpyTests.swift */,
 				BDC5AAEA8A89B929C95B321B /* ConsoleSpyTests.swift */,
+				85D822D1CDB87F87023DE6C2 /* DateFileNameProviderTests.swift */,
 				B7F7DAD6349DEB9B9C93E502 /* DecoratedSpyFormatterTests.swift */,
 				AC9108D395F05EFA68F906AC /* EmojiPrefixedSpyLevelNameDecoratorTests.swift */,
+				D17C70F0F2B27ABF85066F2F /* FileSpyTests.swift */,
+				5674AE2DEC55C024790BF7D7 /* LogFileTests.swift */,
 				4E7BF75BAB70741E76324A4D /* PSpyTests.swift */,
 				FB1892C116E484C0A9CEE11F /* RawSpyFormatterTests.swift */,
 				DF0D945A0C721DC409CDF027 /* SpiedTests.swift */,
@@ -714,9 +755,7 @@
 				5FCAD0635277EC7F24086E2A /* SpyLevelTests.swift */,
 				4D2A75209F0ADFD824A7846E /* SpyTests-Bridging-Header.h */,
 				DB04DC49C011B23DF8C3389E /* TestColoredSpyLevelNameDecorator.swift */,
-				F164CC9923ECE8620067C268 /* DateFileNameProviderTests.swift */,
-				F164CCA123ECEAE10067C268 /* LogFileTests.swift */,
-				F164CCA523ECEE950067C268 /* FileSpyTests.swift */,
+				3D9EADEB37E50F9AAFCB9112 /* ThreadSafeSpyTests.swift */,
 			);
 			path = SpyTests;
 			sourceTree = "<group>";
@@ -729,14 +768,6 @@
 				C9D02D06CCB2020EE4E5E901 /* Release.xcconfig */,
 			);
 			path = Configurations;
-			sourceTree = "<group>";
-		};
-		F164CCAE23ECF04F0067C268 /* Console */ = {
-			isa = PBXGroup;
-			children = (
-				0CEB4932676666D032930956 /* ConsoleSpy.swift */,
-			);
-			path = Console;
 			sourceTree = "<group>";
 		};
 		F9D3C2E2AFB761F8D3F4894E /* Decorated */ = {
@@ -799,7 +830,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E20D01782C16923CC210FC11 /* Build configuration list for PBXNativeTarget "Example" */;
 			buildPhases = (
-				B3DBDE6C502297CF4F0B7DE9 /* [CP] Check Pods Manifest.lock */,
+				877BA39B657A30BF0ACE018D /* [CP] Check Pods Manifest.lock */,
 				9F17513BE0DEE0FD0EB5FF02 /* Sources */,
 				BAC317D50090DEA1A23ED8B3 /* Resources */,
 				2F3B647C01C6D6CD27E34356 /* Frameworks */,
@@ -820,10 +851,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3C2AB836305F80B90627295F /* Build configuration list for PBXNativeTarget "Spy_iOS" */;
 			buildPhases = (
-				21274322E0D848804BDD7BAF /* [CP] Check Pods Manifest.lock */,
+				8AABAFDD9D3741FC79D473A4 /* [CP] Check Pods Manifest.lock */,
 				4CE71B7A82F6AB963337104A /* Headers */,
 				31195AA61D13AF5C43F28C5F /* Sources */,
-				E3016C21D449CA2F8A353A64 /* Frameworks */,
+				779A2FE6C24C15C93DE8AECE /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -838,10 +869,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 42EBBB54AA87A8B2CE277EB8 /* Build configuration list for PBXNativeTarget "Spy_macOS" */;
 			buildPhases = (
-				07BF1867D2EA8991B755BE54 /* [CP] Check Pods Manifest.lock */,
+				09F5203B62E56CDC0AF6AE2A /* [CP] Check Pods Manifest.lock */,
 				5BC1FC8F32A204A991913FFD /* Headers */,
 				11CAAEE2FAB9D8F0AFBDE1D9 /* Sources */,
-				12E42BF1BD6829C47F4D45D5 /* Frameworks */,
+				E184689203FC536B2FA7701F /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -856,7 +887,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FE640FAC78F486D49127FDED /* Build configuration list for PBXNativeTarget "SpyTests_macOS" */;
 			buildPhases = (
-				7F45D9F24DE8063D8395D953 /* [CP] Check Pods Manifest.lock */,
+				3EAF94E62AF07B7C21C4F02F /* [CP] Check Pods Manifest.lock */,
 				C0534A3E559CD5AF16872113 /* Sources */,
 				066D9DEF87320C63CDA5A125 /* Frameworks */,
 				ACF73D70A2119F8D95D67799 /* Embed Frameworks */,
@@ -875,10 +906,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D5C83FA2578275282804C87D /* Build configuration list for PBXNativeTarget "Spy_tvOS" */;
 			buildPhases = (
-				B2EA843B76717223491FCA1D /* [CP] Check Pods Manifest.lock */,
+				3F621ACAB7A98DBFC63D37CF /* [CP] Check Pods Manifest.lock */,
 				24DFC8619973A8EF9B5194C4 /* Headers */,
 				3BD522A72D130E6652301A40 /* Sources */,
-				456F7547DF24AEF989D6321D /* Frameworks */,
+				CAE66213676A0AB9ADE53D36 /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -893,7 +924,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F90D4FD8DD1744F5C50047EE /* Build configuration list for PBXNativeTarget "SpyTests_tvOS" */;
 			buildPhases = (
-				A4D3C27CF6C3E24EAAB25DFB /* [CP] Check Pods Manifest.lock */,
+				3ED61DAF130006BB814954FC /* [CP] Check Pods Manifest.lock */,
 				3EAADCC491C85632CAFE3D15 /* Sources */,
 				310DFB39F8D268D0AAAA8F8D /* Frameworks */,
 				D145A19C087A720A8BE5BC33 /* Embed Frameworks */,
@@ -912,7 +943,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 39FF6D6083D6D2F6D05CB4AA /* Build configuration list for PBXNativeTarget "SpyTests_iOS" */;
 			buildPhases = (
-				C278F3097E593C6885D6C9B3 /* [CP] Check Pods Manifest.lock */,
+				2B88850A95EEBA69B530DFFB /* [CP] Check Pods Manifest.lock */,
 				BE626AD77F7927458BB76414 /* Sources */,
 				21541168DF3DDAF3443853AB /* Frameworks */,
 				778878D46AF7A22426B7AF49 /* Embed Frameworks */,
@@ -931,10 +962,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D8D10E5C1D066816B96DF006 /* Build configuration list for PBXNativeTarget "Spy_watchOS" */;
 			buildPhases = (
-				FE0AA188C3BB9A2CB2A60CE6 /* [CP] Check Pods Manifest.lock */,
+				E877205AB579CBA85CD0F51D /* [CP] Check Pods Manifest.lock */,
 				A2399FA8DCBC74F945151BC3 /* Headers */,
 				45FABD15EBAA08D147991A63 /* Sources */,
-				C7568F3B7C3F30FA99631453 /* Frameworks */,
+				0D7EC39666CFD0E1C744BC9C /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1018,7 +1049,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		07BF1867D2EA8991B755BE54 /* [CP] Check Pods Manifest.lock */ = {
+		09F5203B62E56CDC0AF6AE2A /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1040,7 +1071,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		21274322E0D848804BDD7BAF /* [CP] Check Pods Manifest.lock */ = {
+		2B88850A95EEBA69B530DFFB /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1055,14 +1086,14 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Spy_iOS-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-SpyTests_iOS-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		7F45D9F24DE8063D8395D953 /* [CP] Check Pods Manifest.lock */ = {
+		3EAF94E62AF07B7C21C4F02F /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1078,6 +1109,94 @@
 			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-SpyTests_macOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3ED61DAF130006BB814954FC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SpyTests_tvOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3F621ACAB7A98DBFC63D37CF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Spy_tvOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		877BA39B657A30BF0ACE018D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Example-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8AABAFDD9D3741FC79D473A4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Spy_iOS-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1102,95 +1221,7 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
 		};
-		A4D3C27CF6C3E24EAAB25DFB /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-SpyTests_tvOS-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B2EA843B76717223491FCA1D /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Spy_tvOS-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B3DBDE6C502297CF4F0B7DE9 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Example-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C278F3097E593C6885D6C9B3 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-SpyTests_iOS-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		FE0AA188C3BB9A2CB2A60CE6 /* [CP] Check Pods Manifest.lock */ = {
+		E877205AB579CBA85CD0F51D /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1223,40 +1254,43 @@
 				981EEC6855191D72F55509F1 /* AnySpy.swift in Sources */,
 				79E02880AB96459CC2A22701 /* ColoredSpyLevelNameDecorator.swift in Sources */,
 				D9F6A7721E854989F19E4AB2 /* CompositeSpy.swift in Sources */,
-				EE2271B2816C451658931DB0 /* ConsoleSpy.swift in Sources */,
+				78FF0AE282B9E4498B5A3B80 /* ConsoleSpy.swift in Sources */,
 				F5CF317CC6C31D366651B8BF /* CurrentTimestampProvider.swift in Sources */,
-				F164CC9123ECDD7D0067C268 /* PFileNameProvider.swift in Sources */,
+				9F86CD17A283A16C9A6FA08C /* DateFileNameProvider.swift in Sources */,
 				3FEBC2D512FF67DBC4BEAC50 /* DecoratedLevelBuilder.swift in Sources */,
 				65F6F9D33FE128469B6F18BB /* DecoratedSpyFormatter.swift in Sources */,
 				CE56933529D554A751313222 /* EmojiPrefixedSpyLevelDecorator.swift in Sources */,
 				CB3E2547EA0C00326ACF207C /* FileHandle+PFileHandle.swift in Sources */,
-				F164CCAB23ECEF300067C268 /* PLogFile.swift in Sources */,
 				26DD05EC1B1FE12870589ED0 /* FileHandleFactory.swift in Sources */,
-				F164CC8C23ECDCE10067C268 /* DateFileNameProvider.swift in Sources */,
 				F5133789810EDEF82DDA60CB /* FileManager+PFileManager.swift in Sources */,
 				092629F64335AD2891FDA227 /* FileSpy.swift in Sources */,
+				C1E609CD2AA176BC33EFA8F6 /* LogFile.swift in Sources */,
+				A25FACA0B361974B28F61BAC /* LogFileType.swift in Sources */,
+				C49EC977807DBB2A3FC294B7 /* NSLock+PLock.swift in Sources */,
 				99E219E709D0AD5B7F6BEE10 /* PFileHandle.swift in Sources */,
-				F164CC8223ECD0600067C268 /* LogFileType.swift in Sources */,
 				827BB9C02FFD8BB7E358B2C3 /* PFileHandleFactory.swift in Sources */,
 				5DAD76481839FCB075FA86DD /* PFileManager.swift in Sources */,
+				DEB89DB7FD7690611A5CB079 /* PFileNameProvider.swift in Sources */,
+				F78B74E8BC1BDA19340FB52B /* PLock.swift in Sources */,
+				639D44A02D3EED621AFB9D0A /* PLogFile.swift in Sources */,
 				886A7BD2543444F89389CC16 /* PSpy.swift in Sources */,
 				AB29D838E29A56E2F3BC1687 /* PSpyChannel.swift in Sources */,
 				8412EDEAA2D85CEEA805E0EF /* PSpyFormatter.swift in Sources */,
 				4F128AC60B1145DE3F616BC0 /* PSpyLevel.swift in Sources */,
 				EAF3C9B3FF05CA164F540D0C /* PSpyLevelDecorator.swift in Sources */,
 				6632657E0F9024B622C384F2 /* PSpyable.swift in Sources */,
-				F164CC9623ECE3020067C268 /* SpyDateFormatter.swift in Sources */,
 				B8B4D55060E2DA4A225E54EB /* PTimestampProvider.swift in Sources */,
 				D4663683690C94988F8D93DE /* PlainLevelNameDecorator.swift in Sources */,
 				D004DDB2F3FD98F552B769C2 /* RawSpyFormatter.swift in Sources */,
 				EA88018E4F9BA9D58270ED71 /* Spied.swift in Sources */,
 				62AFD6CA6344AF0F4D8F1CCD /* SpyColor.swift in Sources */,
-				F164CC8723ECD0B00067C268 /* LogFile.swift in Sources */,
 				FD176C5DC60F5BF88F166576 /* SpyConfiguration.swift in Sources */,
 				19450A771F401CB4FC681C44 /* SpyConfigurationBuilder.swift in Sources */,
+				54A1269D75EDED46F1256029 /* SpyDateFormatter.swift in Sources */,
 				75519EF5B192426192E12476 /* SpyLevel.swift in Sources */,
 				353C2184989E65ABD598E90B /* String+Colored.swift in Sources */,
 				173FE8DE0B940BD6F0376872 /* String+PSpyable.swift in Sources */,
+				27A3DBC75C568025DC92CF73 /* ThreadSafeSpy.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1268,40 +1302,43 @@
 				9B89D1D5F99812C232E51E89 /* AnySpy.swift in Sources */,
 				895283B869B2AB34764BE357 /* ColoredSpyLevelNameDecorator.swift in Sources */,
 				590450D7D694B7E1B0EF3C04 /* CompositeSpy.swift in Sources */,
-				290B2C3E4938A66DDD8878F1 /* ConsoleSpy.swift in Sources */,
+				ABA43AF9955A9D3AB6F9E92F /* ConsoleSpy.swift in Sources */,
 				44243EEFD83ECAA405CE47D8 /* CurrentTimestampProvider.swift in Sources */,
-				F164CC9023ECDD7D0067C268 /* PFileNameProvider.swift in Sources */,
+				D7141490EBB26EC850680167 /* DateFileNameProvider.swift in Sources */,
 				537CC9E38E37E0DB168FFD00 /* DecoratedLevelBuilder.swift in Sources */,
 				41D050A2F33AC838763DCA80 /* DecoratedSpyFormatter.swift in Sources */,
 				3983E0B3AFB0323C312E3F0D /* EmojiPrefixedSpyLevelDecorator.swift in Sources */,
 				2BE9170A7A66FB15E31F33D7 /* FileHandle+PFileHandle.swift in Sources */,
-				F164CCAA23ECEF300067C268 /* PLogFile.swift in Sources */,
 				0E2E0E7B411CC7DAD77F05FD /* FileHandleFactory.swift in Sources */,
-				F164CC8B23ECDCE10067C268 /* DateFileNameProvider.swift in Sources */,
 				7082AC54F404C5B16ABA4DF3 /* FileManager+PFileManager.swift in Sources */,
 				9CB0ACC88779167DDBFC8244 /* FileSpy.swift in Sources */,
+				B891BF807C11FA44775D5799 /* LogFile.swift in Sources */,
+				CAD435F5BBF2D5BDE46AB69E /* LogFileType.swift in Sources */,
+				C9596DE63212A136C4FB9D29 /* NSLock+PLock.swift in Sources */,
 				482E77F6640801895897D50F /* PFileHandle.swift in Sources */,
-				F164CC8123ECD0600067C268 /* LogFileType.swift in Sources */,
 				8B13AD0E2500267C9AD71B75 /* PFileHandleFactory.swift in Sources */,
 				AFE51C393388FE43EB281CC9 /* PFileManager.swift in Sources */,
+				6EB4D3A22136556613155A74 /* PFileNameProvider.swift in Sources */,
+				43CA154E27B20A83499D4FC3 /* PLock.swift in Sources */,
+				7F8AF205BADAC8D5F9D57FD3 /* PLogFile.swift in Sources */,
 				1D6B29087959EE09A0E38A1E /* PSpy.swift in Sources */,
 				9A9D3BB19B331877AA7384EE /* PSpyChannel.swift in Sources */,
 				75B1B84566E71D5B8B25E261 /* PSpyFormatter.swift in Sources */,
 				83C426EEA71209EFF73B8C33 /* PSpyLevel.swift in Sources */,
 				FA1C94B0513C52E102F2B2EE /* PSpyLevelDecorator.swift in Sources */,
 				D60C6F7CF9D93E8FB7885B95 /* PSpyable.swift in Sources */,
-				F164CC9523ECE3020067C268 /* SpyDateFormatter.swift in Sources */,
 				E0A8B1F68A1D77F737BDFC61 /* PTimestampProvider.swift in Sources */,
 				60BAA8F401079244275AF8A2 /* PlainLevelNameDecorator.swift in Sources */,
 				49FA3E13ED495EFB67F09577 /* RawSpyFormatter.swift in Sources */,
 				27318BCDBBCFBEA006A752A3 /* Spied.swift in Sources */,
 				EA4102CDEC2FA0F762242CF9 /* SpyColor.swift in Sources */,
-				F164CC8623ECD0B00067C268 /* LogFile.swift in Sources */,
 				C00E6ACCAD78C4BFEFDA7A5A /* SpyConfiguration.swift in Sources */,
 				C2CDAB2DB07EA3A221F45346 /* SpyConfigurationBuilder.swift in Sources */,
+				A600FDE4868078CE83CE92E0 /* SpyDateFormatter.swift in Sources */,
 				C2E7B779989D9DBFF18A62EC /* SpyLevel.swift in Sources */,
 				D862FA68866D424B9B0521CB /* String+Colored.swift in Sources */,
 				C8629831D1D56B4BB934DF1A /* String+PSpyable.swift in Sources */,
+				12B9126E60B1ED0F0F1CE643 /* ThreadSafeSpy.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1313,40 +1350,43 @@
 				485CF3835F477BB652A3378E /* AnySpy.swift in Sources */,
 				C18E26A9C71439922FEE77BE /* ColoredSpyLevelNameDecorator.swift in Sources */,
 				F3AC5B799C1B94D8207DD56A /* CompositeSpy.swift in Sources */,
-				ED8830C9C9F5B2E78BE2C89E /* ConsoleSpy.swift in Sources */,
+				50DED3CA1AC648864848C9BF /* ConsoleSpy.swift in Sources */,
 				C99A87C0ED390D32FB658163 /* CurrentTimestampProvider.swift in Sources */,
-				F164CC9223ECDD7D0067C268 /* PFileNameProvider.swift in Sources */,
+				085DE103B7FDF5AA9B271F9F /* DateFileNameProvider.swift in Sources */,
 				51AD4ACDFC2CCF4051A3A48A /* DecoratedLevelBuilder.swift in Sources */,
 				55937733DF64DF3094150778 /* DecoratedSpyFormatter.swift in Sources */,
 				CAD749F4F0BD805A46752680 /* EmojiPrefixedSpyLevelDecorator.swift in Sources */,
 				781EFDA97711EE3A86A3B56D /* FileHandle+PFileHandle.swift in Sources */,
-				F164CCAC23ECEF300067C268 /* PLogFile.swift in Sources */,
 				3EFD3C6D3FF851DF2E177BA0 /* FileHandleFactory.swift in Sources */,
-				F164CC8D23ECDCE10067C268 /* DateFileNameProvider.swift in Sources */,
 				7FBFC4EEA770D2CC60164AF2 /* FileManager+PFileManager.swift in Sources */,
 				8F7F1EFD2E4E598526880130 /* FileSpy.swift in Sources */,
+				966F6E5B202A3B7C37FD9D69 /* LogFile.swift in Sources */,
+				97AF66778738225D6BBAFA81 /* LogFileType.swift in Sources */,
+				84CF509BC35B1B9041791B81 /* NSLock+PLock.swift in Sources */,
 				8EA8E02160BF2DBE80075DE3 /* PFileHandle.swift in Sources */,
-				F164CC8323ECD0600067C268 /* LogFileType.swift in Sources */,
 				554488C8A22DB492F06C24CC /* PFileHandleFactory.swift in Sources */,
 				35DC689824AD25DFA2B1C17F /* PFileManager.swift in Sources */,
+				9EA591AB0419AA35537A5C3C /* PFileNameProvider.swift in Sources */,
+				B45CC84CD996DEA921A3799B /* PLock.swift in Sources */,
+				0C2D07060362C042415301D6 /* PLogFile.swift in Sources */,
 				21B02C3179425E712098BB8F /* PSpy.swift in Sources */,
 				068C3F82F2F30FCE9337F719 /* PSpyChannel.swift in Sources */,
 				892B171B9B79D82756032DEE /* PSpyFormatter.swift in Sources */,
 				0E8A240FB1BD894915DB91FC /* PSpyLevel.swift in Sources */,
 				995190404832857DC9455482 /* PSpyLevelDecorator.swift in Sources */,
 				5ED5122DDB798AC53EE3C8B3 /* PSpyable.swift in Sources */,
-				F164CC9723ECE3020067C268 /* SpyDateFormatter.swift in Sources */,
 				F3D6BF8A86265329889ED41C /* PTimestampProvider.swift in Sources */,
 				20DECD204218C72EB0004F11 /* PlainLevelNameDecorator.swift in Sources */,
 				D63CBC505EDF849AD0751B6E /* RawSpyFormatter.swift in Sources */,
 				8C88E8770908130451C6E60F /* Spied.swift in Sources */,
 				9A1EB1FD313D3F5F095C3DB4 /* SpyColor.swift in Sources */,
-				F164CC8823ECD0B00067C268 /* LogFile.swift in Sources */,
 				DAC461D0CDA627AFAC0E33F8 /* SpyConfiguration.swift in Sources */,
 				71C3E5188C68CD679A7E3BD3 /* SpyConfigurationBuilder.swift in Sources */,
+				FA06E17C2DA9B34B4118946B /* SpyDateFormatter.swift in Sources */,
 				2E177EFC11792493BE363631 /* SpyLevel.swift in Sources */,
 				60EF1293F6688808E82F14F5 /* String+Colored.swift in Sources */,
 				1509C1F557AB15F513F207C5 /* String+PSpyable.swift in Sources */,
+				E79E3A78D9BB58E1EAD3C659 /* ThreadSafeSpy.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1358,21 +1398,22 @@
 				2262A63FF401FB90F7D45B67 /* AutoMockable.generated.swift in Sources */,
 				3C1F26ED92D01B47E2D3007E /* CompositeSpyTests.swift in Sources */,
 				40674627A0381137B894A72A /* ConsoleSpyTests.swift in Sources */,
+				50D9BBE435674DE9D50D047E /* DateFileNameProviderTests.swift in Sources */,
 				4F315EB0E68EC114E14BA0A7 /* DecoratedSpyFormatterTests.swift in Sources */,
 				2A62E9C38A57BF5DD82A36AD /* EmojiPrefixedSpyLevelNameDecoratorTests.swift in Sources */,
+				E09B8D2C10AE942C77AD2C40 /* FileSpyTests.swift in Sources */,
+				566C381A7EBFBD4ABC489E26 /* LogFileTests.swift in Sources */,
 				BE6460A87A2BE44E50B45E09 /* PSpyTests.swift in Sources */,
 				79FA4FB2CD9CE24FAF55CA50 /* RawSpyFormatterTests.swift in Sources */,
 				EF3A7793E1C0E0F5733618A2 /* SpiedTests.swift in Sources */,
 				6D342CD13E60B9F5AF3FE963 /* SpyChannel.swift in Sources */,
 				B242FB7D157350BF3C52AF5F /* SpyColorTests.swift in Sources */,
-				F164CC9C23ECE8620067C268 /* DateFileNameProviderTests.swift in Sources */,
-				F164CCA423ECEAE10067C268 /* LogFileTests.swift in Sources */,
 				6E75553A990E9E21C5A46086 /* SpyConfigurationBuilderTests.swift in Sources */,
-				F164CCA823ECEE950067C268 /* FileSpyTests.swift in Sources */,
 				3AC7008E7D17C907BE2DE52D /* SpyConfigurationTests.swift in Sources */,
 				B2421BD4F629D52D4231ADBE /* SpyLevelTests.swift in Sources */,
 				19DA90F1AA80C6743BB06779 /* SpyableStringTests.swift in Sources */,
 				F1A0395ABBF615489F73A323 /* TestColoredSpyLevelNameDecorator.swift in Sources */,
+				D6DC1AA7E887561C4CB515C2 /* ThreadSafeSpyTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1384,40 +1425,43 @@
 				E4FB454F9DC865BCB2282CE2 /* AnySpy.swift in Sources */,
 				CBFF90ABE45499573540B414 /* ColoredSpyLevelNameDecorator.swift in Sources */,
 				7B85E5EA3D0B84FDE1D6FF01 /* CompositeSpy.swift in Sources */,
-				37DE98D41EE68EF7A373738E /* ConsoleSpy.swift in Sources */,
+				66C138CF1F2510D9A868A484 /* ConsoleSpy.swift in Sources */,
 				9E5DEB16749087CB0CB5339E /* CurrentTimestampProvider.swift in Sources */,
-				F164CC9323ECDD7D0067C268 /* PFileNameProvider.swift in Sources */,
+				6F78C933E48B08D54A600574 /* DateFileNameProvider.swift in Sources */,
 				01DC729040BB0735C4C88EC0 /* DecoratedLevelBuilder.swift in Sources */,
 				7D89F6836B7E1992A7BC274C /* DecoratedSpyFormatter.swift in Sources */,
 				611243FF16D40C61191EAB88 /* EmojiPrefixedSpyLevelDecorator.swift in Sources */,
 				942E09BCE4BD5684AF4CA0E3 /* FileHandle+PFileHandle.swift in Sources */,
-				F164CCAD23ECEF300067C268 /* PLogFile.swift in Sources */,
 				64A30E7E686CED58DBD38F4D /* FileHandleFactory.swift in Sources */,
-				F164CC8E23ECDCE10067C268 /* DateFileNameProvider.swift in Sources */,
 				F364290C14EEF7CC68ACF6E0 /* FileManager+PFileManager.swift in Sources */,
 				25EFD0CFA31D2389BAC5B4B4 /* FileSpy.swift in Sources */,
+				ADBBD473E22EF74054B87732 /* LogFile.swift in Sources */,
+				27AE807ADDE180D188330EEB /* LogFileType.swift in Sources */,
+				B0C590D71B1350866EDE16BE /* NSLock+PLock.swift in Sources */,
 				144730EEDF57DD0FC333ABD6 /* PFileHandle.swift in Sources */,
-				F164CC8423ECD0600067C268 /* LogFileType.swift in Sources */,
 				FEAB9234253255DE36D50125 /* PFileHandleFactory.swift in Sources */,
 				3E0B406758C6DE22A108903B /* PFileManager.swift in Sources */,
+				AE0BEF6D4B67CFEABCFFFA72 /* PFileNameProvider.swift in Sources */,
+				43445E67B81362F3ECDB6036 /* PLock.swift in Sources */,
+				5CE16D2ED336EA75E04F1D4C /* PLogFile.swift in Sources */,
 				3870206ABDFC01485BBF19AC /* PSpy.swift in Sources */,
 				FBB8940D9542B4DD3CB38558 /* PSpyChannel.swift in Sources */,
 				D4F8CBC3E2FCD93A2FD4EF6D /* PSpyFormatter.swift in Sources */,
 				7F7AC611D87F5A755F2FD60D /* PSpyLevel.swift in Sources */,
 				AE5CCB62E1C4924EB767F3C4 /* PSpyLevelDecorator.swift in Sources */,
 				54843A4085FFD5237E5E6E59 /* PSpyable.swift in Sources */,
-				F164CC9823ECE3020067C268 /* SpyDateFormatter.swift in Sources */,
 				73BF06596792ACCE96D05F8C /* PTimestampProvider.swift in Sources */,
 				66F5EFA3C14E939E4E3C8E8A /* PlainLevelNameDecorator.swift in Sources */,
 				E853FF141B439C68A77C24BD /* RawSpyFormatter.swift in Sources */,
 				39529FD52B2201DDB43A09DC /* Spied.swift in Sources */,
 				AEA11A8D41458C45890DD2FC /* SpyColor.swift in Sources */,
-				F164CC8923ECD0B00067C268 /* LogFile.swift in Sources */,
 				C1739893893ED4397E244D5C /* SpyConfiguration.swift in Sources */,
 				A30368B5C48757EC721B8C5E /* SpyConfigurationBuilder.swift in Sources */,
+				0AC667038AC75191D02E9C1C /* SpyDateFormatter.swift in Sources */,
 				8910FD3712967C56851A303E /* SpyLevel.swift in Sources */,
 				FF178CD83D8835E8EEDA8FC7 /* String+Colored.swift in Sources */,
 				05B151B8E880D8E760E474EB /* String+PSpyable.swift in Sources */,
+				35ACD21735D41ADE8629ADE3 /* ThreadSafeSpy.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1440,21 +1484,22 @@
 				EC640757F0DF68788CB2E307 /* AutoMockable.generated.swift in Sources */,
 				CE63C4AE38E15F61A2389431 /* CompositeSpyTests.swift in Sources */,
 				AA95200FE6E47BAA72C42FF4 /* ConsoleSpyTests.swift in Sources */,
+				FF7595D23F548C94BF92668D /* DateFileNameProviderTests.swift in Sources */,
 				747E2C1E6608D27B31A11543 /* DecoratedSpyFormatterTests.swift in Sources */,
 				CEA58439D3FE9FBDA34AB8E6 /* EmojiPrefixedSpyLevelNameDecoratorTests.swift in Sources */,
+				F2BFF752E84D6008FAB7FD89 /* FileSpyTests.swift in Sources */,
+				E8E6C6663968A5F21F531434 /* LogFileTests.swift in Sources */,
 				067547D57836983449BD37FF /* PSpyTests.swift in Sources */,
 				D221CA190DA599ECDBE6AB66 /* RawSpyFormatterTests.swift in Sources */,
 				3C0F64939563EADEBE668408 /* SpiedTests.swift in Sources */,
 				C0962F28B8B09664B1A667EE /* SpyChannel.swift in Sources */,
 				9B3FD0BB2566700EFB118DA2 /* SpyColorTests.swift in Sources */,
-				F164CC9A23ECE8620067C268 /* DateFileNameProviderTests.swift in Sources */,
-				F164CCA223ECEAE10067C268 /* LogFileTests.swift in Sources */,
 				E65242FA8DE42CEF964BFF32 /* SpyConfigurationBuilderTests.swift in Sources */,
-				F164CCA623ECEE950067C268 /* FileSpyTests.swift in Sources */,
 				06E623625255BD2C37780B70 /* SpyConfigurationTests.swift in Sources */,
 				0B1E4BECF222C9816D8B377B /* SpyLevelTests.swift in Sources */,
 				AFF10C2452455326925C8D6C /* SpyableStringTests.swift in Sources */,
 				BFD3C8954E99A4A1BFA557A8 /* TestColoredSpyLevelNameDecorator.swift in Sources */,
+				810F2FE0F716EBC67A017A82 /* ThreadSafeSpyTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1466,21 +1511,22 @@
 				FBF6654AE8F7E3DC0AE1FF88 /* AutoMockable.generated.swift in Sources */,
 				1FCAA0FF0B43AE7ACD7B48C6 /* CompositeSpyTests.swift in Sources */,
 				5BDEC228E142161495F28987 /* ConsoleSpyTests.swift in Sources */,
+				125709E3EC9E31FBED2FC674 /* DateFileNameProviderTests.swift in Sources */,
 				7B1724B853FD434EFB0706B8 /* DecoratedSpyFormatterTests.swift in Sources */,
 				97B5920715A544FA22458037 /* EmojiPrefixedSpyLevelNameDecoratorTests.swift in Sources */,
+				8460200FCFF6F82A77E2A59D /* FileSpyTests.swift in Sources */,
+				B00232352FCCCB7F30B33FE2 /* LogFileTests.swift in Sources */,
 				F923CDB15CA708C9A4F9918A /* PSpyTests.swift in Sources */,
 				1E4752938008078138590582 /* RawSpyFormatterTests.swift in Sources */,
 				3027593B0CA259AFD8E92DEB /* SpiedTests.swift in Sources */,
 				FC980D0C4924363F9FD1AEA4 /* SpyChannel.swift in Sources */,
 				39672CB6F32864A32B83F830 /* SpyColorTests.swift in Sources */,
-				F164CC9B23ECE8620067C268 /* DateFileNameProviderTests.swift in Sources */,
-				F164CCA323ECEAE10067C268 /* LogFileTests.swift in Sources */,
 				6AF426DCA1E3D154730C05A9 /* SpyConfigurationBuilderTests.swift in Sources */,
-				F164CCA723ECEE950067C268 /* FileSpyTests.swift in Sources */,
 				D05742190967E771291030A7 /* SpyConfigurationTests.swift in Sources */,
 				C9767B7941C887F87CB15FED /* SpyLevelTests.swift in Sources */,
 				8C26251481FA08C43C7F898B /* SpyableStringTests.swift in Sources */,
 				0D3A37DE86601FE16EF5D1D8 /* TestColoredSpyLevelNameDecorator.swift in Sources */,
+				2E25EF5243D9CE200E23A2FB /* ThreadSafeSpyTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1523,7 +1569,7 @@
 /* Begin XCBuildConfiguration section */
 		0C054A4C6A73B141C3E4A7E1 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CB84D125C4E64FF90F89C351 /* Pods-Example.release.xcconfig */;
+			baseConfigurationReference = 1320E0055D82A780AA11D996 /* Pods-Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -1541,7 +1587,7 @@
 		};
 		1BF055A76204D004FAFD51AE /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B5449DEE35DE95C8502F47E3 /* Pods-Spy_macOS.debug.xcconfig */;
+			baseConfigurationReference = 601B37680E28D23E7A94D7C8 /* Pods-Spy_macOS.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
@@ -1566,7 +1612,7 @@
 		};
 		221018AAB67F06061632C216 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5D03CBF7BC2D2260F721680B /* Pods-Spy_watchOS.debug.xcconfig */;
+			baseConfigurationReference = E7988F87357A11FD2AC2C1A7 /* Pods-Spy_watchOS.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				CURRENT_PROJECT_VERSION = 1;
@@ -1587,7 +1633,7 @@
 		};
 		276F33608C73B2EFED6D277D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 648F9B523D182E89CE93150D /* Pods-SpyTests_tvOS.debug.xcconfig */;
+			baseConfigurationReference = F1EF242C65897C93735F3484 /* Pods-SpyTests_tvOS.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1605,7 +1651,7 @@
 		};
 		333AAF53B4B79D6C7401C5BB /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 406C0FECA905C943E712F21E /* Pods-Example.debug.xcconfig */;
+			baseConfigurationReference = 257AFF4EFD684FF8914153BA /* Pods-Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -1682,7 +1728,7 @@
 		};
 		406A77023509B2F3B8C793ED /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A738721FC0E27B446B20EF18 /* Pods-Spy_watchOS.release.xcconfig */;
+			baseConfigurationReference = 6BE20DB7F455DDBF93B48DF2 /* Pods-Spy_watchOS.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				CURRENT_PROJECT_VERSION = 1;
@@ -1703,7 +1749,7 @@
 		};
 		425F9F5ADC3513B70C9CAD5D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2E5F3F5AABA8A982517FCB1F /* Pods-Spy_iOS.debug.xcconfig */;
+			baseConfigurationReference = 4BF49A28950F4E849D00C2F6 /* Pods-Spy_iOS.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				CURRENT_PROJECT_VERSION = 1;
@@ -1728,7 +1774,7 @@
 		};
 		49D6DDC318E8EBB539F35DE5 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C22396A83D00CD2278A03331 /* Pods-SpyTests_tvOS.release.xcconfig */;
+			baseConfigurationReference = 79A0E0F42767C527590BA24D /* Pods-SpyTests_tvOS.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1746,7 +1792,7 @@
 		};
 		4CBD552CCBF93EC5EE73E378 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0715498166643281437381FC /* Pods-SpyTests_iOS.debug.xcconfig */;
+			baseConfigurationReference = D776199A5E80D5D737682928 /* Pods-SpyTests_iOS.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1764,7 +1810,7 @@
 		};
 		5BC81AD6AF80183195099A42 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4154F4A0AE5CBBF520924100 /* Pods-Spy_macOS.release.xcconfig */;
+			baseConfigurationReference = 310B52D305500C473E09D4BB /* Pods-Spy_macOS.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
@@ -1789,7 +1835,7 @@
 		};
 		5D77F0E8BB15017A730126DC /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5E133CB695639A2C9BEABD96 /* Pods-SpyTests_macOS.release.xcconfig */;
+			baseConfigurationReference = 735CEEE934CEFFC83D2901FE /* Pods-SpyTests_macOS.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COMBINE_HIDPI_IMAGES = YES;
@@ -1807,7 +1853,7 @@
 		};
 		5F6BFA27A824A14C4D2DE804 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9F4915A63BB1F628F6118A0F /* Pods-Spy_iOS.release.xcconfig */;
+			baseConfigurationReference = A36D6365EE4F272BCF143CBF /* Pods-Spy_iOS.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				CURRENT_PROJECT_VERSION = 1;
@@ -1884,7 +1930,7 @@
 		};
 		8BBBEACB9C073941FB5731E0 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B42D1074B51CD40022C3CABA /* Pods-SpyTests_iOS.release.xcconfig */;
+			baseConfigurationReference = B59DDD31050940F10E4712EF /* Pods-SpyTests_iOS.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1902,7 +1948,7 @@
 		};
 		B2DECA4BBA01E433FF0EA8B6 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C7103667F17C920280C7E6DF /* Pods-Spy_tvOS.release.xcconfig */;
+			baseConfigurationReference = 0425927E9058F5F15A45775F /* Pods-Spy_tvOS.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				CURRENT_PROJECT_VERSION = 1;
@@ -1927,7 +1973,7 @@
 		};
 		F346B87A2A43A6C94B06CC45 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FEEFAF5636BEDD1866D42993 /* Pods-Spy_tvOS.debug.xcconfig */;
+			baseConfigurationReference = B1D14B2903DD11E0A9F862CE /* Pods-Spy_tvOS.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				CURRENT_PROJECT_VERSION = 1;
@@ -1952,7 +1998,7 @@
 		};
 		FC107C9144FFC557F37F5D74 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 66FC2DD6F1BB55364E976230 /* Pods-SpyTests_macOS.debug.xcconfig */;
+			baseConfigurationReference = 70FE4B0963EC50F2359D77F4 /* Pods-SpyTests_macOS.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COMBINE_HIDPI_IMAGES = YES;
