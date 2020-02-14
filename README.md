@@ -119,6 +119,23 @@ class Foo {
 }
 ```
 
+### SpiedFunction
+SpiedFunction is a function wrapper that allows to log function calls. It logs given spyable and forward execution to wrapped function. Example usage
+```swift
+let function = SpiedFunction(
+    spy: spy,
+    level: .info,
+    channel: .foo,
+    spyableProvider: { value in "Called Math.squared with value \(value)" },
+    function: Math.squared)
+ let x = 3
+ let xSquared = function.callAsFunction(x)
+```
+If using Swift 5.2 it is possible to call the SpiedFunction as follows:
+```
+ let xSquared = function(x)
+```
+
 ### Spy
 Spy is anything that implements *PSpy* protocol. There are a few spies already defined for you:
 - *ConsoleSpy* - spy that logs spyables by using print command
