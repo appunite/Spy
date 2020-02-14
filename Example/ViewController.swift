@@ -10,28 +10,31 @@ import Cocoa
 import Spy
 
 class ViewController: NSViewController {
-    @Spied(spy: Environment.spy, onLevel: .info, onChannel: .foo) var text = "text"
+    @Spied(spy: Environment.spy, onLevel: .severe, onChannel: .foo) var text = "text"
     
     override init(nibName nibNameOrNil: NSNib.Name?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
         Environment.spy.log(level: .info, channel: .foo, message: "initialized")
+        Environment.spy.log(level: .severe, channel: .bar, message: "provide initializer implementation")
     }
     
     required init?(coder: NSCoder) {
         super.init(coder: coder)
         Environment.spy.log(level: .info, channel: .foo, message: "initialized")
+        Environment.spy.log(level: .severe, channel: .bar, message: "provide initializer implementation")
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         Environment.spy.log(level: .info, channel: .foo, message: "ViewDidLoad")
+        Environment.spy.log(level: .severe, channel: .foo, message: "provide ViewDidLoad implementation")
         text = "abc"
     }
     
     override func viewDidAppear() {
         super.viewDidAppear()
         Environment.spy.log(level: .info, channel: .foo, message: "ViewDidAppear")
-        Environment.spy.log(level: .severe, channel: .bar, message: "ViewDidAppear not implemented")
+        Environment.spy.log(level: .severe, channel: .bar, message: "provide ViewDidAppear implementation")
     }
     
     override func viewWillAppear() {
