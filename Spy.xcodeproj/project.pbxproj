@@ -383,7 +383,7 @@
 		619E2CE79551BD109F8EAD7D /* Pods_SpyTests_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpyTests_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		66A51CA11936981CBDD18898 /* Pods-SpyTests_iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpyTests_iOS.debug.xcconfig"; path = "Target Support Files/Pods-SpyTests_iOS/Pods-SpyTests_iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		67253CF8104AD95F0C363B9E /* AnyLevelDecorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyLevelDecorator.swift; sourceTree = "<group>"; };
-		6772CCD175E542765B2DCE45 /* SpyTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = SpyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6772CCD175E542765B2DCE45 /* SpyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		692954C115330B3101F59907 /* FileSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileSpy.swift; sourceTree = "<group>"; };
 		6CB6786C6868991BD7D00539 /* Pods-Spy_iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Spy_iOS.debug.xcconfig"; path = "Target Support Files/Pods-Spy_iOS/Pods-Spy_iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		6D80E77E946C234FA70A60CB /* String+Colored.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Colored.swift"; sourceTree = "<group>"; };
@@ -432,7 +432,7 @@
 		BF2977004EA2EB53528A4F35 /* AnySpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnySpy.swift; sourceTree = "<group>"; };
 		C5413DCDB3D16BCB0C025380 /* Pods_Spy_tvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Spy_tvOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9D02D06CCB2020EE4E5E901 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
-		CA898462C74354F0C07F6D32 /* SpyTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = SpyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA898462C74354F0C07F6D32 /* SpyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF49C862AFF8344692F93D42 /* Spy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Spy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D17C70F0F2B27ABF85066F2F /* FileSpyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileSpyTests.swift; sourceTree = "<group>"; };
 		D19ADD9D7DF5A76D1ADFDAA2 /* AnySpyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnySpyTests.swift; sourceTree = "<group>"; };
