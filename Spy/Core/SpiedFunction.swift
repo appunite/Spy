@@ -9,7 +9,7 @@
 /* A functor that decorates the function and logs a given message when it is called.
 
 Example usage:
- let function = SpiedFunction(spy: spyMock.any(), level: .info, channel: .foo, spyableProvider: { value in "Called Math.squared with value \(value)" }, function: Math.squared)
+ let function = SpiedFunction(spy: spy, level: .info, channel: .foo, spyableProvider: { value in "Called Math.squared with value \(value)" }, function: Math.squared)
  let x = 3
  let xSquared = function.callAsFunction(x)
  With Swift 5.2 it is available to call it like this
