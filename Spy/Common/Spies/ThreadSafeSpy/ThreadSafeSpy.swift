@@ -28,23 +28,23 @@ public final class ThreadSafeSpy<Spy: PSpy>: PSpy {
     }
     
     @discardableResult public func log(level: Level, channel: Channel, message: PSpyable) -> Self {
+        defer { lock.unlock() }
         lock.lock()
         underlyingSpy.log(level: level, channel: channel, message: message)
-        lock.unlock()
         return self
     }
     
     @discardableResult public func apply(configuration: SpyConfiguration<Level, Channel>) -> Self {
+        defer { lock.unlock() }
         lock.lock()
         underlyingSpy.apply(configuration: configuration)
-        lock.unlock()
         return self
     }
     
     @discardableResult public func forceLog(level: Level, channel: Channel, message: PSpyable) -> Self {
+        defer { lock.unlock() }
         lock.lock()
         underlyingSpy.forceLog(level: level, channel: channel, message: message)
-        lock.unlock()
         return self
     }
 }
